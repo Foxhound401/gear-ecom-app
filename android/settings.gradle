@@ -1,0 +1,3 @@
+rootProject.name = 'GamExc'
+
+include ':app'
