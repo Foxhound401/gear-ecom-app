@@ -1,23 +1,11 @@
 import React, { Component } from 'react';
-import Authentication from './Authentication/Authentication';
-import ChangeInfor from './ChangeInfo/ChangeInfo';
-import Main from './Main/Main';
-import OrderHistory from './OrderHistory/OrderHistory';
+import { View } from 'react-native';
+import { TabBar, RootStack } from './Route/Route';
 // eslint-disable-next-line
-import { createStackNavigator } from 'react-navigation';
+import { createStackNavigator, createDrawerNavigator, createBottomTabNavigator } from 'react-navigation';
+import Main from './Main/Main';
 
-const RootStack = createStackNavigator(
-    {
-        main: { screen: Main },
-        authentication: Authentication,
-        changeInfor: ChangeInfor,
-        orderHistory: OrderHistory,
-    },
-    {
-        initialRouteName: 'main',
-    },
-);
-
+// eslint-disable-next-line
 export default class App extends Component {
     render() {
         return (

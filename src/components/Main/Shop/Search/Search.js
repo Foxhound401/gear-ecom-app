@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import { Text, View, TouchableOpacity, StyleSheet } from 'react-native';
-import Shop from './Shop/Shop';
 
-export default class Main extends Component {
+export default class Search extends Component {
 
     render() {
         return (
-            <Shop />
+            <View style={{ flex: 1, backgroundColor: '#FFC1E9' }}>
+                <View style={{ flex: 0.1, backgroundColor: 'blue' }}>
+                    <Text>TopBar</Text>
+                </View>
+                <Text>Search component</Text>
+            </View>
         );
     }
 }

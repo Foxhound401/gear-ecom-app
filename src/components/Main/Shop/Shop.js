@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Text, View, TouchableOpacity, StyleSheet } from 'react-native';
-import Shop from './Shop/Shop';
+import { TabBar } from '../../Route/Route';
 
-export default class Main extends Component {
+export default class Shop extends Component {
 
     render() {
         return (
-            <Shop />
+            <TabBar />
         );
     }
 }

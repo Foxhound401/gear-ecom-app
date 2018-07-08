@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { Text, View, TouchableOpacity, StyleSheet } from 'react-native';
-import Shop from './Shop/Shop';
 
-export default class Main extends Component {
+export default class Wallet extends Component {
 
     render() {
         return (
-            <Shop />
+            <View style={{ flex: 1, backgroundColor: '#FFC1E9' }}>
+                <Text>Wallet component</Text>
+            </View>
         );
     }
 }
