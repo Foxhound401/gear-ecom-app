@@ -14,6 +14,8 @@ import Search from '../Main/Shop/Search/Search';
 import Wallet from '../Main/Shop/Wallet/Wallet';
 import Cart from '../Main/Shop/Cart/Cart';
 import Profile from '../Main/Shop/Profile/Profile';
+import HomeView from '../Main/Shop/Home/HomeView';
+import ListProduct from '../Main/Shop/ListProduct/ListProduct';
 
 
 const homeIcon = (<Icon name='home' size={24} />);
@@ -37,6 +39,21 @@ export const RootStack = createStackNavigator(
 
     }
 );
+
+export const HomeStack = createStackNavigator(
+    {
+        HomeView: {
+            screen: HomeView,
+        },
+        ListProduct: {
+            screen: ListProduct,
+        },
+    },
+    {
+        initialRouteName: 'HomeView',
+        headerMode: 'none'
+    }
+)
 
 export const TabBar = createBottomTabNavigator(
     {
@@ -77,7 +94,7 @@ export const TabBar = createBottomTabNavigator(
         },
     },
     {
-        initialRouteName: 'Home'
+        initialRouteName: 'Home',
     }
 );
 

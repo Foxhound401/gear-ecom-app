@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 import { Text, View, TouchableOpacity, StyleSheet } from 'react-native';
 import { TabBar } from '../../Route/Route';
+import Header from './Header';
 
 export default class Shop extends Component {
 
     render() {
         return (
-            <TabBar />
+            <View style={{ flex: 1 }}>
+                <Header />
+                <TabBar />
+            </View>
+
         );
     }
 }

@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
-import { Text, View, TouchableOpacity, StyleSheet } from 'react-native';
+import { Text, View, TextInput, StyleSheet } from 'react-native';
 
 export default class Search extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            txtSearch: "",
+        }
+    }
+
     render() {
         return (
-            <View style={{ flex: 1, backgroundColor: '#FFC1E9' }}>
-                <View style={{ flex: 0.1, backgroundColor: 'blue' }}>
-                    <Text>TopBar</Text>
-                </View>
-                <Text>Search component</Text>
+            <View>
+                <Text>Search Component</Text>
             </View>
         );
     }

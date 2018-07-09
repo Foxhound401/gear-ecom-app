@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import { Text, View, TouchableOpacity, StyleSheet } from 'react-native';
+import { HomeStack } from '../../../Route/Route';
 
 export default class Home extends Component {
 
     render() {
         return (
-            <View style={{ flex: 1, backgroundColor: '#FFC1E9' }}>
-                <Text>Home component</Text>
-            </View>
+            <HomeStack />
         );
     }
 }
