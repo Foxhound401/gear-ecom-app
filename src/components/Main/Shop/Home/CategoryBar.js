@@ -44,12 +44,15 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         justifyContent: 'space-around',
         alignItems: 'center',
+        shadowColor: '#2E272B',
+        shadowOffset: { width: 0, height: 3 },
+        shadowOpacity: 1,
     },
     wrapper: {
         flex: 0.12,
         shadowColor: '#2E272B',
         shadowOffset: { width: 0, height: 3 },
-        shadowOpacity: 0.2,
+        shadowOpacity: 1,
         marginBottom: 0,
         marginTop: 0,
 
@@ -58,7 +61,10 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        marginBottom: 0
+        marginBottom: 0,
+        shadowColor: '#2E272B',
+        shadowOffset: { width: 0, height: 5 },
+        shadowOpacity: 1,
     },
     scroll: {
         flex: 1,

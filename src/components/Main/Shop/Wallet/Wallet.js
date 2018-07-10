@@ -26,7 +26,7 @@ export default class Wallet extends Component {
 
         return (
             <View style={{ flex: 1, backgroundColor: '#22A7F0' }}>
-                <View style={{ flex: 0.6, backgroundColor: '#22A7F0', justifyContent: 'center' }}>
+                <View style={{ flex: 0.6, backgroundColor: '#3FC380', justifyContent: 'center' }}>
                     <View style={scrollButtonWrapper} >
                         <Text style={textStyle}>
                             Total balance

@@ -59,6 +59,9 @@ const styles = StyleSheet.create({
         justifyContent: 'space-around',
         alignItems: 'center',
         backgroundColor: '#FFF',
+        shadowColor: '#2E272B',
+        shadowOffset: { width: 0, height: 3 },
+        shadowOpacity: 0.2,
         margin: 15,
         borderRadius: 3,
         paddingLeft: 15,
@@ -70,7 +73,10 @@ const styles = StyleSheet.create({
         paddingLeft: 10,
         paddingVertical: 0,
         justifyContent: 'space-around',
-        flex: 1
+        flex: 1,
+        shadowColor: '#2E272B',
+        shadowOffset: { width: 0, height: 3 },
+        shadowOpacity: 0.2,
     },
     titleStyle: {
         justifyContent: 'center',
@@ -80,6 +86,9 @@ const styles = StyleSheet.create({
         color: '#FFF',
         fontFamily: 'Avenir',
         fontSize: 20,
+        shadowColor: '#2E272B',
+        shadowOffset: { width: 0, height: 3 },
+        shadowOpacity: 0.2,
     },
     iconStyle: { width: 25, height: 25 }
 });

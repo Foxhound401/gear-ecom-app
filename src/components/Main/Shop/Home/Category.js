@@ -10,7 +10,7 @@ export default class Category extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            title: "Weeboo Shit",
+            title: "Most Popular",
             gameTitle: "Son Tung matlozzzzzz :))",
             price: "0.00",
             currency: "VND"
@@ -77,7 +77,6 @@ const styles = StyleSheet.create({
     },
     textStyle: {
         fontSize: 20,
-        color: '#AFAEAF',
         padding: 10,
         paddingBottom: 0,
     },
