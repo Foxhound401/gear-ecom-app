@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Text, View, TouchableOpacity, StyleSheet, Dimensions, ScrollView, Image } from 'react-native';
 import nekoparaItem from '../../../../media/gameImage/nekoparaItem.jpg';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import Icon from 'react-native-vector-icons/Ionicons';
+import MaterialIcon from 'react-native-vector-icons/MaterialIcons';
 
 
 const { height, width } = Dimensions.get('window');
@@ -13,36 +14,62 @@ export default class Profile extends Component {
 
     render() {
 
-        const { listMenu, itemSlide, wrapper, textTitle, textLogin, iconUser } = styles;
+        const { icon, container, listText, listMenu, itemSlide, wrapper, textTitle, textLogin, iconUser } = styles;
         return (
-            <ScrollView style={{ flex: 1 }}>
-                <TouchableOpacity style={itemSlide}>
-                    <View style={wrapper} >
-                        <Icon name="wheelchair-accessibility" style={iconUser} size={60} />
-                        <Text style={textTitle}>
-                            Welcome to GamExc
+            <View style={{ flex: 1 }}>
+                <ScrollView style={{ flex: 1 }}>
+                    <TouchableOpacity style={itemSlide}>
+                        <View style={wrapper} >
+                            <MaterialIcon name="account-circle" style={iconUser} size={60} />
+                            <Text style={textTitle}>
+                                Welcome to GamExc
                         </Text>
-                        <Text style={textLogin}>Login or sign up</Text>
+                            <Text style={textLogin}>Login or sign up</Text>
+                        </View>
+                    </TouchableOpacity>
+                    <View style={listMenu}>
+                        <TouchableOpacity style={container}>
+                            <MaterialIcon name="assignment" size={30} style={icon} />
+                            <Text style={listText}>My Orders</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={container}>
+                            <MaterialIcon name="account-balance" size={30} style={icon} />
+                            <Text style={listText}>My Sellings</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={container}>
+                            <Icon name="md-log-out" size={30} style={icon} />
+                            <Text style={listText}>Log out</Text>
+                        </TouchableOpacity>
                     </View>
-                </TouchableOpacity>
-                <View style={listMenu}>
-
-                </View>
-            </ScrollView>
+                </ScrollView>
+            </View>
         );
     }
 }
 
 const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        flexDirection: 'row',
+        minHeight: height / 9,
+        alignItems: 'center',
+    },
+    listText: {
+        fontWeight: 'bold',
+        fontSize: 15,
+        marginLeft: 15,
+    },
+    icon: {
+        margin: 10,
+    },
     iconUser: {
-        color: '#4DAF7C',
+        alignItems: 'center',
     },
     wrapper: {
         alignItems: 'center',
     },
     listMenu: {
-        minHeight: height / 2,
-        backgroundColor: 'yellow',
+        backgroundColor: '#FFF',
     },
     itemSlide: {
         flex: 1,
@@ -55,7 +82,6 @@ const styles = StyleSheet.create({
     textTitle: {
         fontSize: 25,
         fontWeight: 'bold',
-        color: '#4DAF7C',
     },
     textLogin: {
         fontSize: 15,
