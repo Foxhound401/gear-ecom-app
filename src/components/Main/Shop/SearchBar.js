@@ -5,7 +5,9 @@ import {
 } from 'react-native';
 import icSearch from '../../../media/appIcon/search0.png'
 
-export default class Header extends Component {
+const { height } = Dimensions.get('window');
+
+export default class SearchBar extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -22,25 +24,23 @@ export default class Header extends Component {
     render() {
         const { wrapper, row1, textInput, titleStyle, iconStyle, titleText } = styles;
         return (
-            <View style={wrapper}>
-                <View style={row1}>
-                    <TouchableOpacity>
-                        <Image style={iconStyle} source={icSearch} />
-                    </TouchableOpacity>
-                    <TextInput
-                        style={textInput}
-                        placeholder="What do you want to buy?"
-                        underlineColorAndroid="transparent"
-                        value={this.state.txtSearch}
-                        onChangeText={(text) => {
-                            this.setState({
-                                txtSearch: text
-                            })
-                        }}
-                        onFocus={(arrProduct) => global.gotoSearch()}
-                        onSubmitEditing={this.onSearch.bind(this)}
-                    />
-                </View>
+            <View style={row1}>
+                <TouchableOpacity>
+                    <Image style={iconStyle} source={icSearch} />
+                </TouchableOpacity>
+                <TextInput
+                    style={textInput}
+                    placeholder="What do you want to buy?"
+                    underlineColorAndroid="transparent"
+                    value={this.state.txtSearch}
+                    onChangeText={(text) => {
+                        this.setState({
+                            txtSearch: text
+                        })
+                    }}
+                    onFocus={(arrProduct) => global.gotoSearch()}
+                    onSubmitEditing={this.onSearch.bind(this)}
+                />
             </View>
         );
     }
@@ -48,21 +48,28 @@ export default class Header extends Component {
 
 const styles = StyleSheet.create({
     wrapper: {
-        flex: 0.05,
+        flex: 0.1,
         backgroundColor: '#7BC8C8',
         padding: 5,
-        justifyContent: 'space-around'
+        paddingBottom: 0
     },
     row1: {
+        flex: 0.1,
         flexDirection: 'row',
-        justifyContent: 'space-between',
-        backgroundColor: '#FFF'
+        justifyContent: 'space-around',
+        alignItems: 'center',
+        backgroundColor: '#FFF',
+        margin: 15,
+        borderRadius: 3,
+        paddingLeft: 15,
+        minHeight: height/12,
     },
     textInput: {
         height: 23,
         backgroundColor: '#FFF',
         paddingLeft: 10,
         paddingVertical: 0,
+        justifyContent: 'space-around',
         flex: 1
     },
     titleStyle: {
