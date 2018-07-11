@@ -19,7 +19,7 @@ export default class Profile extends Component {
             <View style={{ flex: 1 }}>
                 <ScrollView style={{ flex: 1 }}>
                     <TouchableOpacity style={itemSlide}>
-                        <View style={wrapper} >
+                        <View style={wrapper}>
                             <MaterialIcon name="account-circle" style={iconUser} size={60} />
                             <Text style={textTitle}>
                                 Welcome to GamExc

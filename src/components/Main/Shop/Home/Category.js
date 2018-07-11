@@ -11,14 +11,16 @@ export default class Category extends Component {
         super(props);
         this.state = {
             title: "Most Popular",
-            gameTitle: "Son Tung matlozzzzzz :))",
+            gameTitle: "Nekopara Vol 1 Key Steam Global",
             price: "0.00",
-            currency: "VND"
+            currency: "VND",
+            bool: false,
         }
     }
 
     render() {
-        const { wrapper, textStyle, imageStyle, scroll, itemSlide, gameTitle, textGameTitle, priceTitle, textPrice, textCurrency } = styles;
+        const { wrapper, textStyle, imageStyle, scroll, itemSlide,
+            gameTitle, textGameTitle, priceTitle, textPrice, textCurrency } = styles;
         return (
             <View style={wrapper}>
                 <Text style={textStyle}>{this.state.title}</Text>
@@ -37,7 +39,7 @@ export default class Category extends Component {
                     </TouchableOpacity>
                     <TouchableOpacity style={itemSlide}>
                         <View style={{ flex: 1 }}>
-                            <Image source={thangmatloz} style={imageStyle} />
+                            <Image source={nekoparaItem} style={imageStyle} />
                         </View>
                         <View style={gameTitle}>
                             <Text style={textGameTitle}>{this.state.gameTitle}</Text>
@@ -49,7 +51,7 @@ export default class Category extends Component {
                     </TouchableOpacity>
                     <TouchableOpacity style={itemSlide}>
                         <View style={{ flex: 1 }}>
-                            <Image source={thangmatloz} style={imageStyle} />
+                            <Image source={nekoparaItem} style={imageStyle} />
                         </View>
                         <View style={gameTitle}>
                             <Text style={textGameTitle}>{this.state.gameTitle}</Text>
