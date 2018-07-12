@@ -8,7 +8,6 @@ import IcoIcon from 'react-native-vector-icons/Ionicons';
 
 // eslint-disable-next-line
 import { createStackNavigator, createSwitchNavigator, createBottomTabNavigator } from 'react-navigation';
-import Home from '../Main/Shop/Home/Home';
 import Search from '../Main/Shop/Search/Search';
 import Wallet from '../Main/Shop/Wallet/Wallet';
 import Cart from '../Main/Shop/Cart/Cart';
@@ -29,14 +28,16 @@ export const HomeStack = createStackNavigator(
     {
         HomeView: {
             screen: HomeView,
+            navigationOptions: {
+                header: null,
+            }
         },
-        ListProduct: {
+        ListView: {
             screen: ListProduct,
-        },
+        }
     },
     {
         initialRouteName: 'HomeView',
-        headerMode: 'none',
     }
 );
 
@@ -63,6 +64,7 @@ export const ProfileStack = createStackNavigator(
 
         Profile: {
             screen: Profile,
+            navigationOptions: { header: null },
         },
         AuthenticationStack: { screen: AuthenticationStack }
     },
@@ -74,7 +76,7 @@ export const ProfileStack = createStackNavigator(
 export const TabBar = createBottomTabNavigator(
     {
         Home: {
-            screen: AuthenticationStack,
+            screen: HomeStack,
             navigationOptions: {
                 title: "Home",
                 tabBarIcon: homeIcon

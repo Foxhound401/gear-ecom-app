@@ -13,12 +13,12 @@ export default class HomeView extends Component {
         const { wrapper } = styles;
         return (
             <ScrollView style={wrapper}>
-                <Collection />
-                <FinanceBar />
-                <SearchBar />
-                <CategoryBar />
-                <Category />
-                <Category />
+                <Collection navigation={this.props.navigation} />
+                <FinanceBar navigation={this.props.navigation} />
+                <SearchBar navigation={this.props.navigation} />
+                <CategoryBar navigation={this.props.navigation} />
+                <Category navigation={this.props.navigation} />
+                <Category navigation={this.props.navigation} />
             </ScrollView>
 
         );

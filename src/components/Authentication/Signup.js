@@ -3,7 +3,7 @@ import { Text, View, Button, Dimensions, StyleSheet, TextInput, TouchableOpacity
 import Icon from 'react-native-vector-icons/Ionicons';
 
 const { height, width } = Dimensions.get('window');
-const backIcon = (<Icon name='ios-arrow-back' size={20} />)
+const backIcon = (<Icon name='ios-arrow-back' size={20} />);
 
 export default class Signup extends Component {
 

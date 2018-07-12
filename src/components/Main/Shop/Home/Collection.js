@@ -11,17 +11,17 @@ export default class Collection extends Component {
     render() {
         const { wrapper, textStyle, imageStyle, row1 } = styles;
         return (
-            <View style={{height: height/3 }}>
+            <View style={{ height: height / 3 }}>
                 <Swiper autoplay={true}>
-                    <View style={wrapper}>
+                    <TouchableOpacity style={wrapper} onPress={() => this.props.navigation.navigate("ListView", { itemId: '1' })} >
                         <Image source={nekopara} style={imageStyle} />
-                    </View>
-                    <View style={wrapper}>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={wrapper} onPress={() => this.props.navigation.navigate("ListView", { itemId: '2' })} >
                         <Image source={stardew} style={imageStyle} />
-                    </View>
-                    <View style={wrapper}>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={wrapper} onPress={() => this.props.navigation.navigate("ListView", { itemId: '3' })} >
                         <Image source={fallout4} style={imageStyle} />
-                    </View>
+                    </TouchableOpacity>
                 </Swiper>
             </View>
         );
