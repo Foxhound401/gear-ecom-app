@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
     slideButton: {
         width: 45,
         height: 45,
-        backgroundColor: "#019875",
+        backgroundColor: "#57b9b9",
         borderRadius: 35,
         justifyContent: 'space-around',
         alignItems: 'center',
@@ -82,7 +82,6 @@ const styles = StyleSheet.create({
     },
     wrapper: {
         flex: 0.2,
-        backgroundColor: '#3FC380',
         shadowColor: '#2E272B',
         shadowOffset: { width: 0, height: 3 },
         shadowOpacity: 0.2,
@@ -97,7 +96,7 @@ const styles = StyleSheet.create({
     textStyle: {
         fontSize: 20,
         margin: 10,
-        color: '#66CC99',
+        color: '#46a8a8',
         marginTop: 0,
     },
     container: {
@@ -106,11 +105,11 @@ const styles = StyleSheet.create({
     },
     left: {
         flex: 1,
-        backgroundColor: '#3FC380'
+        backgroundColor: '#7BC8C8'
     },
     right: {
         flex: 1,
-        backgroundColor: '#3FC380',
+        backgroundColor: '#7BC8C8',
         justifyContent: 'space-around',
         alignItems: 'center',
     },

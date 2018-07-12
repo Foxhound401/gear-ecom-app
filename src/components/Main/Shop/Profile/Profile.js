@@ -3,6 +3,7 @@ import { Text, View, TouchableOpacity, StyleSheet, Dimensions, ScrollView, Image
 import nekoparaItem from '../../../../media/gameImage/nekoparaItem.jpg';
 import Icon from 'react-native-vector-icons/Ionicons';
 import MaterialIcon from 'react-native-vector-icons/MaterialIcons';
+import { createStackNavigator } from 'react-navigation';
 
 
 const { height, width } = Dimensions.get('window');
@@ -18,7 +19,7 @@ export default class Profile extends Component {
         return (
             <View style={{ flex: 1 }}>
                 <ScrollView style={{ flex: 1 }}>
-                    <TouchableOpacity style={itemSlide}>
+                    <TouchableOpacity style={itemSlide} onPress={() => this.props.navigation.navigate('Authentication')}>
                         <View style={wrapper}>
                             <MaterialIcon name="account-circle" style={iconUser} size={60} />
                             <Text style={textTitle}>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Text, View, TouchableOpacity, StyleSheet, Image, Dimensions } from 'react-native';
+import { Text, View, TouchableOpacity, StyleSheet, Image, Dimensions, ScrollView } from 'react-native';
 import nekoparaItem from '../../../../media/gameImage/nekoparaItem.jpg';
+import fallout4Item from '../../../../media/gameImage/fallout4Slider.png';
 
 const { width, height } = Dimensions.get('window');
 export default class Cart extends Component {
@@ -29,20 +30,38 @@ export default class Cart extends Component {
                     </TouchableOpacity>
                 </View>
                 :
-                <View style={containerItems}>
-                    <TouchableOpacity style={cartItem}>
-                        <View style={imageWrapper}>
-                            <Image source={nekoparaItem} style={imageStyle} />
-                        </View>
-                        <View style={{ flex: 1 }}>
-                            <Text style={textGameTitle}>{this.state.gameTitle}</Text>
-                            <View style={priceTitle}>
-                                <Text style={textPrice}>{this.state.price}</Text>
-                                <Text style={textCurrency}>{this.state.currency}</Text>
+                <ScrollView style={{ flex: 1 }}>
+                    <View style={containerItems}>
+                        <TouchableOpacity style={cartItem}>
+                            <View style={imageWrapper}>
+                                <Image source={nekoparaItem} style={imageStyle} />
                             </View>
-                        </View>
-                    </TouchableOpacity>
-                </View>
+                            <View style={{ flex: 1 }}>
+                                <Text style={textGameTitle}>{this.state.gameTitle}</Text>
+                                <View style={priceTitle}>
+                                    <Text style={textPrice}>{this.state.price}</Text>
+                                    <Text style={textCurrency}>{this.state.currency}</Text>
+                                </View>
+                            </View>
+                        </TouchableOpacity>
+                    </View>
+                    <View style={containerItems}>
+                        <TouchableOpacity style={cartItem}>
+                            <View style={imageWrapper}>
+                                <Image source={fallout4Item} style={imageStyle} />
+                            </View>
+                            <View style={{ flex: 1 }}>
+                                <Text style={textGameTitle}>{this.state.gameTitle}</Text>
+                                <View style={priceTitle}>
+                                    <Text style={textPrice}>{this.state.price}</Text>
+                                    <Text style={textCurrency}>{this.state.currency}</Text>
+                                </View>
+                            </View>
+                        </TouchableOpacity>
+                    </View>
+                
+                </ScrollView>
+
         );
     }
 }
@@ -77,7 +96,7 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     cartItem: {
-        flex: 0.25,
+        flex: 0.45,
         flexDirection: 'row',
         backgroundColor: '#FFF',
         margin: 15,
@@ -86,12 +105,13 @@ const styles = StyleSheet.create({
     imageStyle: {
         flex: 1,
         width: undefined,
-        height: undefined,
-        minWidth: 100,
-        resizeMode: 'contain',
+        height: 100,
+        minHeight: 100,
+        minWidth: 80,
+        resizeMode: 'stretch',
     },
     imageWrapper: {
-        flex: 0.3,
+        flex: 0.4,
         margin: 10,
         alignItems: 'center',
     }

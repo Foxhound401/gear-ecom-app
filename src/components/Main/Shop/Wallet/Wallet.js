@@ -26,7 +26,7 @@ export default class Wallet extends Component {
 
         return (
             <View style={{ flex: 1, backgroundColor: '#22A7F0' }}>
-                <View style={{ flex: 0.6, backgroundColor: '#3FC380', justifyContent: 'center' }}>
+                <View style={{ flex: 0.6, backgroundColor: '#7BC8C8', justifyContent: 'center' }}>
                     <View style={scrollButtonWrapper} >
                         <Text style={textStyle}>
                             Total balance
@@ -37,7 +37,7 @@ export default class Wallet extends Component {
                         </View>
                     </View>
                 </View>
-                <View style={{ flex: 0.4, backgroundColor: '#3FC380', justifyContent: 'center' }}>
+                <View style={{ flex: 0.4, backgroundColor: '#7BC8C8', justifyContent: 'center' }}>
                     <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
                         <TouchableOpacity style={scrollButtonWrapper}>
                             <View style={slideButton}>
@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
     slideButton: {
         width: 55,
         height: 55,
-        backgroundColor: "#019875",
+        backgroundColor: "#57b9b9",
         borderRadius: 35,
         justifyContent: 'space-around',
         alignItems: 'center',

@@ -23,10 +23,19 @@ export default class Category extends Component {
             gameTitle, textGameTitle, priceTitle, textPrice, textCurrency } = styles;
         return (
             <View style={wrapper}>
-                <Text style={textStyle}>{this.state.title}</Text>
+                <View style={{ flex: 0.01, flexDirection: 'row', marginBottom: 0 }}>
+                    <Text style={textStyle}>{this.state.title}</Text>
+                    <TouchableOpacity style={{ flex: 1, justifyContent: 'flex-end', alignItems: 'flex-end' }}>
+                        <Text style={{ color: '#22A7F0', margin: 15, fontSize: 17,  }}>More</Text>
+                    </TouchableOpacity>
+
+                </View>
                 <ScrollView style={scroll} horizontal={true} showsHorizontalScrollIndicator={false}>
                     <TouchableOpacity style={itemSlide}>
-                        <View style={{ flex: 1 }}>
+                        <View style={{
+                            flex: 1, justifyContent: 'center',
+                            alignItems: 'center', marginBottom: 15
+                        }}>
                             <Image source={nekoparaItem} style={imageStyle} />
                         </View>
                         <View style={gameTitle}>
@@ -38,20 +47,11 @@ export default class Category extends Component {
                         </View>
                     </TouchableOpacity>
                     <TouchableOpacity style={itemSlide}>
-                        <View style={{ flex: 1 }}>
-                            <Image source={nekoparaItem} style={imageStyle} />
-                        </View>
-                        <View style={gameTitle}>
-                            <Text style={textGameTitle}>{this.state.gameTitle}</Text>
-                        </View>
-                        <View style={priceTitle}>
-                            <Text style={textPrice}>{this.state.price}</Text>
-                            <Text style={textCurrency}>{this.state.currency}</Text>
-                        </View>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={itemSlide}>
-                        <View style={{ flex: 1 }}>
-                            <Image source={nekoparaItem} style={imageStyle} />
+                        <View style={{
+                            flex: 1, justifyContent: 'center',
+                            alignItems: 'center', marginBottom: 15
+                        }}>
+                            <Image source={thangmatloz} style={imageStyle} />
                         </View>
                         <View style={gameTitle}>
                             <Text style={textGameTitle}>{this.state.gameTitle}</Text>
@@ -84,13 +84,10 @@ const styles = StyleSheet.create({
     },
     imageStyle: {
         flex: 1,
-        width: undefined,
-        height: undefined,
-        resizeMode: "contain",
-        minHeight: height / 8,
+        width: width / 3.5,
+        height: height / 4.5,
+        resizeMode: "stretch",
         marginTop: 20,
-        justifyContent: 'space-around',
-        alignItems: 'center',
     },
     scroll: {
         flex: 1,
@@ -100,12 +97,14 @@ const styles = StyleSheet.create({
         width: undefined,
         height: undefined,
         backgroundColor: '#FFF',
-        minWidth: width / 2.3,
-        maxWidth: width / 2.3,
+        maxWidth: width / 3,
+        minWidth: width / 2.5,
         margin: 10,
+        marginTop: 0,
+
     },
     gameTitle: {
-        flex: 0.2,
+        flex: 0.1,
         alignItems: 'center',
         padding: 10,
         paddingTop: 5,
@@ -117,15 +116,10 @@ const styles = StyleSheet.create({
     priceTitle: {
         flex: 0.2,
         flexDirection: 'row',
-        padding: 10,
-        paddingTop: 0,
-        paddingBottom: 0,
-        marginBottom: 0,
+        padding: 15,
     },
     textPrice: {
         fontSize: 20,
-        paddingBottom: 0,
-        marginBottom: 0,
         color: "#E87E04",
     },
     textCurrency: {
