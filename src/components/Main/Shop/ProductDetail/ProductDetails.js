@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
 
 export default class ProductDetails extends Component {
     render() {
+
+        const { navigation } = this.props;
+        const name = navigation.getParam('name');
+
         return (
-            <View>
+            <TouchableOpacity onPress={() => this.props.navigation.goBack()}>
                 <Text>
-                    Product Details
+                    Product Details {name}
                 </Text>
-            </View>
+            </TouchableOpacity>
         );
     }
 }

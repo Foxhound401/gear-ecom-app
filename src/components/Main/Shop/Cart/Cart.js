@@ -32,7 +32,7 @@ export default class Cart extends Component {
                 :
                 <ScrollView style={{ flex: 1 }}>
                     <View style={containerItems}>
-                        <TouchableOpacity style={cartItem}>
+                        <TouchableOpacity style={cartItem} onPress={() => this.props.navigation.navigate('DetailView', { name: 'phuc' })}>
                             <View style={imageWrapper}>
                                 <Image source={nekoparaItem} style={imageStyle} />
                             </View>
@@ -59,7 +59,7 @@ export default class Cart extends Component {
                             </View>
                         </TouchableOpacity>
                     </View>
-                
+
                 </ScrollView>
 
         );

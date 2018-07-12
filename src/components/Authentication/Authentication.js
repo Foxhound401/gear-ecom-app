@@ -7,11 +7,16 @@ import Signup from './Signup';
 const { height, width } = Dimensions.get('window');
 export default class Authentication extends Component {
 
-    constructor(props) {
+    constructor(props){
         super(props);
-        this.state = {
-            isLogged: false,
-        }
+    }
+
+    state = {
+        isLogin: true,
+    };
+
+    update = value => {
+        this.setState({ isLogin: value })
     }
 
     render() {
@@ -27,7 +32,7 @@ export default class Authentication extends Component {
                         <Text style={{ color: '#FFF', fontSize: 9, fontFamily: 'Helvetica-Light' }}>One login to the last Platforms you ever need</Text>
                     </ImageBackground>
                 </View>
-                {this.state.isLogged ? <Login /> : <Signup />}
+                {this.state.isLogin ? <Login navigation={this.props.navigation} {...this.props} /> : <Signup navigation={this.props.navigation} {...this.props} />}
             </ScrollView>
         );
     }

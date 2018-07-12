@@ -31,7 +31,7 @@ export default class Category extends Component {
 
                 </View>
                 <ScrollView style={scroll} horizontal={true} showsHorizontalScrollIndicator={false}>
-                    <TouchableOpacity style={itemSlide}>
+                    <TouchableOpacity style={itemSlide} onPress={() => this.props.navigation.navigate('DetailView')}>
                         <View style={{
                             flex: 1, justifyContent: 'center',
                             alignItems: 'center', marginBottom: 15

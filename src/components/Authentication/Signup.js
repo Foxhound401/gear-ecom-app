@@ -21,7 +21,7 @@ export default class Signup extends Component {
         const { email, password } = this.state;
         return (
             <View style={container}>
-                <TouchableOpacity style={backButton}>
+                <TouchableOpacity style={backButton} onPress={() => { this.props.update(true) }}>
                     {backIcon}
                 </TouchableOpacity>
                 <TextInput

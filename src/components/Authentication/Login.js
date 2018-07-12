@@ -10,6 +10,7 @@ export default class Login extends Component {
         this.state = {
             email: '',
             password: '',
+
         }
     }
 
@@ -38,10 +39,10 @@ export default class Login extends Component {
                     <Text style={buttonText}>Log in</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={signUpButton}>
+                <TouchableOpacity style={signUpButton} onPress={() => { this.props.update(false) }}>
                     <Text style={buttonSinupText}>Create GameXC ID</Text>
                 </TouchableOpacity>
-            </View>
+            </View >
         );
     }
 };

@@ -16,6 +16,7 @@ import HomeView from '../Main/Shop/Home/HomeView';
 import ListProduct from '../Main/Shop/ListProduct/ListProduct';
 import Login from '../Authentication/Login';
 import Signup from '../Authentication/Signup';
+import ProductDetails from '../Main/Shop/ProductDetail/ProductDetails';
 
 
 const homeIcon = (<Icon name='home' size={24} />);
@@ -34,10 +35,14 @@ export const HomeStack = createStackNavigator(
         },
         ListView: {
             screen: ListProduct,
+        },
+        DetailView: {
+            screen: ProductDetails,
         }
     },
     {
         initialRouteName: 'HomeView',
+        headerMode: 'none',
     }
 );
 

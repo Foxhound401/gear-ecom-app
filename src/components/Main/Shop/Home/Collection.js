@@ -13,13 +13,13 @@ export default class Collection extends Component {
         return (
             <View style={{ height: height / 3 }}>
                 <Swiper autoplay={true}>
-                    <TouchableOpacity style={wrapper} onPress={() => this.props.navigation.navigate("ListView", { itemId: '1' })} >
+                    <TouchableOpacity style={wrapper} onPress={() => this.props.navigation.navigate("Cart", { itemId: '1' })} >
                         <Image source={nekopara} style={imageStyle} />
                     </TouchableOpacity>
-                    <TouchableOpacity style={wrapper} onPress={() => this.props.navigation.navigate("ListView", { itemId: '2' })} >
+                    <TouchableOpacity style={wrapper} onPress={() => this.props.navigation.navigate("Cart", { itemId: '2' })} >
                         <Image source={stardew} style={imageStyle} />
                     </TouchableOpacity>
-                    <TouchableOpacity style={wrapper} onPress={() => this.props.navigation.navigate("ListView", { itemId: '3' })} >
+                    <TouchableOpacity style={wrapper} onPress={() => this.props.navigation.navigate("Cart", { itemId: '3' })} >
                         <Image source={fallout4} style={imageStyle} />
                     </TouchableOpacity>
                 </Swiper>
