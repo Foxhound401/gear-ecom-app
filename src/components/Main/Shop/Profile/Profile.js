@@ -19,7 +19,7 @@ export default class Profile extends Component {
         return (
             <View style={{ flex: 1 }}>
                 <ScrollView style={{ flex: 1 }}>
-                    <TouchableOpacity style={itemSlide} onPress={() => this.props.navigation.navigate('Authentication')}>
+                    <TouchableOpacity style={itemSlide} onPress={() => this.props.navigation.navigate('AuthenticationStack')}>
                         <View style={wrapper}>
                             <MaterialIcon name="account-circle" style={iconUser} size={60} />
                             <Text style={textTitle}>

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { TouchableOpacity } from 'react-native';
 import Authentication from '../Authentication/Authentication';
 import ChangeInfor from '../ChangeInfo/ChangeInfo';
 import Main from '../Main/Main';
@@ -8,7 +7,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import IcoIcon from 'react-native-vector-icons/Ionicons';
 
 // eslint-disable-next-line
-import { createStackNavigator, createDrawerNavigator, createBottomTabNavigator } from 'react-navigation';
+import { createStackNavigator, createSwitchNavigator, createBottomTabNavigator } from 'react-navigation';
 import Home from '../Main/Shop/Home/Home';
 import Search from '../Main/Shop/Search/Search';
 import Wallet from '../Main/Shop/Wallet/Wallet';
@@ -26,22 +25,6 @@ const profileIcon = (<Icon name='user' size={24} />);
 const cartIcon = (<Icon name='shopping-cart' size={24} />);
 const walletIcon = (<Icon name="credit-card" size={24} />);
 
-export const RootStack = createStackNavigator(
-    {
-        main: {
-            screen: Main,
-        },
-        authentication: Authentication,
-        changeInfor: ChangeInfor,
-        orderHistory: OrderHistory,
-    },
-    {
-        initialRouteName: 'main',
-        headerMode: 'none'
-
-    }
-);
-
 export const HomeStack = createStackNavigator(
     {
         HomeView: {
@@ -53,29 +36,38 @@ export const HomeStack = createStackNavigator(
     },
     {
         initialRouteName: 'HomeView',
-        headerMode: 'none'
+        headerMode: 'none',
     }
 );
 
-export const AuthenticationStack = createStackNavigator(
+
+export const AuthenticationStack = createSwitchNavigator(
     {
-        Authentication: {
+        AuthenticationScreen: {
             screen: Authentication,
         },
-        Login: {
+        LoginScreen: {
             screen: Login,
         },
-        Signup: {
+        SignupScreen: {
             screen: Signup,
-        }, 
-        Profile: {
-            screen: Profile,
-        }
-
+        },
     },
     {
-        initialRouteName: 'Authentication',
-        headerMode: 'none'
+        initialRouteName: 'AuthenticationScreen',
+        headerMode: 'screen',
+    }
+);
+export const ProfileStack = createStackNavigator(
+    {
+
+        Profile: {
+            screen: Profile,
+        },
+        AuthenticationStack: { screen: AuthenticationStack }
+    },
+    {
+        initialRouteName: 'Profile',
     }
 );
 
@@ -110,15 +102,17 @@ export const TabBar = createBottomTabNavigator(
             }
         },
         Profile: {
-            screen: AuthenticationStack,
+            screen: ProfileStack,
             navigationOptions: {
                 title: "Profile",
-                tabBarIcon: profileIcon
+                tabBarIcon: profileIcon,
+                headerMode: 'screen'
             }
         },
     },
     {
         initialRouteName: 'Home',
+        headerMode: 'none'
     }
 );
 

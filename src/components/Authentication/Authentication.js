@@ -10,14 +10,14 @@ export default class Authentication extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            isLogged: true,
+            isLogged: false,
         }
     }
 
     render() {
         const { imageStyle, title } = styles;
         return (
-            <ScrollView style={{ flex: 1 }}>
+            <ScrollView style={{ flex: 1, marginTop: 0, backgroundColor: '#FFF' }}>
                 <View style={{
                     flex: 1, justifyContent: 'center',
                     alignItems: 'center', marginBottom: 15,
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
         opacity: 0.9,
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: 10,
+        marginTop: 0,
     },
     title: {
         fontSize: 50,
