@@ -30,15 +30,15 @@ export default class Profile extends Component {
                     </TouchableOpacity>
                     <View style={listMenu}>
                         <TouchableOpacity style={container}>
-                            <MaterialIcon name="assignment" size={30} style={icon} />
+                            <MaterialIcon name="assignment" size={28} style={icon} />
                             <Text style={listText}>My Orders</Text>
                         </TouchableOpacity>
                         <TouchableOpacity style={container}>
-                            <MaterialIcon name="account-balance" size={30} style={icon} />
+                            <MaterialIcon name="account-balance" size={28} style={icon} />
                             <Text style={listText}>My Sellings</Text>
                         </TouchableOpacity>
                         <TouchableOpacity style={container}>
-                            <Icon name="md-log-out" size={30} style={icon} />
+                            <Icon name="md-log-out" size={28} style={icon} />
                             <Text style={listText}>Log out</Text>
                         </TouchableOpacity>
                     </View>
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     listText: {
-        fontWeight: 'bold',
+        fontWeight: '200',
         fontSize: 15,
         marginLeft: 15,
     },

@@ -25,6 +25,33 @@ const profileIcon = (<Icon name='user' size={24} />);
 const cartIcon = (<Icon name='shopping-cart' size={24} />);
 const walletIcon = (<Icon name="credit-card" size={24} />);
 
+
+export const AuthenticationStack = createSwitchNavigator(
+    {
+        AuthenticationScreen: {
+            screen: Authentication,
+        },
+    },
+    {
+        initialRouteName: 'AuthenticationScreen',
+        headerMode: 'screen',
+    }
+);
+
+export const ProfileStack = createStackNavigator(
+    {
+
+        Profile: {
+            screen: Profile,
+            navigationOptions: { header: null },
+        },
+        AuthenticationStack: { screen: AuthenticationStack }
+    },
+    {
+        initialRouteName: 'Profile',
+    }
+);
+
 export const HomeStack = createStackNavigator(
     {
         HomeView: {
@@ -38,43 +65,11 @@ export const HomeStack = createStackNavigator(
         },
         DetailView: {
             screen: ProductDetails,
-        }
+        },
     },
     {
         initialRouteName: 'HomeView',
         headerMode: 'none',
-    }
-);
-
-
-export const AuthenticationStack = createSwitchNavigator(
-    {
-        AuthenticationScreen: {
-            screen: Authentication,
-        },
-        LoginScreen: {
-            screen: Login,
-        },
-        SignupScreen: {
-            screen: Signup,
-        },
-    },
-    {
-        initialRouteName: 'AuthenticationScreen',
-        headerMode: 'screen',
-    }
-);
-export const ProfileStack = createStackNavigator(
-    {
-
-        Profile: {
-            screen: Profile,
-            navigationOptions: { header: null },
-        },
-        AuthenticationStack: { screen: AuthenticationStack }
-    },
-    {
-        initialRouteName: 'Profile',
     }
 );
 
@@ -122,4 +117,6 @@ export const TabBar = createBottomTabNavigator(
         headerMode: 'none'
     }
 );
+
+
 

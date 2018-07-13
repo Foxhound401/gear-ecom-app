@@ -38,7 +38,7 @@ export default class SearchBar extends Component {
                             txtSearch: text
                         })
                     }}
-                    onFocus={(arrProduct) => global.gotoSearch()}
+                    onFocus={() => {this.props.navigation.navigate('Search')}}
                     onSubmitEditing={this.onSearch.bind(this)}
                 />
             </View>

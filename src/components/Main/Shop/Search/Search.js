@@ -37,7 +37,6 @@ export default class Search extends Component {
                             txtSearch: text
                         })
                     }}
-                    onFocus={(arrProduct) => global.gotoSearch()}
                     onSubmitEditing={this.onSearch.bind(this)}
                 />
             </View>

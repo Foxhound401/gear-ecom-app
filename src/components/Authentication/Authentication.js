@@ -7,20 +7,15 @@ import Signup from './Signup';
 const { height, width } = Dimensions.get('window');
 export default class Authentication extends Component {
 
-    constructor(props){
+    constructor(props) {
         super(props);
-    }
-
-    state = {
-        isLogin: true,
-    };
-
-    update = value => {
-        this.setState({ isLogin: value })
     }
 
     render() {
         const { imageStyle, title } = styles;
+        const { navigation } = this.props;
+        const isLogin = navigation.getParam('isLogin');
+
         return (
             <ScrollView style={{ flex: 1, marginTop: 0, backgroundColor: '#FFF' }}>
                 <View style={{
@@ -32,7 +27,7 @@ export default class Authentication extends Component {
                         <Text style={{ color: '#FFF', fontSize: 9, fontFamily: 'Helvetica-Light' }}>One login to the last Platforms you ever need</Text>
                     </ImageBackground>
                 </View>
-                {this.state.isLogin ? <Login navigation={this.props.navigation} {...this.props} /> : <Signup navigation={this.props.navigation} {...this.props} />}
+                {isLogin ? <Signup navigation={this.props.navigation} {...this.props} /> : <Login navigation={this.props.navigation} {...this.props} />}
             </ScrollView>
         );
     }

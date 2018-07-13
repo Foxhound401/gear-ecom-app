@@ -27,14 +27,14 @@ export default class FinanceBar extends Component {
             <View style={wrapper}>
                 <View style={container}>
                     <View style={left}>
-                        <TouchableOpacity>
+                        <TouchableOpacity onPress={() => this.props.navigation.navigate("AuthenticationScreen")}>
                             <Text style={titleStyle} >Login to see balance</Text>
                             <Text style={textStyle} >0.00 EUR</Text>
                         </TouchableOpacity>
                     </View>
                     <View style={right} >
                         <ScrollView style={scroll} horizontal={true} showsHorizontalScrollIndicator={false}>
-                            <TouchableOpacity style={scrollButtonWrapper}>
+                            <TouchableOpacity style={scrollButtonWrapper} onPress={() => this.props.navigation.navigate("Wallet")}>
                                 <View style={slideButton}>
                                     {addIcon}
                                 </View>
@@ -50,7 +50,7 @@ export default class FinanceBar extends Component {
                                     History
                                 </Text>
                             </TouchableOpacity>
-                            <TouchableOpacity style={scrollButtonWrapper}>
+                            <TouchableOpacity style={scrollButtonWrapper} onPress={() => this.props.navigation.navigate("Profile")} >
                                 <View style={slideButton}>
                                     {profileIcon}
                                 </View>

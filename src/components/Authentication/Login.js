@@ -35,11 +35,11 @@ export default class Login extends Component {
                     secureTextEntry
                     underlineColorAndroid='transparent'
                 />
-                <TouchableOpacity style={bigButton}>
+                <TouchableOpacity style={bigButton} onPress={() => { this.props.navigation.navigate("AuthenticationScreen", { isLogin: false }) }}>
                     <Text style={buttonText}>Log in</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={signUpButton} onPress={() => { this.props.update(false) }}>
+                <TouchableOpacity style={signUpButton} onPress={() => { this.props.navigation.navigate("AuthenticationScreen", { isLogin: true }) }}>
                     <Text style={buttonSinupText}>Create GameXC ID</Text>
                 </TouchableOpacity>
             </View >
