@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g fill="none" fill-rule="evenodd" transform="translate(6 3)">
+    <polyline fill="#A5AAB1" points="2.961 17 2.602 10.642 8.635 9.125 8.648 14.792 2.961 17"/>
+    <polyline fill="#A5AAB1" points="8.805 14.84 8.792 9.176 8.791 8.805 8.789 8.131 9.332 7.648 13.57 13.258 12.033 13.867 11.972 16.086 8.805 14.84"/>
+    <polyline fill="#A5AAB1" points="8.795 8.088 8.797 8.773 8.441 8.686 8.438 8.146 9.231 7.438 9.352 7.596 8.795 8.088"/>
+    <polyline fill="#767A7E" points="8.711 14.75 11.883 16 11.732 21.5 3.023 16.965 8.711 14.75"/>
+    <polyline fill="#767A7E" points="2.754 10.531 1.688 10.168 8.439 8.563 8.788 8.648 8.789 9.018 2.754 10.531"/>
+    <polyline fill="#A5AAB1" points="1.727 10.32 1.688 9.72 8.435 8.211 8.438 8.735 1.727 10.32"/>
+    <polyline fill="#5C6063" points="1.688 9.617 6.703 4.063 9.211 7.392 8.439 8.087 1.688 9.617"/>
+    <polyline fill="#EEEEEE" points="11.963 16.03 12.024 13.816 13.856 14.442 17.859 12.711 17.418 18.173 11.813 21.5 11.963 16.03"/>
+    <polyline fill="#2F201C" points="17.855 12.799 13.852 14.539 13.887 13.738 20.461 11.023 20.392 11.697 17.855 12.799"/>
+    <polyline fill="#767A7E" points="13.922 13.722 13.886 14.539 12.023 13.897 13.586 13.273 13.922 13.722"/>
+    <polyline fill="#969481" points="9.175 7.652 9.057 7.496 6.539 4.166 11.902 3.5 11.822 6.673 13.315 8.554 16.151 7.799 16.253 6.192 20.32 10.991 13.745 13.695 13.414 13.258 9.175 7.652"/>
+    <polyline fill="#EEEEEE" points="16.211 5.995 16.109 7.598 13.289 8.352 13.517 2.479 16.453 2.164 16.211 5.995"/>
+    <polyline fill="#AAAAAA" points="15.007 2.164 16.594 2.278 13.641 2.586 12.023 2.451 15.007 2.164"/>
+    <polyline fill="#EDEDED" points="13.486 8.422 12.023 6.534 12.102 3.35 12.126 2.375 13.711 2.513 13.486 8.422"/>
+    <path stroke="#000000" stroke-width=".75" d="M8.7890625 14.75L11.953125 16.015625M3.0234375 16.9296875L8.71875 14.75M13.8515625 13.6953125L20.390625 11.0234375M1.6875 9.7578125L8.4375 8.2109375M1.6875 10.1796875L8.4375 8.5625" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline stroke="#000000" stroke-width=".75" points="8.789 8.844 8.441 8.756 8.438 8.211" stroke-linecap="round" stroke-linejoin="round"/>
+    <path stroke="#000000" stroke-width=".75" d="M9.2109375 7.4375L8.4375 8.140625M2.6015625 10.671875L8.6484375 9.125" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline stroke="#000000" stroke-width=".75" points="12.023 6.664 13.503 8.563 16.313 7.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline stroke="#000000" stroke-width=".75" points="13.411 8.422 13.641 2.513 12.023 2.375" stroke-linecap="round" stroke-linejoin="round"/>
+    <path stroke="#000000" stroke-width=".75" d="M17.4375 18.1953125L17.859375 12.7109375M11.8125 21.4296875L17.4375 18.125M6.5390625 4.1328125L11.8828125 3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline stroke="#000000" stroke-width=".75" points="16.313 6.102 20.391 10.913 20.321 11.586" stroke-linecap="round" stroke-linejoin="round"/>
+    <path stroke="#000000" stroke-width=".75" d="M12.0234375 13.90625L13.5703125 13.2734375" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline stroke="#000000" stroke-width=".75" points="8.792 9.055 8.791 8.68 8.789 8" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline stroke="#000000" stroke-width=".75" points="13.852 14.398 17.854 12.677 20.391 11.586" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline stroke="#000000" stroke-width=".75" points="12.141 2.375 12.114 3.347 12.023 6.523" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline stroke="#000000" stroke-width=".75" points="16.664 2.164 16.416 5.982 16.313 7.578" stroke-linecap="round" stroke-linejoin="round"/>
+    <path stroke="#000000" stroke-width=".75" d="M13.8515625 14.46875L12.0234375 13.8359375M6.5390625 4.0625L13.7109375 13.5546875M1.6875 9.6171875L6.6796875 4.0625M11.671875 21.5L3.0234375 17M13.8515625 14.46875L12.0234375 13.8359375M1.6875 9.6171875L6.6796875 4.0625M11.671875 21.5L3.0234375 17" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline stroke="#000000" stroke-width=".75" points="12.023 13.836 11.963 16.045 11.813 21.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path stroke="#000000" stroke-width=".75" d="M6.77728271,4.0791626 C6.77728271,4.0791626 10.1235962,3.69232178 11.7967529,3.49890137 L11.9893799,2.31988525 L15.8362427,2.31988525 L15.8362427,7.19506836" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon fill="#D0D0D7" fill-opacity=".7" points="14.999 24.875 16.383 1.055 0 .125 1.159 17.349"/>
+    <polygon stroke="#4A4949" stroke-width=".75" points="14.999 24.875 16.383 1.055 0 .125 1.159 17.349"/>
+    <polygon stroke="#000000" stroke-width=".75" points="3.167 17.132 2.804 10.792 1.728 10.428 1.688 9.821 6.779 4.273 14.063 13.789 14.027 14.586 12.174 13.959 11.96 21.641"/>
+  </g>
+</svg>

@@ -9,7 +9,7 @@ import Main from './Main/Main';
 export default class App extends Component {
     render() {
         return (
-            <TabBar navigation={this.props.navigation} />
+            <TabBar />
         );
     }
 }

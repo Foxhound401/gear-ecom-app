@@ -5,23 +5,25 @@ import stardew from '../../../../media/gameImage/stardewValleySlider.jpg';
 import fallout4 from '../../../../media/gameImage/fallout4Slider.png';
 import Swiper from 'react-native-swiper';
 
+const url = 'http://192.168.0.101:27017/gamexc/images/game/'
 const { height } = Dimensions.get('window');
 
 export default class Collection extends Component {
     render() {
+        const { drawers } = this.props;
         const { wrapper, textStyle, imageStyle, row1 } = styles;
         return (
             <View style={{ height: height / 3 }}>
                 <Swiper autoplay={true}>
-                    <TouchableOpacity style={wrapper} onPress={() => this.props.navigation.navigate("DetailView", { name: 'Phuc' })} >
-                        <Image source={nekopara} style={imageStyle} />
-                    </TouchableOpacity>
-                    <TouchableOpacity style={wrapper} onPress={() => this.props.navigation.navigate("DetailView", { name: 'Hoang' })} >
-                        <Image source={stardew} style={imageStyle} />
-                    </TouchableOpacity>
-                    <TouchableOpacity style={wrapper} onPress={() => this.props.navigation.navigate("DetailView", { name: 'Nam' })} >
-                        <Image source={fallout4} style={imageStyle} />
-                    </TouchableOpacity>
+                    {
+                        drawers.map(e =>
+                            (
+                                <TouchableOpacity style={wrapper} onPress={() => console.log(e.id)} key={e.link} >
+                                    <Image source={{ uri: `${url}${e.link}` }} style={imageStyle} />
+                                </TouchableOpacity>
+                            )
+                        )
+                    }
                 </Swiper>
             </View>
         );

@@ -7,26 +7,19 @@ const { width } = Dimensions.get('window');
 
 export default class CategoryBar extends Component {
     render() {
+        const { categorys } = this.props;
         const { wrapper, container, scroll, slideButton, textStyle } = styles;
         return (
             <View style={wrapper}>
                 <View style={container} >
-                    <ScrollView style={scroll} horizontal={true} showsHorizontalScrollIndicator={false}>
-                        <TouchableOpacity style={slideButton}>
-                            <Text style={textStyle}>Action</Text>
-                        </TouchableOpacity>
-                        <TouchableOpacity style={slideButton}>
-                            <Text style={textStyle}>Indie</Text>
-                        </TouchableOpacity>
-                        <TouchableOpacity style={slideButton}>
-                            <Text style={textStyle}>Open-world</Text>
-                        </TouchableOpacity>
-                        <TouchableOpacity style={slideButton}>
-                            <Text style={textStyle}>Co-op</Text>
-                        </TouchableOpacity>
-                        <TouchableOpacity style={slideButton}>
-                            <Text style={textStyle}>Anime</Text>
-                        </TouchableOpacity>
+                    <ScrollView style={scroll} horizontal={true} showsHorizontalScrollIndicator={false} >
+                        {
+                            categorys.map(e => (
+                                <TouchableOpacity style={slideButton} key={e.id} >
+                                    <Text style={textStyle}>{e.name}</Text>
+                                </TouchableOpacity>
+                            ))
+                        }
                     </ScrollView>
                 </View>
             </View>

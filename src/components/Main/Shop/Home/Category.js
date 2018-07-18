@@ -13,9 +13,13 @@ export default class Category extends Component {
             title: "Most Popular",
             gameTitle: "Nekopara Vol 1 Key Steam Global",
             price: "0.00",
-            currency: "VND",
+            currency: "USD",
             bool: false,
         }
+    }
+
+    formatPrice(price) {
+        return Number.parseFloat(price).toFixed(1);
     }
 
     render() {

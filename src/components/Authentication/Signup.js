@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Text, View, Button, Dimensions, StyleSheet, TextInput, TouchableOpacity } from 'react-native';
+import { Text, View, Dimensions, StyleSheet, TextInput, TouchableOpacity, Alert } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
-
+import register from '../../api/register';
 const { height, width } = Dimensions.get('window');
 const backIcon = (<Icon name='ios-arrow-back' size={20} />);
 
@@ -16,9 +16,52 @@ export default class Signup extends Component {
         }
     }
 
+    gotoSignin() {
+        this.props.navigation.navigate("AuthenticationScreen", { isLogin: false });
+    }
+
+    onSuccess() {
+        Alert.alert(
+            'Notice',
+            'Sign up successfully',
+            [
+                { text: 'OK', onPress: this.gotoSignin() }
+            ],
+            { cancelable: false }
+        );
+    }
+
+    onFail() {
+        Alert.alert(
+            'Notice',
+            'Email has been used by other',
+            [
+                { text: 'OK', onPress: () => console.log('fail') }
+            ],
+            { cancelable: false }
+        );
+    }
+
+    removeText() {
+        this.setState({
+            email: '',
+            password: '',
+            retypePassword: '',
+        })
+    }
+
+    registerUser() {
+        const { email, password } = this.state;
+        register(email, password)
+            .then(res => {
+                if (res === 'SUCCESS_ADD_NEW') return this.onSuccess();
+                this.onFail();
+            })
+    }
+
     render() {
         const { container, inputStyle, bigButton, buttonText, signUpButton, buttonSinupText, backButton } = styles;
-        const { email, password } = this.state;
+        const { email, password, retypePassword } = this.state;
         return (
             <View style={container}>
                 <TouchableOpacity style={backButton} onPress={() => { this.props.navigation.navigate("AuthenticationScreen", { isLogin: false }) }}>
@@ -43,15 +86,15 @@ export default class Signup extends Component {
                 <TextInput
                     style={inputStyle}
                     placeholder="Re-type password"
-                    value={password}
+                    value={retypePassword}
                     onChangeText={text => this.setState({ retypePassword: text })}
                     secureTextEntry
                     underlineColorAndroid='transparent'
                 />
-                <TouchableOpacity style={bigButton}>
+                <TouchableOpacity style={bigButton} onPress={this.registerUser.bind(this)} >
                     <Text style={buttonText}>Register</Text>
                 </TouchableOpacity>
-            </View>
+            </View >
         );
     }
 };

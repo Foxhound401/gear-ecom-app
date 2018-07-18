@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="#4A4A4A" width="32" height="32" viewBox="0 0 32 32">
+  <g id="tb_split" transform="translate(5 5)" fill="inherit" stroke="none">
+    <path fill-opacity=".25" d="M22 7v15H7v-7H0V0h15v7h7z"/>
+    <path d="M22 7h.7v-.7H22V7zm0 15v.7h.7V22H22zM7 22h-.7v.7H7V22zM0 0v-.7h-.7V0H0zm15 0h.7v-.7H15V0zM0 15h-.7v.7H0V15zm15 0v.7h.7V15H15zM7 7v-.7h-.7V7H7zm14.3 0v15h1.4V7h-1.4zm.7 14.3H7v1.4h15v-1.4zM0 .7h15V-.7H0V.7zM.7 15V0H-.7v15H.7zm15 0V7h-1.4v8h1.4zM15 6.3H7v1.4h8V6.3zM6.3 7v8h1.4V7H6.3zm.7 8.7h8v-1.4H7v1.4zm0-1.4H0v1.4h7v-1.4zm.7 7.7v-7H6.3v7h1.4zm6.6-22v7h1.4V0h-1.4zm.7 7.7h7V6.3h-7v1.4z"/>
+  </g>
+</svg>

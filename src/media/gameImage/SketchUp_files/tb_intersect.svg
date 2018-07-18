@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="#4A4A4A" width="32" height="32" viewBox="0 0 32 32">
+  <g id="tb_intersect" transform="translate(5 5)" fill="inherit" stroke="none">
+    <g transform="translate(7 7)">
+      <path fill-opacity=".25" d="M8 8V0H0v8h8z"/>
+      <path d="M0 0v-.7h-.7V0H0zm8 8v.7h.7V8H8zm0-8h.7v-.7H8V0zM0 8h-.7v.7H0V8zm7.3-8v8h1.4V0H7.3zM0 .7h8V-.7H0V.7zm8 6.6H0v1.4h8V7.3zM.7 8V0H-.7v8H.7z"/>
+    </g>
+    <path d="M22 7h.36v-.36H22V7zm0 15v.36h.36V22H22zM7 22h-.36v.36H7V22zM0 0v-.35h-.35V0H0zm15 0h.36v-.35H15V0zM0 15h-.35v.36H0V15zm15-8h-.36v.36H15V7zm-8 8h.36v-.36H7V15zm14.64-8v15h.7l.02-15h-.7zM22 21.64H7v.7l15 .02v-.7zM0 .36h15v-.7H0v.7zM.35 15V0h-.7v15h.7zm14.3-15v7h.7V0h-.7zM15 7.36h7v-.72h-7v.72zm-8 7.28H0v.7c2.73.02 4.27.02 7 .02v-.7zM7.36 22v-7h-.72v7h.72z"/>
+  </g>
+</svg>

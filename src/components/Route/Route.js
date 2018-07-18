@@ -17,6 +17,7 @@ import ListProduct from '../Main/Shop/ListProduct/ListProduct';
 import Login from '../Authentication/Login';
 import Signup from '../Authentication/Signup';
 import ProductDetails from '../Main/Shop/ProductDetail/ProductDetails';
+import Shop from '../Main/Shop/Shop';
 
 
 const homeIcon = (<Icon name='home' size={24} />);
@@ -55,7 +56,7 @@ export const ProfileStack = createStackNavigator(
 export const HomeStack = createStackNavigator(
     {
         HomeView: {
-            screen: HomeView,
+            screen: Shop,
             navigationOptions: {
                 header: null,
             }

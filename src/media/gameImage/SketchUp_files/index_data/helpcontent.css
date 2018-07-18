@@ -1,0 +1,66 @@
+/**
+ * Copyright 2016 Trimble Inc. All Rights Reserved.
+ * Author: eric@sketchup.com (Eric Bohn)
+ * Author: brooks@sketchup.com (Brooks Mershon)
+ */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+
+body {
+  background-color: #f3f3f7;
+  font-family: "Open Sans", sans-serif;
+  font-size: 10pt;
+  margin-right: 10px;
+  margin-left: 10px;
+  overflow-x: hidden;
+  overflow: hidden;
+}
+
+.blackheader {
+  color: #363545;
+  font-weight: 400;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.blacksubheader {
+  color: #363545;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+ol {
+  color: #8C8B96;
+  list-style-type: decimal;
+  list-style-position: inside;
+  margin-left: 10px;
+  padding: 0;
+}
+
+ul {
+  color: #363545;
+  list-style-type: none;
+  list-style-position: inside;
+  padding: 0;
+  margin-left: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/**
+ * Override anchor tags which use the blacksubheader class.
+ */
+a span.blacksubheader:hover {
+  color: #009AD9 !important;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
