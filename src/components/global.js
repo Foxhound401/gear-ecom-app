@@ -1,9 +1,9 @@
-export const addProductToCart = null;
-export const incrQuantity = null;
-export const decrQuantity = null;
-export const removeProduct = null;
-export const onSignIn = null;
-export const gotoSearch = null;
-export const setArraySearch = null;
-export let isLogged = false;
-export const url = 'http://192.168.0.101:27017/gamexc/';
+module.exports = {
+    addProductToCart: null,
+    incrQuantity: null,
+    decrQuantity: null,
+    removeProduct: null,
+    onSignIn: null,
+    gotoSearch: null,
+    setArraySearch: null
+};

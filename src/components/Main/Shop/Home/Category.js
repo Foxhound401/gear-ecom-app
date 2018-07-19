@@ -5,12 +5,14 @@ import nekoparaItem from '../../../../media/gameImage/nekoparaItem.jpg';
 import thangmatloz from '../../../../media/gameImage/thangmatlon.jpg';
 
 const { height, width } = Dimensions.get('window');
+const url = 'http://192.168.0.101:27017/gamexc/images/game/';
+
 export default class Category extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            title: "Most Popular",
+            title: "Game on Play Station 4",
             gameTitle: "Nekopara Vol 1 Key Steam Global",
             price: "0.00",
             currency: "USD",
@@ -19,10 +21,11 @@ export default class Category extends Component {
     }
 
     formatPrice(price) {
-        return Number.parseFloat(price).toFixed(1);
+        return Number.parseFloat(price).toFixed(2);
     }
 
     render() {
+        const { steams } = this.props;
         const { wrapper, textStyle, imageStyle, scroll, itemSlide,
             gameTitle, textGameTitle, priceTitle, textPrice, textCurrency } = styles;
         return (
@@ -30,41 +33,30 @@ export default class Category extends Component {
                 <View style={{ flex: 0.01, flexDirection: 'row', marginBottom: 0 }}>
                     <Text style={textStyle}>{this.state.title}</Text>
                     <TouchableOpacity style={{ flex: 1, justifyContent: 'flex-end', alignItems: 'flex-end' }}>
-                        <Text style={{ color: '#22A7F0', margin: 15, fontSize: 17,  }}>More</Text>
+                        <Text style={{ color: '#22A7F0', margin: 15, fontSize: 17, }}>More</Text>
                     </TouchableOpacity>
 
                 </View>
                 <ScrollView style={scroll} horizontal={true} showsHorizontalScrollIndicator={false}>
-                    <TouchableOpacity style={itemSlide} onPress={() => this.props.navigation.navigate('DetailView')}>
-                        <View style={{
-                            flex: 1, justifyContent: 'center',
-                            alignItems: 'center', marginBottom: 15
-                        }}>
-                            <Image source={nekoparaItem} style={imageStyle} />
-                        </View>
-                        <View style={gameTitle}>
-                            <Text style={textGameTitle}>{this.state.gameTitle}</Text>
-                        </View>
-                        <View style={priceTitle}>
-                            <Text style={textPrice}>{this.state.price}</Text>
-                            <Text style={textCurrency}>{this.state.currency}</Text>
-                        </View>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={itemSlide}>
-                        <View style={{
-                            flex: 1, justifyContent: 'center',
-                            alignItems: 'center', marginBottom: 15
-                        }}>
-                            <Image source={thangmatloz} style={imageStyle} />
-                        </View>
-                        <View style={gameTitle}>
-                            <Text style={textGameTitle}>{this.state.gameTitle}</Text>
-                        </View>
-                        <View style={priceTitle}>
-                            <Text style={textPrice}>{this.state.price}</Text>
-                            <Text style={textCurrency}>{this.state.currency}</Text>
-                        </View>
-                    </TouchableOpacity>
+                    {
+                        steams.map(e => (
+                            <TouchableOpacity style={itemSlide} onPress={() => console.log(e.images)} key={e.id} >
+                                <View style={{
+                                    flex: 1, justifyContent: 'center',
+                                    alignItems: 'center', marginBottom: 15
+                                }}>
+                                    <Image source={{ uri: `${url}${e.images}` }} style={imageStyle} />
+                                </View>
+                                <View style={gameTitle}>
+                                    <Text style={textGameTitle}>{e.title}</Text>
+                                </View>
+                                <View style={priceTitle}>
+                                    <Text style={textPrice}>{this.formatPrice(e.price)}</Text>
+                                    <Text style={textCurrency}>{this.state.currency}</Text>
+                                </View>
+                            </TouchableOpacity>
+                        ))
+                    }
                 </ScrollView>
             </View>
         );

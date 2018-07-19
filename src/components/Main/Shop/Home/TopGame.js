@@ -5,7 +5,7 @@ import nekoparaItem from '../../../../media/gameImage/nekoparaItem.jpg';
 import thangmatloz from '../../../../media/gameImage/thangmatlon.jpg';
 
 const { height, width } = Dimensions.get('window');
-const url = 'http://192.168.0.101:27017/gamexc/images/game/'
+const url = 'http://192.168.0.101:27017/gamexc/images/game/';
 
 export default class TopGame extends Component {
 
@@ -46,7 +46,7 @@ export default class TopGame extends Component {
                                     flex: 1, justifyContent: 'center',
                                     alignItems: 'center', marginBottom: 15
                                 }}>
-                                    <Image source={{ uri: `${url}23.jpg` }} style={imageStyle} />
+                                    <Image source={{ uri: `${url}${e.images}` }} style={imageStyle} />
                                 </View>
                                 <View style={gameTitle}>
                                     <Text style={textGameTitle}>{e.title}</Text>
@@ -59,7 +59,7 @@ export default class TopGame extends Component {
                         ))
                     }
 
-
+                    
                 </ScrollView>
             </View>
         );

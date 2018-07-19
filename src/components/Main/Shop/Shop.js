@@ -13,6 +13,7 @@ export default class Shop extends Component {
             categorys: [],
             drawers: [],
             topGames: [],
+            steams: [],
         }
     }
 
@@ -20,12 +21,13 @@ export default class Shop extends Component {
         fetch('http://192.168.0.101:27017/gamexc/')
         initData()
             .then((responseJson) => {
-                const { category, drawer, item } = responseJson;
-                console.log('resul tof type: ', item);
+                const { category, drawer, item, steam } = responseJson;
+                console.log('resul tof type: ', steam);
                 this.setState({
                     categorys: category,
                     drawers: drawer,
                     topGames: item,
+                    steams: steam
                 })
             })
             .catch((error) => {
@@ -36,11 +38,11 @@ export default class Shop extends Component {
     render() {
 
         const { navigation } = this.props;
-        const { categorys, drawers, topGames } = this.state;
+        const { categorys, drawers, topGames, steams } = this.state;
 
         return (
             <View style={{ flex: 1 }}>
-                <HomeView navigation={navigation} categorys={categorys} drawers={drawers} topGames={topGames} />
+                <HomeView navigation={navigation} categorys={categorys} drawers={drawers} topGames={topGames} steams={steams} />
             </View>
 
         );

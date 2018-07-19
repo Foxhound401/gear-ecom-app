@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Text, View, Button, Dimensions, StyleSheet, TextInput, TouchableOpacity } from 'react-native';
-
+import global from '../global';
+import login from '../../api/login';
+import saveToken from '../../api/saveToken';
 const { height, width } = Dimensions.get('window');
 
 export default class Login extends Component {
@@ -12,6 +14,17 @@ export default class Login extends Component {
             password: '',
 
         }
+    }
+
+    onLogin() {
+        const { email, password } = this.state;
+        login(email, password)
+        .then(responseJson => {
+            global.onSignIn(responseJson.user);
+            saveToken(responseJson.token);
+            this.props.navigation.navigate("HomeStack");
+        })
+        .catch((error) => console.log(error));
     }
 
     render() {
