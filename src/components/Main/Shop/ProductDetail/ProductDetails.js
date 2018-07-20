@@ -6,7 +6,7 @@ import FontIcon from 'react-native-vector-icons/FontAwesome';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 const globeIcon = (<Icon name="md-globe" size={25} />);
-const steamIcon = (<Icon name="logo-steam" size={25} />);
+const steamIcon = (<FontIcon name="steam" size={25} />);
 const digitalIcon = (<Icon name="ios-key" size={25} />);
 
 const { height, width } = Dimensions.get('window');
@@ -14,6 +14,10 @@ export default class ProductDetails extends Component {
 
     constructor(props) {
         super(props);
+    }
+
+    componentWillMount () {
+        
     }
 
     render() {

@@ -77,7 +77,7 @@ export const HomeStack = createStackNavigator(
 export const TabBar = createBottomTabNavigator(
     {
         Home: {
-            screen: HomeStack,
+            screen: ProductDetails,
             navigationOptions: {
                 title: "Home",
                 tabBarIcon: homeIcon

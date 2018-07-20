@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
         paddingTop: 0,
     },
     textStyle: {
-        fontSize: 20,
+        fontSize: 16,
         color: '#AFAEAF'
     },
     imageStyle: {

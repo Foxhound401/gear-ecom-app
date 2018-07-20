@@ -50,6 +50,7 @@ export default class Category extends Component {
                                 <View style={gameTitle}>
                                     <Text style={textGameTitle}>{e.title}</Text>
                                 </View>
+                                <Text style={{ padding: 5, paddingBottom: 0, color: '#BDC3C7' }} >From</Text>
                                 <View style={priceTitle}>
                                     <Text style={textPrice}>{this.formatPrice(e.price)}</Text>
                                     <Text style={textCurrency}>{this.state.currency}</Text>
@@ -113,12 +114,16 @@ const styles = StyleSheet.create({
         flex: 0.2,
         flexDirection: 'row',
         padding: 15,
+        paddingTop: 0,
     },
     textPrice: {
-        fontSize: 20,
+        fontSize: 16,
         color: "#E87E04",
+        paddingRight: 2,
+        paddingTop: 0,
     },
     textCurrency: {
+        fontSize: 10,
         color: "#E87E04",
     }
 });
