@@ -17,14 +17,18 @@ export default class Login extends Component {
     }
 
     onLogin() {
+
         const { email, password } = this.state;
+
+        console.log(email, password);
         login(email, password)
-        .then(responseJson => {
-            global.onSignIn(responseJson.user);
-            saveToken(responseJson.token);
-            this.props.navigation.navigate("HomeStack");
-        })
-        .catch((error) => console.log(error));
+            .then(responseJson => {
+                console.log('data', responseJson);
+                global.onSignIn(responseJson.user);
+                saveToken(responseJson.token);
+                this.props.navigation.navigate("HomeStack");
+            })
+            .catch((error) => console.log(error));
     }
 
     render() {
@@ -48,7 +52,7 @@ export default class Login extends Component {
                     secureTextEntry
                     underlineColorAndroid='transparent'
                 />
-                <TouchableOpacity style={bigButton} onPress={() => { this.props.navigation.navigate("AuthenticationScreen", { isLogin: false }) }}>
+                <TouchableOpacity style={bigButton} onPress={this.onLogin.bind(this)}>
                     <Text style={buttonText}>Log in</Text>
                 </TouchableOpacity>
 
