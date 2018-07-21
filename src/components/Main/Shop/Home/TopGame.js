@@ -5,7 +5,7 @@ import nekoparaItem from '../../../../media/gameImage/nekoparaItem.jpg';
 import thangmatloz from '../../../../media/gameImage/thangmatlon.jpg';
 
 const { height, width } = Dimensions.get('window');
-const url = 'http://10.82.139.8:27017/gamexc/images/game/';
+const url = 'http://192.168.0.101:27017/gamexc/images/game/';
 
 export default class TopGame extends Component {
 

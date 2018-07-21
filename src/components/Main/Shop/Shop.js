@@ -20,7 +20,7 @@ export default class Shop extends Component {
     componentDidMount() {
 
         console.log('go here')
-        fetch('http://10.82.139.8:27017/gamexc/')
+        fetch('http://192.168.0.101:27017/gamexc/')
         initData()
             .then((responseJson) => {
                 const { category, drawer, item, steam } = responseJson;

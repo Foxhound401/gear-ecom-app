@@ -23,7 +23,7 @@ export default class Authentication extends Component {
                     alignItems: 'center', marginBottom: 15,
                 }}>
                     <ImageBackground source={backGround} style={imageStyle}>
-                        <Text style={title}>GameXC</Text>
+                        <Text style={title}>GamExc</Text>
                         <Text style={{ color: '#FFF', fontSize: 9, fontFamily: 'Helvetica-Light' }}>One login to the last Platforms you ever need</Text>
                     </ImageBackground>
                 </View>

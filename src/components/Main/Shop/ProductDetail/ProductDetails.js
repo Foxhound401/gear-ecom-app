@@ -16,12 +16,12 @@ export default class ProductDetails extends Component {
         super(props);
     }
 
-    componentWillMount () {
-        
+    componentWillMount() {
+
     }
 
     render() {
-        const { imageStyle, title, imageUpper, textFinance, scrollButtonWrapper, slideButton } = styles;
+        const { imageStyle, title, imageUpper, textFinance, scrollButtonWrapper, slideButton, priceTitle, textPrice, textCurrency, textDescription, titleDescription, wrapDescription } = styles;
         const { navigation } = this.props;
 
         return (
@@ -66,14 +66,26 @@ export default class ProductDetails extends Component {
                             </TouchableOpacity>
                         </View>
                     </View>
-                    <View style={{ flex: 1, borderTopWidth: 0.5, borderColor: 'gray' }}>
+                    <View style={{ flex: 1, borderTopWidth: 0.5, borderColor: '#EEEEEE' }}>
                         <View style={{ flex: 1, flexDirection: 'row', width: undefined, height: undefined, minHeight: 50, minWidth: width }}>
-                            <FontIcon name='user-circle' size={30} style={{ margin: 20 }} />
+                            <FontIcon name='user-circle' size={35} style={{ margin: 20, marginLeft: 25 }} />
                             <View style={{ flex: 1, justifyContent: 'center' }}>
-                                <Text style={{ fontSize: 14, color: '#22A7F0' }}>Usersome-thing</Text>
-                                <Text style={{ fontSize: 12 }}>Item sold: 1000</Text>
+                                <Text style={{ fontSize: 18, color: '#22A7F0' }}>Usersome-thing</Text>
+                                <Text style={{ fontSize: 12 }}>In stock: 1000</Text>
                             </View>
                             <Text style={{ fontSize: 25, color: '#E87E04' }}></Text>
+                        </View>
+                        <View style={priceTitle}>
+                            <Text style={textPrice}>00.00</Text>
+                            <Text style={textCurrency}>USD</Text>
+                        </View>
+                    </View>
+                    <View>
+                        <Text style={titleDescription} >Product description</Text>
+                        <View style={wrapDescription} >
+                            <Text style={textDescription} >
+                                
+                            </Text>
                         </View>
                     </View>
                 </ScrollView>
@@ -83,6 +95,15 @@ export default class ProductDetails extends Component {
 }
 
 const styles = StyleSheet.create({
+    wrapDescription: {
+
+    },
+    textDescription: {
+
+    },
+    titleDescription: {
+
+    },
     textFinance: {
         fontSize: 12,
     },
@@ -125,5 +146,22 @@ const styles = StyleSheet.create({
         margin: 20,
         marginTop: 18,
         marginBottom: 0,
+    },
+    priceTitle: {
+        flex: 0.2,
+        flexDirection: 'row',
+        padding: 15,
+        paddingLeft: 25,
+        paddingTop: 0,
+    },
+    textPrice: {
+        fontSize: 35,
+        color: "#E87E04",
+        paddingRight: 2,
+        paddingTop: 0,
+    },
+    textCurrency: {
+        fontSize: 15,
+        color: "#E87E04",
     }
 })
