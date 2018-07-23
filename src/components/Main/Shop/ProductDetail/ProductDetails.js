@@ -8,7 +8,7 @@ import backGround from '../../../../media/temp/subway-lines.png';
 import nekoparaImage from '../../../../media/gameImage/fallout4Item.jpg'
 import FontIcon from 'react-native-vector-icons/FontAwesome';
 import Icon from 'react-native-vector-icons/Ionicons';
-import getGameDetail from '../../../../api/getGameDetail';
+import gameDetail from '../../../../api/gameDetail';
 
 const globeIcon = (<Icon name="md-globe" size={25} />);
 const steamIcon = (<FontIcon name="steam" size={25} />);
@@ -29,11 +29,11 @@ export default class ProductDetails extends Component {
 
     componentWillMount() {
         const gameId = this.props.navigation.getParam('game').id;
-        getGameDetail(gameId)
-        .then((jsonResponse) => {
-            console.log(jsonResponse);
-        })
-        .catch((err) => console.log(err));
+        gameDetail(gameId)
+            .then((jsonResponse) => {
+                console.log('jsonResponse ', jsonResponse.detail);
+            })
+            .catch((err) => console.log(err));
     }
 
     render() {

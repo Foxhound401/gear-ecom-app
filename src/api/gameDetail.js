@@ -1,4 +1,4 @@
-const getGameDetail = (id) => (
+const gameDetail = (id) => (
     fetch('http://10.82.139.8:27017/gamexc/game_detail.php',
         {
             method: 'POST',
@@ -8,7 +8,9 @@ const getGameDetail = (id) => (
             },
             body: JSON.stringify({ id })
         })
-        .then(res => res.json())
+        .then(res => {
+            res.json();
+        })
 );
 
-module.exports = getGameDetail;
+module.exports = gameDetail;

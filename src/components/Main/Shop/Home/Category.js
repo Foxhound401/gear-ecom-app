@@ -5,13 +5,13 @@ import nekoparaItem from '../../../../media/gameImage/nekoparaItem.jpg';
 import thangmatloz from '../../../../media/gameImage/thangmatlon.jpg';
 
 const { height, width } = Dimensions.get('window');
-const url = 'http://192.168.0.100:27017/gamexc/images/game/';
+const url = 'http://10.82.139.8:27017/gamexc/images/game/';
 
 export default class Category extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {
+        this.state = {  
             title: "Game on Play Station 4",
             gameTitle: "Nekopara Vol 1 Key Steam Global",
             price: "0.00",

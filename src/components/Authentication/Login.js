@@ -17,14 +17,11 @@ export default class Login extends Component {
     }
 
     onLogin() {
-
         const { email, password } = this.state;
-
-        console.log(email, password);
         login(email, password)
             .then(responseJson => {
-                console.log('data', responseJson);
-                global.onSignIn(responseJson.user);
+                console.log('userpassback: ',responseJson.user);
+                console.log("here move here");
                 saveToken(responseJson.token);
                 this.props.navigation.navigate("HomeStack");
             })
