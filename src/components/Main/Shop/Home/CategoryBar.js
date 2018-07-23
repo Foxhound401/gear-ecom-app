@@ -15,7 +15,7 @@ export default class CategoryBar extends Component {
                     <ScrollView style={scroll} horizontal={true} showsHorizontalScrollIndicator={false} >
                         {
                             categorys.map(e => (
-                                <TouchableOpacity style={slideButton} key={e.id} >
+                                <TouchableOpacity style={slideButton} onPress={() => this.props.navigation.navigate('ListView', { 'category': e })} key={e.id} >
                                     <Text style={textStyle}>{e.name}</Text>
                                 </TouchableOpacity>
                             ))

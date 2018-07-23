@@ -1,5 +1,5 @@
 const register = (email, password) => (
-    fetch('http://10.82.139.8:27017/gamexc/register.php',
+    fetch('http://192.168.0.100:27017/gamexc/register.php',
         {
             method: 'POST',
             headers: {

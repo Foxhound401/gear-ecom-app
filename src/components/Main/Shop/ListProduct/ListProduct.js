@@ -2,44 +2,61 @@ import React, { Component } from 'react';
 import { Text, View, TouchableOpacity, StyleSheet, Image, Dimensions, ScrollView } from 'react-native';
 import nekoparaItem from '../../../../media/gameImage/nekoparaItem.jpg';
 import fallout4Item from '../../../../media/gameImage/fallout4Slider.png';
+import getListGame from '../../../../api/getListGame';
 
+const url = 'http://192.168.0.100:27017/gamexc/images/game/';
 
 export default class ListProduct extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            category: [],
+            currency: 'USD'
+        }
+    }
+
+    componentDidMount() {
+        const categoryId = this.props.navigation.getParam('category').id;
+        getListGame(categoryId)
+            .then((responseJSON) => {
+                console.log('response ', responseJSON);
+                this.setState({ category: responseJSON });
+            })
+    }
+
+    formatPrice(price) {
+        return Number.parseFloat(price).toFixed(2);
+    }
+
     render() {
         const { navigation } = this.props;
-        const itemId = navigation.getParam('itemId', 'NO-ID');
         const { containerEmpty, containerItems, cartItem, imageStyle, gameTitle, textPrice, priceTitle, textCurrency, textGameTitle, imageWrapper } = styles;
+        const { category, currency } = this.state;
         return (
             <ScrollView style={{ flex: 1 }}>
-                <View style={containerItems}>
-                    <TouchableOpacity style={cartItem} onPress={() => this.props.navigation.navigate('DetailView', { name: 'phuc' })}>
-                        <View style={imageWrapper}>
-                            <Image source={nekoparaItem} style={imageStyle} />
-                        </View>
-                        <View style={{ flex: 1 }}>
-                            <Text style={textGameTitle}>{this.state.gameTitle}</Text>
-                            <View style={priceTitle}>
-                                <Text style={textPrice}>{this.state.price}</Text>
-                                <Text style={textCurrency}>{this.state.currency}</Text>
+                {
+                    category.length > 0 ?
+                        category.map(e => (
+                            <View style={containerItems} key={e.id}>
+                                <TouchableOpacity style={cartItem} onPress={() => this.props.navigation.navigate('DetailView', { 'game': e })}>
+                                    <View style={imageWrapper}>
+                                        <Image source={{ uri: `${url}${e.images}` }} style={imageStyle} />
+                                    </View>
+                                    <View style={{ flex: 1 }}>
+                                        <Text style={textGameTitle}>{e.name}</Text>
+                                        <View style={priceTitle}>
+                                            <Text style={textPrice}>{this.formatPrice(e.price)}</Text>
+                                            <Text style={textCurrency}>{currency}</Text>
+                                        </View>
+                                    </View>
+                                </TouchableOpacity>
                             </View>
+                        ))
+                        :
+                        <View>
+                            <Text> No records </Text>
                         </View>
-                    </TouchableOpacity>
-                </View>
-                <View style={containerItems}>
-                    <TouchableOpacity style={cartItem}>
-                        <View style={imageWrapper}>
-                            <Image source={fallout4Item} style={imageStyle} />
-                        </View>
-                        <View style={{ flex: 1 }}>
-                            <Text style={textGameTitle}>{this.state.gameTitle}</Text>
-                            <View style={priceTitle}>
-                                <Text style={textPrice}>{this.state.price}</Text>
-                                <Text style={textCurrency}>{this.state.currency}</Text>
-                            </View>
-                        </View>
-                    </TouchableOpacity>
-                </View>
-
+                }
             </ScrollView>
         );
     }
@@ -50,9 +67,8 @@ const styles = StyleSheet.create({
         backgroundColor: 'blue',
     },
     priceTitle: {
-        marginRight: 55,
+        margin: 20,
         flexDirection: 'row',
-        justifyContent: 'flex-end',
     },
     textPrice: {
         fontSize: 20,
