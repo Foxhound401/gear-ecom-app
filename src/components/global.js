@@ -5,5 +5,6 @@ module.exports = {
     removeProduct: null,
     onSignIn: null,
     gotoSearch: null,
-    setArraySearch: null
+    setArraySearch: null,
+    url: 'http://192.168.0.100:27017/gamexc'
 };

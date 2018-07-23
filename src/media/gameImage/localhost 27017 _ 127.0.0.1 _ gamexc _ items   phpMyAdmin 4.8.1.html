@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="utf-8"><meta name="referrer" content="no-referrer"><meta name="robots" content="noindex,nofollow"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="icon" href="http://localhost:27017/phpmyadmin/favicon.ico" type="image/x-icon"><link rel="shortcut icon" href="http://localhost:27017/phpmyadmin/favicon.ico" type="image/x-icon"><link rel="stylesheet" type="text/css" href="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/jquery-ui.css"><link rel="stylesheet" type="text/css" href="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/codemirror.css"><link rel="stylesheet" type="text/css" href="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/show-hint.css"><link rel="stylesheet" type="text/css" href="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/lint.css"><link rel="stylesheet" type="text/css" href="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/phpmyadmin.css"><link rel="stylesheet" type="text/css" href="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/printview.css" media="print" id="printcss"><title>localhost:27017 / 127.0.0.1 / gamexc / items | phpMyAdmin 4.8.1</title><script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/jquery_004.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/jquery-migrate.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/whitelist.php"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/sprintf.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/ajax.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/keyhandler.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/jquery-ui.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/js.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/jquery.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/jquery_006.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/jquery_002.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/jquery-ui-timepicker-addon.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/jquery_003.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/jquery_005.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/menu-resizer.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/cross_framing_protection.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/rte.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/tracekit.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/error_report.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/messages.php"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/config.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/doclinks.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/functions.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/navigation.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/indexes.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/common.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/page_settings.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/shortcuts_handler.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/jquery_007.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/tbl_change.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/gis_data_editor.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/multi_column_sort.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/makegrid.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/sql_002.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/codemirror.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/sql.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/runmode.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/show-hint.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/sql-hint.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/lint.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/sql-lint.js"></script>
+<script data-cfasync="false" type="text/javascript" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/console.js"></script>
+<script data-cfasync="false" type="text/javascript">// <![CDATA[
+PMA_commonParams.setAll({common_query:"",opendb_url:"db_structure.php",lang:"en",server:"1",table:"users",db:"gamexc",token:"HZHN[GAotc.$wjr=",text_dir:"ltr",show_databases_navigation_as_tree:true,pma_text_default_tab:"Browse",pma_text_left_default_tab:"Structure",pma_text_left_default_tab2:false,LimitChars:"50",pftext:"P",confirm:true,LoginCookieValidity:"1440",session_gc_maxlifetime:"1440",logged_in:true,is_https:false,rootPath:"/phpmyadmin/",arg_separator:"&",PMA_VERSION:"4.8.1",auth_type:"config",user:"root"});
+ConsoleEnterExecutes=false
+AJAX.scriptHandler.add("vendor/jquery/jquery.min.js",0).add("vendor/jquery/jquery-migrate.js",0).add("whitelist.php",1).add("vendor/sprintf.js",1).add("ajax.js",0).add("keyhandler.js",1).add("vendor/jquery/jquery-ui.min.js",0).add("vendor/js.cookie.js",1).add("vendor/jquery/jquery.mousewheel.js",0).add("vendor/jquery/jquery.event.drag-2.2.js",0).add("vendor/jquery/jquery.validate.js",0).add("vendor/jquery/jquery-ui-timepicker-addon.js",0).add("vendor/jquery/jquery.ba-hashchange-1.3.js",0).add("vendor/jquery/jquery.debounce-1.0.5.js",0).add("menu-resizer.js",1).add("cross_framing_protection.js",0).add("rte.js",1).add("vendor/tracekit.js",1).add("error_report.js",1).add("messages.php",0).add("config.js",1).add("doclinks.js",1).add("functions.js",1).add("navigation.js",1).add("indexes.js",1).add("common.js",1).add("page_settings.js",1).add("shortcuts_handler.js",1).add("vendor/jquery/jquery.uitablefilter.js",0).add("tbl_change.js",1).add("gis_data_editor.js",1).add("multi_column_sort.js",1).add("makegrid.js",1).add("sql.js",1).add("vendor/codemirror/lib/codemirror.js",0).add("vendor/codemirror/mode/sql/sql.js",0).add("vendor/codemirror/addon/runmode/runmode.js",0).add("vendor/codemirror/addon/hint/show-hint.js",0).add("vendor/codemirror/addon/hint/sql-hint.js",0).add("vendor/codemirror/addon/lint/lint.js",0).add("codemirror/addon/lint/sql-lint.js",0).add("console.js",1);
+$(function() {AJAX.fireOnload("whitelist.php");AJAX.fireOnload("vendor/sprintf.js");AJAX.fireOnload("keyhandler.js");AJAX.fireOnload("vendor/js.cookie.js");AJAX.fireOnload("menu-resizer.js");AJAX.fireOnload("rte.js");AJAX.fireOnload("vendor/tracekit.js");AJAX.fireOnload("error_report.js");AJAX.fireOnload("config.js");AJAX.fireOnload("doclinks.js");AJAX.fireOnload("functions.js");AJAX.fireOnload("navigation.js");AJAX.fireOnload("indexes.js");AJAX.fireOnload("common.js");AJAX.fireOnload("page_settings.js");AJAX.fireOnload("shortcuts_handler.js");AJAX.fireOnload("tbl_change.js");AJAX.fireOnload("gis_data_editor.js");AJAX.fireOnload("multi_column_sort.js");AJAX.fireOnload("makegrid.js");AJAX.fireOnload("sql.js");AJAX.fireOnload("console.js");});
+// ]]></script><noscript><style>html{display:block}</style></noscript></head><body style="margin-left: 240px; margin-bottom: 359.35px; padding-top: 58.1px; cursor: inherit; -moz-user-select: inherit;"><div id="pma_navigation" style="width: 240px;"><div id="pma_navigation_resizer" style="left: 240px; width: 3px;"></div><div id="pma_navigation_collapser" style="left: 240px;" title="Hide panel">←</div><div id="pma_navigation_content"><div id="pma_navigation_header"><a class="hide navigation_url" href="http://localhost:27017/phpmyadmin/navigation.php?ajax_request=1"></a>    <div id="pmalogo">
+                    <a href="http://localhost:27017/phpmyadmin/index.php">
+                <img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/logo_left.png" alt="phpMyAdmin" id="imgpmalogo">
+                    </a>
+            </div>
+<!-- LINKS START --><div id="navipanellinks"><a href="http://localhost:27017/phpmyadmin/index.php" title="Home"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Home" alt="Home" class="icon ic_b_home"></a><a href="http://localhost:27017/phpmyadmin/logout.php" class="logout disableAjax" title="Empty session data"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Empty session data" alt="Empty session data" class="icon ic_s_loggoff"></a><a href="http://localhost:27017/phpmyadmin/doc/html/index.html" target="documentation" title="phpMyAdmin documentation"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="phpMyAdmin documentation" alt="phpMyAdmin documentation" class="icon ic_b_docs"></a><a href="http://localhost:27017/phpmyadmin/url.php?url=https%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F5.7%2Fen%2Findex.html" target="mysql_doc" title="Documentation"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_sqlhelp"></a><a href="#" id="pma_navigation_settings_icon" title="Navigation panel settings"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Navigation panel settings" alt="Navigation panel settings" class="icon ic_s_cog"></a><a href="#" id="pma_navigation_reload" title="Reload navigation panel"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Reload navigation panel" alt="Reload navigation panel" class="icon ic_s_reload"></a></div><!-- LINKS ENDS --><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Loading…" alt="Loading…" style="visibility: hidden; display:none" class="icon ic_ajax_clock_small throbber"></div><div id="pma_navigation_tree" class="list_container synced highlight" style="height: 892.9px;"><div class="pma_quick_warp"><div class="drop_list"><span title="Recent tables" class="drop_button">Recent</span><ul id="pma_recent_list"><li class="warp_link">There are no recent tables.</li></ul></div><div class="drop_list"><span title="Favorite tables" class="drop_button">Favorites</span><ul id="pma_favorite_list"><li class="warp_link">There are no favorite tables.</li></ul></div><div class="clearfloat"></div></div><div class="clearfloat"></div><ul><!-- CONTROLS START --><li id="navigation_controls_outer"><div id="navigation_controls"><a href="#" id="pma_navigation_collapse" title="Collapse all"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Collapse all" alt="Collapse all" class="icon ic_s_collapseall"></a><a href="#" id="pma_navigation_sync" title="Unlink from main panel"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Unlink from main panel" alt="Unlink from main panel" class="icon ic_s_link"></a></div></li><!-- CONTROLS ENDS --></ul><div id="pma_navigation_tree_content" style="height: 846.9px;"><ul><li class="first new_database italics"><div class="block"><i class="first"></i></div><div class="block "><a href="http://localhost:27017/phpmyadmin/server_databases.php?server=1"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="" alt="" class="icon ic_b_newdb"></a></div><a class="hover_show_full" href="http://localhost:27017/phpmyadmin/server_databases.php?server=1" title="">New</a><div class="clearfloat"></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="#"><span class="hide aPath">cm9vdA==.ZGJfZ2FtZXhj</span><span class="hide vPath">cm9vdA==.ZGJfZ2FtZXhj</span><span class="hide pos">0</span><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block "><a href="http://localhost:27017/phpmyadmin/db_operations.php?server=1&amp;db=db_gamexc&amp;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://localhost:27017/phpmyadmin/db_structure.php?server=1&amp;db=db_gamexc" title="Structure">db_gamexc</a><div class="clearfloat"></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="#"><span class="hide aPath">cm9vdA==.ZGVtbw==</span><span class="hide vPath">cm9vdA==.ZGVtbw==</span><span class="hide pos">0</span><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block "><a href="http://localhost:27017/phpmyadmin/db_operations.php?server=1&amp;db=demo&amp;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://localhost:27017/phpmyadmin/db_structure.php?server=1&amp;db=demo" title="Structure">demo</a><div class="clearfloat"></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="#"><span class="hide aPath">cm9vdA==.ZGVtb2NhbGN1bGF0ZQ==</span><span class="hide vPath">cm9vdA==.ZGVtb2NhbGN1bGF0ZQ==</span><span class="hide pos">0</span><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block "><a href="http://localhost:27017/phpmyadmin/db_operations.php?server=1&amp;db=democalculate&amp;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://localhost:27017/phpmyadmin/db_structure.php?server=1&amp;db=democalculate" title="Structure">democalculate</a><div class="clearfloat"></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="#"><span class="hide aPath">cm9vdA==.ZGVtb2p3dA==</span><span class="hide vPath">cm9vdA==.ZGVtb2p3dA==</span><span class="hide pos">0</span><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block "><a href="http://localhost:27017/phpmyadmin/db_operations.php?server=1&amp;db=demojwt&amp;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://localhost:27017/phpmyadmin/db_structure.php?server=1&amp;db=demojwt" title="Structure">demojwt</a><div class="clearfloat"></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander loaded" href="#"><span class="hide aPath">cm9vdA==.Z2FtZXhj</span><span class="hide vPath">cm9vdA==.Z2FtZXhj</span><span class="hide pos">0</span><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="" alt="" class="icon ic_b_minus"></a></div><div class="block "><a href="http://localhost:27017/phpmyadmin/db_operations.php?server=1&amp;db=gamexc&amp;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://localhost:27017/phpmyadmin/db_structure.php?server=1&amp;db=gamexc" title="Structure">gamexc</a><div class="clearfloat"></div><div class="list_container"><ul><span class="hide pos2_name">tables</span><span class="hide pos2_value">0</span><li class="new_table italics new_table italics"><div class="block"><i></i><span class="hide pos2_name">tables</span><span class="hide pos2_value">0</span></div><div class="block "><a href="http://localhost:27017/phpmyadmin/tbl_create.php?server=1&amp;db=gamexc"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="New" alt="New" class="icon ic_b_table_add"></a></div><a class="hover_show_full" href="http://localhost:27017/phpmyadmin/tbl_create.php?server=1&amp;db=gamexc" title="">New</a><div class="clearfloat"></div></li><li class="table table"><div class="block"><i></i><b></b><a class="expander" href="#"><span class="hide aPath">cm9vdA==.Z2FtZXhj.dGFibGVz.Y2F0ZWdvcnk=</span><span class="hide vPath">cm9vdA==.Z2FtZXhj.VGFibGVz.Y2F0ZWdvcnk=</span><span class="hide pos">0</span><span class="hide pos2_name">tables</span><span class="hide pos2_value">0</span><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block "><a href="http://localhost:27017/phpmyadmin/tbl_structure.php?server=1&amp;db=gamexc&amp;table=category"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props"></a></div><a class="hover_show_full" href="http://localhost:27017/phpmyadmin/sql.php?server=1&amp;db=gamexc&amp;table=category&amp;pos=0" title="Browse">category</a><span class="navItemControls"><a href="http://localhost:27017/phpmyadmin/navigation.php?hideNavItem=1&amp;itemType=table&amp;itemName=category&amp;dbName=gamexc" class="hideNavItem ajax"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Hide" alt="Hide" class="icon ic_hide"></a></span><div class="clearfloat"></div></li><li class="table table"><div class="block"><i></i><b></b><a class="expander" href="#"><span class="hide aPath">cm9vdA==.Z2FtZXhj.dGFibGVz.Y3JlZGl0X2NhcmQ=</span><span class="hide vPath">cm9vdA==.Z2FtZXhj.VGFibGVz.Y3JlZGl0X2NhcmQ=</span><span class="hide pos">0</span><span class="hide pos2_name">tables</span><span class="hide pos2_value">0</span><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block "><a href="http://localhost:27017/phpmyadmin/tbl_structure.php?server=1&amp;db=gamexc&amp;table=credit_card"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props"></a></div><a class="hover_show_full" href="http://localhost:27017/phpmyadmin/sql.php?server=1&amp;db=gamexc&amp;table=credit_card&amp;pos=0" title="Browse">credit_card</a><span class="navItemControls"><a href="http://localhost:27017/phpmyadmin/navigation.php?hideNavItem=1&amp;itemType=table&amp;itemName=credit_card&amp;dbName=gamexc" class="hideNavItem ajax"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Hide" alt="Hide" class="icon ic_hide"></a></span><div class="clearfloat"></div></li><li class="table table"><div class="block"><i></i><b></b><a class="expander" href="#"><span class="hide aPath">cm9vdA==.Z2FtZXhj.dGFibGVz.Z2FtZQ==</span><span class="hide vPath">cm9vdA==.Z2FtZXhj.VGFibGVz.Z2FtZQ==</span><span class="hide pos">0</span><span class="hide pos2_name">tables</span><span class="hide pos2_value">0</span><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block "><a href="http://localhost:27017/phpmyadmin/tbl_structure.php?server=1&amp;db=gamexc&amp;table=game"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props"></a></div><a class="hover_show_full" href="http://localhost:27017/phpmyadmin/sql.php?server=1&amp;db=gamexc&amp;table=game&amp;pos=0" title="Browse">game</a><span class="navItemControls"><a href="http://localhost:27017/phpmyadmin/navigation.php?hideNavItem=1&amp;itemType=table&amp;itemName=game&amp;dbName=gamexc" class="hideNavItem ajax"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Hide" alt="Hide" class="icon ic_hide"></a></span><div class="clearfloat"></div></li><li class="table table"><div class="block"><i></i><b></b><a class="expander" href="#"><span class="hide aPath">cm9vdA==.Z2FtZXhj.dGFibGVz.aW1hZ2Vz</span><span class="hide vPath">cm9vdA==.Z2FtZXhj.VGFibGVz.aW1hZ2Vz</span><span class="hide pos">0</span><span class="hide pos2_name">tables</span><span class="hide pos2_value">0</span><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block "><a href="http://localhost:27017/phpmyadmin/tbl_structure.php?server=1&amp;db=gamexc&amp;table=images"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props"></a></div><a class="hover_show_full" href="http://localhost:27017/phpmyadmin/sql.php?server=1&amp;db=gamexc&amp;table=images&amp;pos=0" title="Browse">images</a><span class="navItemControls"><a href="http://localhost:27017/phpmyadmin/navigation.php?hideNavItem=1&amp;itemType=table&amp;itemName=images&amp;dbName=gamexc" class="hideNavItem ajax"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Hide" alt="Hide" class="icon ic_hide"></a></span><div class="clearfloat"></div></li><li class="table table selected"><div class="block"><i></i><b></b><a class="expander" href="#"><span class="hide aPath">cm9vdA==.Z2FtZXhj.dGFibGVz.aXRlbXM=</span><span class="hide vPath">cm9vdA==.Z2FtZXhj.VGFibGVz.aXRlbXM=</span><span class="hide pos">0</span><span class="hide pos2_name">tables</span><span class="hide pos2_value">0</span><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block "><a href="http://localhost:27017/phpmyadmin/tbl_structure.php?server=1&amp;db=gamexc&amp;table=items"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props"></a></div><a class="hover_show_full" href="http://localhost:27017/phpmyadmin/sql.php?server=1&amp;db=gamexc&amp;table=items&amp;pos=0" title="Browse">items</a><span class="navItemControls"><a href="http://localhost:27017/phpmyadmin/navigation.php?hideNavItem=1&amp;itemType=table&amp;itemName=items&amp;dbName=gamexc" class="hideNavItem ajax"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Hide" alt="Hide" class="icon ic_hide"></a></span><div class="clearfloat"></div></li><li class="table table"><div class="block"><i></i><b></b><a class="expander" href="#"><span class="hide aPath">cm9vdA==.Z2FtZXhj.dGFibGVz.b3JkZXJz</span><span class="hide vPath">cm9vdA==.Z2FtZXhj.VGFibGVz.b3JkZXJz</span><span class="hide pos">0</span><span class="hide pos2_name">tables</span><span class="hide pos2_value">0</span><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block "><a href="http://localhost:27017/phpmyadmin/tbl_structure.php?server=1&amp;db=gamexc&amp;table=orders"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props"></a></div><a class="hover_show_full" href="http://localhost:27017/phpmyadmin/sql.php?server=1&amp;db=gamexc&amp;table=orders&amp;pos=0" title="Browse">orders</a><span class="navItemControls"><a href="http://localhost:27017/phpmyadmin/navigation.php?hideNavItem=1&amp;itemType=table&amp;itemName=orders&amp;dbName=gamexc" class="hideNavItem ajax"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Hide" alt="Hide" class="icon ic_hide"></a></span><div class="clearfloat"></div></li><li class="table table"><div class="block"><i></i><b></b><a class="expander" href="#"><span class="hide aPath">cm9vdA==.Z2FtZXhj.dGFibGVz.b3JkZXJfZGV0YWls</span><span class="hide vPath">cm9vdA==.Z2FtZXhj.VGFibGVz.b3JkZXJfZGV0YWls</span><span class="hide pos">0</span><span class="hide pos2_name">tables</span><span class="hide pos2_value">0</span><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block "><a href="http://localhost:27017/phpmyadmin/tbl_structure.php?server=1&amp;db=gamexc&amp;table=order_detail"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props"></a></div><a class="hover_show_full" href="http://localhost:27017/phpmyadmin/sql.php?server=1&amp;db=gamexc&amp;table=order_detail&amp;pos=0" title="Browse">order_detail</a><span class="navItemControls"><a href="http://localhost:27017/phpmyadmin/navigation.php?hideNavItem=1&amp;itemType=table&amp;itemName=order_detail&amp;dbName=gamexc" class="hideNavItem ajax"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Hide" alt="Hide" class="icon ic_hide"></a></span><div class="clearfloat"></div></li><li class="table table"><div class="block"><i></i><b></b><a class="expander" href="#"><span class="hide aPath">cm9vdA==.Z2FtZXhj.dGFibGVz.dHJhbnNhY3Rpb24=</span><span class="hide vPath">cm9vdA==.Z2FtZXhj.VGFibGVz.dHJhbnNhY3Rpb24=</span><span class="hide pos">0</span><span class="hide pos2_name">tables</span><span class="hide pos2_value">0</span><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block "><a href="http://localhost:27017/phpmyadmin/tbl_structure.php?server=1&amp;db=gamexc&amp;table=transaction"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props"></a></div><a class="hover_show_full" href="http://localhost:27017/phpmyadmin/sql.php?server=1&amp;db=gamexc&amp;table=transaction&amp;pos=0" title="Browse">transaction</a><span class="navItemControls"><a href="http://localhost:27017/phpmyadmin/navigation.php?hideNavItem=1&amp;itemType=table&amp;itemName=transaction&amp;dbName=gamexc" class="hideNavItem ajax"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Hide" alt="Hide" class="icon ic_hide"></a></span><div class="clearfloat"></div></li><li class="table table"><div class="block"><i></i><b></b><a class="expander" href="#"><span class="hide aPath">cm9vdA==.Z2FtZXhj.dGFibGVz.dXNlcnM=</span><span class="hide vPath">cm9vdA==.Z2FtZXhj.VGFibGVz.dXNlcnM=</span><span class="hide pos">0</span><span class="hide pos2_name">tables</span><span class="hide pos2_value">0</span><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block "><a href="http://localhost:27017/phpmyadmin/tbl_structure.php?server=1&amp;db=gamexc&amp;table=users"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props"></a></div><a class="hover_show_full" href="http://localhost:27017/phpmyadmin/sql.php?server=1&amp;db=gamexc&amp;table=users&amp;pos=0" title="Browse">users</a><span class="navItemControls"><a href="http://localhost:27017/phpmyadmin/navigation.php?hideNavItem=1&amp;itemType=table&amp;itemName=users&amp;dbName=gamexc" class="hideNavItem ajax"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Hide" alt="Hide" class="icon ic_hide"></a></span><div class="clearfloat"></div></li><li class="table last table"><div class="block"><i></i><a class="expander" href="#"><span class="hide aPath">cm9vdA==.Z2FtZXhj.dGFibGVz.d2FsbGV0</span><span class="hide vPath">cm9vdA==.Z2FtZXhj.VGFibGVz.d2FsbGV0</span><span class="hide pos">0</span><span class="hide pos2_name">tables</span><span class="hide pos2_value">0</span><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block "><a href="http://localhost:27017/phpmyadmin/tbl_structure.php?server=1&amp;db=gamexc&amp;table=wallet"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props"></a></div><a class="hover_show_full" href="http://localhost:27017/phpmyadmin/sql.php?server=1&amp;db=gamexc&amp;table=wallet&amp;pos=0" title="Browse">wallet</a><span class="navItemControls"><a href="http://localhost:27017/phpmyadmin/navigation.php?hideNavItem=1&amp;itemType=table&amp;itemName=wallet&amp;dbName=gamexc" class="hideNavItem ajax"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Hide" alt="Hide" class="icon ic_hide"></a></span><div class="clearfloat"></div></li></ul></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="#"><span class="hide aPath">cm9vdA==.aW5mb3JtYXRpb25fc2NoZW1h</span><span class="hide vPath">cm9vdA==.aW5mb3JtYXRpb25fc2NoZW1h</span><span class="hide pos">0</span><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block "><a href="http://localhost:27017/phpmyadmin/db_operations.php?server=1&amp;db=information_schema&amp;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://localhost:27017/phpmyadmin/db_structure.php?server=1&amp;db=information_schema" title="Structure">information_schema</a><div class="clearfloat"></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="#"><span class="hide aPath">cm9vdA==.bXlzcWw=</span><span class="hide vPath">cm9vdA==.bXlzcWw=</span><span class="hide pos">0</span><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block "><a href="http://localhost:27017/phpmyadmin/db_operations.php?server=1&amp;db=mysql&amp;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://localhost:27017/phpmyadmin/db_structure.php?server=1&amp;db=mysql" title="Structure">mysql</a><div class="clearfloat"></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="#"><span class="hide aPath">cm9vdA==.cGVyZm9ybWFuY2Vfc2NoZW1h</span><span class="hide vPath">cm9vdA==.cGVyZm9ybWFuY2Vfc2NoZW1h</span><span class="hide pos">0</span><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block "><a href="http://localhost:27017/phpmyadmin/db_operations.php?server=1&amp;db=performance_schema&amp;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://localhost:27017/phpmyadmin/db_structure.php?server=1&amp;db=performance_schema" title="Structure">performance_schema</a><div class="clearfloat"></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="#"><span class="hide aPath">cm9vdA==.cGhwbXlhZG1pbg==</span><span class="hide vPath">cm9vdA==.cGhwbXlhZG1pbg==</span><span class="hide pos">0</span><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block "><a href="http://localhost:27017/phpmyadmin/db_operations.php?server=1&amp;db=phpmyadmin&amp;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://localhost:27017/phpmyadmin/db_structure.php?server=1&amp;db=phpmyadmin" title="Structure">phpmyadmin</a><div class="clearfloat"></div></li><li class="last database"><div class="block"><i></i><a class="expander" href="#"><span class="hide aPath">cm9vdA==.dGVzdA==</span><span class="hide vPath">cm9vdA==.dGVzdA==</span><span class="hide pos">0</span><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block "><a href="http://localhost:27017/phpmyadmin/db_operations.php?server=1&amp;db=test&amp;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://localhost:27017/phpmyadmin/db_structure.php?server=1&amp;db=test" title="Structure">test</a><div class="clearfloat"></div></li></ul></div></div><div id="pma_navi_settings_container"><div id="pma_navigation_settings"><div class="page_settings"><form method="post" action="db_structure.php?db=gamexc&amp;table=items&amp;server=1&amp;target=" class="config-form disableAjax"><input name="tab_hash" value="" type="hidden"><input name="token" value="HZHN[GAotc.$wjr=" type="hidden">
+<input name="submit_save" value="Navi" type="hidden"><input name="token" value="HZHN[GAotc.$wjr=" type="hidden"><ul class="tabs responsivetable">
+
+                                    <li class="active">
+
+            <a href="#Navi_panel">
+            Navigation panel
+            </a>
+        </li>
+                                <li>
+
+            <a href="#Navi_tree">
+            Navigation tree
+            </a>
+        </li>
+                                <li>
+
+            <a href="#Navi_servers">
+            Servers
+            </a>
+        </li>
+                                <li>
+
+            <a href="#Navi_databases">
+            Databases
+            </a>
+        </li>
+                                <li>
+
+            <a href="#Navi_tables">
+            Tables
+            </a>
+        </li>
+            </ul>
+<br><div class="tabs_contents"><fieldset class="optbox" id="Navi_panel" style="">
+<legend>Navigation panel</legend>
+    <p>Customize appearance of the navigation panel.</p>
+<table width="100%" cellspacing="0">
+<tbody><tr><th><label for="ShowDatabasesNavigationAsTree">Show databases navigation as tree</label><span class="doc"><a href="http://localhost:27017/phpmyadmin/doc/html/config.html#cfg_ShowDatabasesNavigationAsTree" target="documentation"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>In the navigation panel, replaces the database tree with a selector</small></th><td><span class="checkbox"><input name="ShowDatabasesNavigationAsTree" id="ShowDatabasesNavigationAsTree" checked="checked" type="checkbox"></span><a class="restore-default hide" href="#ShowDatabasesNavigationAsTree" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationLinkWithMainPanel">Link with main panel</label><span class="doc"><a href="http://localhost:27017/phpmyadmin/doc/html/config.html#cfg_NavigationLinkWithMainPanel" target="documentation"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Link with main panel by highlighting the current database or table.</small></th><td><span class="checkbox"><input name="NavigationLinkWithMainPanel" id="NavigationLinkWithMainPanel" checked="checked" type="checkbox"></span><a class="restore-default hide" href="#NavigationLinkWithMainPanel" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationDisplayLogo">Display logo</label><span class="doc"><a href="http://localhost:27017/phpmyadmin/doc/html/config.html#cfg_NavigationDisplayLogo" target="documentation"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Show logo in navigation panel.</small></th><td><span class="checkbox"><input name="NavigationDisplayLogo" id="NavigationDisplayLogo" checked="checked" type="checkbox"></span><a class="restore-default hide" href="#NavigationDisplayLogo" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationLogoLink">Logo link URL</label><span class="doc"><a href="http://localhost:27017/phpmyadmin/doc/html/config.html#cfg_NavigationLogoLink" target="documentation"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>URL where logo in the navigation panel will point to.</small></th><td><input class="all85" name="NavigationLogoLink" id="NavigationLogoLink" value="index.php" type="text"><a class="restore-default hide" href="#NavigationLogoLink" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationLogoLinkWindow">Logo link target</label><span class="doc"><a href="http://localhost:27017/phpmyadmin/doc/html/config.html#cfg_NavigationLogoLinkWindow" target="documentation"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Open the linked page in the main window (<kbd>main</kbd>) or in a new one (<kbd>new</kbd>).</small></th><td><select class="all85" name="NavigationLogoLinkWindow" id="NavigationLogoLinkWindow"><option value="main" selected="selected">main</option><option value="new">new</option></select><a class="restore-default hide" href="#NavigationLogoLinkWindow" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreePointerEnable">Enable highlighting</label><span class="doc"><a href="http://localhost:27017/phpmyadmin/doc/html/config.html#cfg_NavigationTreePointerEnable" target="documentation"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Highlight server under the mouse cursor.</small></th><td><span class="checkbox"><input name="NavigationTreePointerEnable" id="NavigationTreePointerEnable" checked="checked" type="checkbox"></span><a class="restore-default hide" href="#NavigationTreePointerEnable" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="FirstLevelNavigationItems">Maximum items on first level</label><span class="doc"><a href="http://localhost:27017/phpmyadmin/doc/html/config.html#cfg_FirstLevelNavigationItems" target="documentation"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>The number of items that can be displayed on each page on the first level of the navigation tree.</small></th><td><input name="FirstLevelNavigationItems" id="FirstLevelNavigationItems" value="100" type="number"><a class="restore-default hide" href="#FirstLevelNavigationItems" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeDisplayItemFilterMinimum">Minimum number of items to display the filter box</label><span class="doc"><a href="http://localhost:27017/phpmyadmin/doc/html/config.html#cfg_NavigationTreeDisplayItemFilterMinimum" target="documentation"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Defines the minimum number of items (tables, views, routines and events) to display a filter box.</small></th><td><input name="NavigationTreeDisplayItemFilterMinimum" id="NavigationTreeDisplayItemFilterMinimum" value="30" type="number"><a class="restore-default hide" href="#NavigationTreeDisplayItemFilterMinimum" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NumRecentTables">Recently used tables</label><span class="doc"><a href="http://localhost:27017/phpmyadmin/doc/html/config.html#cfg_NumRecentTables" target="documentation"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Maximum number of recently used tables; set 0 to disable.</small></th><td><input name="NumRecentTables" id="NumRecentTables" value="10" type="number"><a class="restore-default hide" href="#NumRecentTables" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NumFavoriteTables">Favorite tables</label><span class="doc"><a href="http://localhost:27017/phpmyadmin/doc/html/config.html#cfg_NumFavoriteTables" target="documentation"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Maximum number of favorite tables; set 0 to disable.</small></th><td><input name="NumFavoriteTables" id="NumFavoriteTables" value="10" type="number"><a class="restore-default hide" href="#NumFavoriteTables" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationWidth">Navigation panel width</label><span class="doc"><a href="http://localhost:27017/phpmyadmin/doc/html/config.html#cfg_NavigationWidth" target="documentation"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Set to 0 to collapse navigation panel.</small></th><td><input name="NavigationWidth" id="NavigationWidth" value="240" type="number"><a class="restore-default hide" href="#NavigationWidth" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr></tbody></table>
+</fieldset>
+<fieldset class="optbox" id="Navi_tree" style="display: none;">
+<legend>Navigation tree</legend>
+    <p>Customize the navigation tree.</p>
+<table width="100%" cellspacing="0">
+<tbody><tr><th><label for="MaxNavigationItems">Maximum items in branch</label><span class="doc"><a href="http://localhost:27017/phpmyadmin/doc/html/config.html#cfg_MaxNavigationItems" target="documentation"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>The number of items that can be displayed on each page of the navigation tree.</small></th><td><input name="MaxNavigationItems" id="MaxNavigationItems" value="50" type="number"><a class="restore-default hide" href="#MaxNavigationItems" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeEnableGrouping">Group items in the tree</label><span class="doc"><a href="http://localhost:27017/phpmyadmin/doc/html/config.html#cfg_NavigationTreeEnableGrouping" target="documentation"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Group items in the navigation tree (determined by the separator defined in the Databases and Tables tabs above).</small></th><td><span class="checkbox"><input name="NavigationTreeEnableGrouping" id="NavigationTreeEnableGrouping" checked="checked" type="checkbox"></span><a class="restore-default hide" href="#NavigationTreeEnableGrouping" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeEnableExpansion">Enable navigation tree expansion</label><span class="doc"><a href="http://localhost:27017/phpmyadmin/doc/html/config.html#cfg_NavigationTreeEnableExpansion" target="documentation"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Whether to offer the possibility of tree expansion in the navigation panel.</small></th><td><span class="checkbox"><input name="NavigationTreeEnableExpansion" id="NavigationTreeEnableExpansion" checked="checked" type="checkbox"></span><a class="restore-default hide" href="#NavigationTreeEnableExpansion" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeShowTables">Show tables in tree</label><span class="doc"><a href="http://localhost:27017/phpmyadmin/doc/html/config.html#cfg_NavigationTreeShowTables" target="documentation"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Whether to show tables under database in the navigation tree</small></th><td><span class="checkbox"><input name="NavigationTreeShowTables" id="NavigationTreeShowTables" checked="checked" type="checkbox"></span><a class="restore-default hide" href="#NavigationTreeShowTables" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeShowViews">Show views in tree</label><span class="doc"><a href="http://localhost:27017/phpmyadmin/doc/html/config.html#cfg_NavigationTreeShowViews" target="documentation"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Whether to show views under database in the navigation tree</small></th><td><span class="checkbox"><input name="NavigationTreeShowViews" id="NavigationTreeShowViews" checked="checked" type="checkbox"></span><a class="restore-default hide" href="#NavigationTreeShowViews" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeShowFunctions">Show functions in tree</label><span class="doc"><a href="http://localhost:27017/phpmyadmin/doc/html/config.html#cfg_NavigationTreeShowFunctions" target="documentation"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Whether to show functions under database in the navigation tree</small></th><td><span class="checkbox"><input name="NavigationTreeShowFunctions" id="NavigationTreeShowFunctions" checked="checked" type="checkbox"></span><a class="restore-default hide" href="#NavigationTreeShowFunctions" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeShowProcedures">Show procedures in tree</label><span class="doc"><a href="http://localhost:27017/phpmyadmin/doc/html/config.html#cfg_NavigationTreeShowProcedures" target="documentation"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Whether to show procedures under database in the navigation tree</small></th><td><span class="checkbox"><input name="NavigationTreeShowProcedures" id="NavigationTreeShowProcedures" checked="checked" type="checkbox"></span><a class="restore-default hide" href="#NavigationTreeShowProcedures" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeShowEvents">Show events in tree</label><span class="doc"><a href="http://localhost:27017/phpmyadmin/doc/html/config.html#cfg_NavigationTreeShowEvents" target="documentation"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Whether to show events under database in the navigation tree</small></th><td><span class="checkbox"><input name="NavigationTreeShowEvents" id="NavigationTreeShowEvents" checked="checked" type="checkbox"></span><a class="restore-default hide" href="#NavigationTreeShowEvents" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr></tbody></table>
+</fieldset>
+<fieldset class="optbox" id="Navi_servers" style="display: none;">
+<legend>Servers</legend>
+    <p>Servers display options.</p>
+<table width="100%" cellspacing="0">
+<tbody><tr><th><label for="NavigationDisplayServers">Display servers selection</label><span class="doc"><a href="http://localhost:27017/phpmyadmin/doc/html/config.html#cfg_NavigationDisplayServers" target="documentation"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Display server choice at the top of the navigation panel.</small></th><td><span class="checkbox"><input name="NavigationDisplayServers" id="NavigationDisplayServers" checked="checked" type="checkbox"></span><a class="restore-default hide" href="#NavigationDisplayServers" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="DisplayServersList">Display servers as a list</label><span class="doc"><a href="http://localhost:27017/phpmyadmin/doc/html/config.html#cfg_DisplayServersList" target="documentation"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Show server listing as a list instead of a drop down.</small></th><td><span class="checkbox"><input name="DisplayServersList" id="DisplayServersList" type="checkbox"></span><a class="restore-default hide" href="#DisplayServersList" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr></tbody></table>
+</fieldset>
+<fieldset class="optbox" id="Navi_databases" style="display: none;">
+<legend>Databases</legend>
+    <p>Databases display options.</p>
+<table width="100%" cellspacing="0">
+<tbody><tr><th><label for="NavigationTreeDisplayDbFilterMinimum">Minimum number of databases to display the database filter box</label><span class="doc"><a href="http://localhost:27017/phpmyadmin/doc/html/config.html#cfg_NavigationTreeDisplayDbFilterMinimum" target="documentation"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span></th><td><input name="NavigationTreeDisplayDbFilterMinimum" id="NavigationTreeDisplayDbFilterMinimum" value="30" type="number"><a class="restore-default hide" href="#NavigationTreeDisplayDbFilterMinimum" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeDbSeparator">Database tree separator</label><span class="doc"><a href="http://localhost:27017/phpmyadmin/doc/html/config.html#cfg_NavigationTreeDbSeparator" target="documentation"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>String that separates databases into different tree levels.</small></th><td><input size="25" name="NavigationTreeDbSeparator" id="NavigationTreeDbSeparator" value="_" type="text"><a class="restore-default hide" href="#NavigationTreeDbSeparator" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr></tbody></table>
+</fieldset>
+<fieldset class="optbox" id="Navi_tables" style="display: none;">
+<legend>Tables</legend>
+    <p>Tables display options.</p>
+<table width="100%" cellspacing="0">
+<tbody><tr><th><label for="NavigationTreeDefaultTabTable">Target for quick access icon</label><span class="doc"><a href="http://localhost:27017/phpmyadmin/doc/html/config.html#cfg_NavigationTreeDefaultTabTable" target="documentation"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span></th><td><select class="all85" name="NavigationTreeDefaultTabTable" id="NavigationTreeDefaultTabTable"><option value="structure" selected="selected">Structure</option><option value="sql">SQL</option><option value="search">Search</option><option value="insert">Insert</option><option value="browse">Browse</option></select><a class="restore-default hide" href="#NavigationTreeDefaultTabTable" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeDefaultTabTable2">Target for second quick access icon</label><span class="doc"><a href="http://localhost:27017/phpmyadmin/doc/html/config.html#cfg_NavigationTreeDefaultTabTable2" target="documentation"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span></th><td><select class="all85" name="NavigationTreeDefaultTabTable2" id="NavigationTreeDefaultTabTable2"><option value="" selected="selected"></option><option value="structure">Structure</option><option value="sql">SQL</option><option value="search">Search</option><option value="insert">Insert</option><option value="browse">Browse</option></select><a class="restore-default hide" href="#NavigationTreeDefaultTabTable2" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeTableSeparator">Table tree separator</label><span class="doc"><a href="http://localhost:27017/phpmyadmin/doc/html/config.html#cfg_NavigationTreeTableSeparator" target="documentation"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>String that separates tables into different tree levels.</small></th><td><input size="25" name="NavigationTreeTableSeparator" id="NavigationTreeTableSeparator" value="__" type="text"><a class="restore-default hide" href="#NavigationTreeTableSeparator" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeTableLevel">Maximum table tree depth</label><span class="doc"><a href="http://localhost:27017/phpmyadmin/doc/html/config.html#cfg_NavigationTreeTableLevel" target="documentation"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span></th><td><input name="NavigationTreeTableLevel" id="NavigationTreeTableLevel" value="1" type="number"><a class="restore-default hide" href="#NavigationTreeTableLevel" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr></tbody></table>
+</fieldset>
+</div>
+</form>
+<script type="text/javascript">
+if (typeof configInlineParams === "undefined" || !Array.isArray(configInlineParams)) configInlineParams = [];
+configInlineParams.push(function() {
+validateField('FirstLevelNavigationItems', 'PMA_validatePositiveNumber', true);
+validateField('NumRecentTables', 'PMA_validateNonNegativeNumber', true);
+validateField('NumFavoriteTables', 'PMA_validateNonNegativeNumber', true);
+validateField('NavigationWidth', 'PMA_validateNonNegativeNumber', true);
+validateField('MaxNavigationItems', 'PMA_validatePositiveNumber', true);
+validateField('NavigationTreeTableLevel', 'PMA_validatePositiveNumber', true);
+$.extend(PMA_messages, {
+	'error_nan_p': 'Not a positive number!',
+	'error_nan_nneg': 'Not a non-negative number!',
+	'error_incorrect_port': 'Not a valid port number!',
+	'error_invalid_value': 'Incorrect value!',
+	'error_value_lte': 'Value must be equal or lower than %s!'});
+$.extend(defaultValues, {
+	'ShowDatabasesNavigationAsTree': true,
+	'NavigationLinkWithMainPanel': true,
+	'NavigationDisplayLogo': true,
+	'NavigationLogoLink': 'index.php',
+	'NavigationLogoLinkWindow': ['main'],
+	'NavigationTreePointerEnable': true,
+	'FirstLevelNavigationItems': '100',
+	'NavigationTreeDisplayItemFilterMinimum': '30',
+	'NumRecentTables': '10',
+	'NumFavoriteTables': '10',
+	'NavigationWidth': '240',
+	'MaxNavigationItems': '50',
+	'NavigationTreeEnableGrouping': true,
+	'NavigationTreeEnableExpansion': true,
+	'NavigationTreeShowTables': true,
+	'NavigationTreeShowViews': true,
+	'NavigationTreeShowFunctions': true,
+	'NavigationTreeShowProcedures': true,
+	'NavigationTreeShowEvents': true,
+	'NavigationDisplayServers': true,
+	'DisplayServersList': false,
+	'NavigationTreeDisplayDbFilterMinimum': '30',
+	'NavigationTreeDbSeparator': '_',
+	'NavigationTreeDefaultTabTable': ['structure'],
+	'NavigationTreeDefaultTabTable2': [''],
+	'NavigationTreeTableSeparator': '__',
+	'NavigationTreeTableLevel': '1'});
+});
+if (typeof configScriptLoaded !== "undefined" && configInlineParams) loadInlineConfig();
+</script>
+</div></div></div></div><div class="pma_drop_handler">Drop files here</div><div class="pma_sql_import_status"><h2>SQL upload ( <span class="pma_import_count">0</span> ) <span class="close">x</span><span class="minimize">-</span></h2><div></div></div></div><div id="floating_menubar" style="margin-left: 243px; left: 0px; position: fixed; top: 0px; width: 100%; z-index: 99;"><div id="serverinfo"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="" alt="" class="icon ic_s_host item"><a href="http://localhost:27017/phpmyadmin/index.php" class="item">Server: 127.0.0.1</a><span class="separator item">&nbsp;»</span><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="" alt="" class="icon ic_s_db item"><a href="http://localhost:27017/phpmyadmin/db_structure.php?db=gamexc" class="item">Database: gamexc</a><span class="separator item">&nbsp;»</span><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="" alt="" class="icon ic_s_tbl item"><a href="http://localhost:27017/phpmyadmin/sql.php?db=gamexc&amp;table=items" class="item">Table: items</a><div class="clearfloat"></div></div><div id="topmenucontainer" class="menucontainer"><i class="scrollindicator scrollindicator--left"><img alt="" title="" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" class="icon ic_b_left"></i><div class="navigationbar" style="width: auto; overflow: visible;"><ul id="topmenu" class="resizable-menu"><li>
+
+            <a href="http://localhost:27017/phpmyadmin/sql.php?db=gamexc&amp;table=items&amp;pos=0" class="tab">
+            <img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Browse" alt="Browse" class="icon ic_b_browse">&nbsp;Browse
+            </a>
+        </li>
+<li>
+
+            <a href="http://localhost:27017/phpmyadmin/tbl_structure.php?db=gamexc&amp;table=items" class="tab">
+            <img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props">&nbsp;Structure
+            </a>
+        </li>
+<li>
+
+            <a href="http://localhost:27017/phpmyadmin/tbl_sql.php?db=gamexc&amp;table=items" class="tab">
+            <img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="SQL" alt="SQL" class="icon ic_b_sql">&nbsp;SQL
+            </a>
+        </li>
+<li>
+
+            <a href="http://localhost:27017/phpmyadmin/tbl_select.php?db=gamexc&amp;table=items" class="tab">
+            <img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Search" alt="Search" class="icon ic_b_search">&nbsp;Search
+            </a>
+        </li>
+<li>
+
+            <a href="http://localhost:27017/phpmyadmin/tbl_change.php?db=gamexc&amp;table=items" class="tab">
+            <img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Insert" alt="Insert" class="icon ic_b_insrow">&nbsp;Insert
+            </a>
+        </li>
+
+
+
+
+
+
+<li class="submenu shown" style=""><a href="#" class="tab nowrap"><img alt="" title="" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" class="icon ic_b_more">More</a><ul class="notonly"><li>
+
+            <a href="http://localhost:27017/phpmyadmin/tbl_export.php?db=gamexc&amp;table=items&amp;single_table=true" class="tab">
+            <img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Export" alt="Export" class="icon ic_b_tblexport">&nbsp;Export
+            </a>
+        </li><li>
+
+            <a href="http://localhost:27017/phpmyadmin/tbl_import.php?db=gamexc&amp;table=items" class="tab">
+            <img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Import" alt="Import" class="icon ic_b_tblimport">&nbsp;Import
+            </a>
+        </li><li>
+
+            <a href="http://localhost:27017/phpmyadmin/server_privileges.php?db=gamexc&amp;table=items&amp;checkprivsdb=gamexc&amp;checkprivstable=items&amp;viewing_mode=table" class="tab">
+            <img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Privileges" alt="Privileges" class="icon ic_s_rights">&nbsp;Privileges
+            </a>
+        </li><li>
+
+            <a href="http://localhost:27017/phpmyadmin/tbl_operations.php?db=gamexc&amp;table=items" class="tab">
+            <img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Operations" alt="Operations" class="icon ic_b_tblops">&nbsp;Operations
+            </a>
+        </li><li>
+
+            <a href="http://localhost:27017/phpmyadmin/tbl_tracking.php?db=gamexc&amp;table=items" class="tab">
+            <img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Tracking" alt="Tracking" class="icon ic_eye">&nbsp;Tracking
+            </a>
+        </li><li>
+
+            <a href="http://localhost:27017/phpmyadmin/tbl_triggers.php?db=gamexc&amp;table=items" class="tab">
+            <img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Triggers" alt="Triggers" class="icon ic_b_triggers">&nbsp;Triggers
+            </a>
+        </li></ul></li><div class="clearfloat"></div></ul></div>
+<i class="scrollindicator scrollindicator--right"><img alt="" title="" src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" class="icon ic_b_right"></i></div>
+</div>
+<span id="page_nav_icons"><span id="lock_page_icon"></span><span id="page_settings_icon" style="display: none;"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Page-related settings" alt="Page-related settings" class="icon ic_s_cog"></span><a id="goto_pagetop" href="#"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Click on the bar to scroll to top of page" alt="Click on the bar to scroll to top of page" class="icon ic_s_top"></a></span><div id="pma_console_container">
+    <div id="pma_console" style="margin-left: 243px;">
+                <div class="toolbar">
+                    <div class="switch_button console_switch">
+            <img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="SQL Query Console" alt="SQL Query Console" class="icon ic_console">
+            <span>Console</span>
+        </div>
+                            <div class="button clear">
+            
+            <span>Clear</span>
+        </div>
+                            <div class="button history">
+            
+            <span>History</span>
+        </div>
+                            <div class="button options">
+            
+            <span>Options</span>
+        </div>
+                            <div class="button bookmarks">
+            
+            <span>Bookmarks</span>
+        </div>
+                            <div class="button debug hide">
+            
+            <span>Debug SQL</span>
+        </div>
+            </div>
+                <div class="content" style="display: block; height: 335px; margin-bottom: 0px;">
+            <div class="console_message_container">
+                <div class="message welcome binded">
+                    <span id="instructions-0">
+                        Press Ctrl+Enter to execute query                    </span>
+                    <span class="hide" id="instructions-1">
+                        Press Enter to execute query                    </span>
+                </div>
+                            <div class="message collapsed binded select successed hide" msgid="331768183483" targetdb="gamexc" targettable="game"><div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                    </span>
+            </div><div class="query highlighted"><span class="cm-keyword">SELECT</span> * <span class="cm-keyword">FROM</span> `game`</div></div><div class="message collapsed binded select successed hide" msgid="527867001701" targetdb="gamexc" targettable="game"><div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                    </span>
+            </div><div class="query highlighted"><span class="cm-keyword">SELECT</span> * <span class="cm-keyword">FROM</span> `game`  
+ <span class="cm-keyword">ORDER</span> <span class="cm-keyword">BY</span> `id` <span class="cm-keyword">ASC</span></div></div><div class="message collapsed binded select successed hide" msgid="371300924383" targetdb="gamexc" targettable="game"><div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                    </span>
+            </div><div class="query highlighted"><span class="cm-keyword">SELECT</span> * <span class="cm-keyword">FROM</span> `game`  </div></div><div class="message collapsed binded select successed hide" msgid="731711243462" targetdb="gamexc" targettable="items"><div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                    </span>
+            </div><div class="query highlighted"><span class="cm-keyword">SELECT</span> * <span class="cm-keyword">FROM</span> `items`</div></div><div class="message collapsed binded successed select hide" msgid="864932663026" targetdb="gamexc" targettable="items"><div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                    </span>
+            </div><div class="query highlighted"><span class="cm-keyword">select</span> * <span class="cm-keyword">from</span> items it LEFT <span class="cm-keyword">JOIN</span> users u <span class="cm-keyword">ON</span> u<span class="cm-variable-2">.id</span> = it<span class="cm-variable-2">.user_id</span> <span class="cm-keyword">WHERE</span> it<span class="cm-variable-2">.game_id</span> = <span class="cm-number">1</span></div></div><div class="message collapsed binded successed select hide" msgid="800361686187" targetdb="gamexc" targettable="items"><div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                    </span>
+            </div><div class="query highlighted"><span class="cm-keyword">select</span> * <span class="cm-keyword">from</span> items it LEFT <span class="cm-keyword">JOIN</span> users u <span class="cm-keyword">ON</span> u<span class="cm-variable-2">.id</span> = it<span class="cm-variable-2">.user_id</span> <span class="cm-keyword">WHERE</span> it<span class="cm-variable-2">.game_id</span> = <span class="cm-number">2</span></div></div><div class="message collapsed binded successed select hide" msgid="620715115728" targetdb="gamexc" targettable="items"><div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                    </span>
+            </div><div class="query highlighted"><span class="cm-keyword">select</span> * <span class="cm-keyword">from</span> items it LEFT <span class="cm-keyword">JOIN</span> users u <span class="cm-keyword">ON</span> u<span class="cm-variable-2">.id</span> = it<span class="cm-variable-2">.user_id</span> <span class="cm-keyword">WHERE</span> it<span class="cm-variable-2">.game_id</span> = <span class="cm-number">3</span></div></div><div class="message collapsed binded select successed hide" msgid="538025619599" targetdb="gamexc" targettable="game"><div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                    </span>
+            </div><div class="query highlighted"><span class="cm-keyword">SELECT</span> * <span class="cm-keyword">FROM</span> `game`</div></div><div class="message collapsed binded select successed hide" msgid="115891381298" targetdb="gamexc" targettable="game"><div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                    </span>
+            </div><div class="query highlighted"><span class="cm-keyword">SELECT</span> * <span class="cm-keyword">FROM</span> `game`  
+ <span class="cm-keyword">ORDER</span> <span class="cm-keyword">BY</span> `id` <span class="cm-keyword">ASC</span></div></div><div class="message collapsed binded select successed hide" msgid="517443214636" targetdb="gamexc" targettable="game"><div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                    </span>
+            </div><div class="query highlighted"><span class="cm-keyword">SELECT</span> * <span class="cm-keyword">FROM</span> `game`  </div></div><div class="message collapsed binded select successed hide" msgid="213033253409" targetdb="gamexc" targettable="users"><div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                    </span>
+            </div><div class="query highlighted"><span class="cm-keyword">SELECT</span> * <span class="cm-keyword">FROM</span> `users`</div></div><div class="message collapsed binded select successed hide" msgid="451707505521" targetdb="gamexc" targettable="items"><div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                    </span>
+            </div><div class="query highlighted"><span class="cm-keyword">SELECT</span> * <span class="cm-keyword">FROM</span> `items`</div></div><div class="message collapsed binded select successed hide" msgid="193509276782" targetdb="gamexc" targettable="items"><div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                    </span>
+            </div><div class="query highlighted"><span class="cm-keyword">SELECT</span> * <span class="cm-keyword">FROM</span> `items`</div></div><div class="message collapsed binded select successed hide" msgid="852870150560" targetdb="gamexc" targettable="items"><div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                    </span>
+            </div><div class="query highlighted"><span class="cm-keyword">SELECT</span> * <span class="cm-keyword">FROM</span> `items`</div></div><div class="message collapsed binded select successed hide" msgid="688338137239" targetdb="gamexc" targettable="items"><div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                    </span>
+            </div><div class="query highlighted"><span class="cm-keyword">SELECT</span> * <span class="cm-keyword">FROM</span> `items`</div></div><div class="message collapsed binded select successed hide" msgid="749794365578" targetdb="gamexc" targettable="items"><div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                    </span>
+            </div><div class="query highlighted"><span class="cm-keyword">SELECT</span> * <span class="cm-keyword">FROM</span> `items`</div></div><div class="message collapsed binded successed select" msgid="727938290161" targetdb="gamexc" targettable="items"><div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                    </span>
+            </div><div class="query highlighted"><span class="cm-keyword">select</span> * <span class="cm-keyword">from</span> items it LEFT <span class="cm-keyword">JOIN</span> users u <span class="cm-keyword">ON</span> u<span class="cm-variable-2">.id</span> = it<span class="cm-variable-2">.user_id</span> <span class="cm-keyword">WHERE</span> it<span class="cm-variable-2">.game_id</span> = <span class="cm-number">3</span></div></div><div class="message collapsed binded successed select" msgid="927436440609" targetdb="gamexc" targettable="items"><div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                    </span>
+            </div><div class="query highlighted"><span class="cm-keyword">select</span> * <span class="cm-keyword">from</span> items it LEFT <span class="cm-keyword">JOIN</span> users u <span class="cm-keyword">ON</span> u<span class="cm-variable-2">.id</span> = it<span class="cm-variable-2">.user_id</span> <span class="cm-keyword">WHERE</span> it<span class="cm-variable-2">.game_id</span> = <span class="cm-number">21</span></div></div><div class="message collapsed binded select failed" msgid="528492521244"><div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                    </span>
+            </div><div class="query highlighted"><span class="cm-keyword">SELECT</span> g<span class="cm-variable-2">.id</span>,g<span class="cm-variable-2">.name</span> <span class="cm-keyword">as</span> Game, g<span class="cm-variable-2">.price</span> ,GROUP_CONCAT(i<span class="cm-variable-2">.link</span>) 
+<span class="cm-keyword">AS</span> images <span class="cm-keyword">FROM</span> game g LEFT <span class="cm-keyword">JOIN</span> images i <span class="cm-keyword">ON</span> g<span class="cm-variable-2">.id</span> = i<span class="cm-variable-2">.game_id</span> <span class="cm-keyword">join</span> items it LEFT <span class="cm-keyword">JOIN</span> users u <span class="cm-keyword">ON</span> u<span class="cm-variable-2">.id</span> = it<span class="cm-variable-2">.user_id</span> <span class="cm-keyword">WHERE</span> g<span class="cm-variable-2">.new</span> = <span class="cm-number">1</span> <span class="cm-keyword">and</span> g<span class="cm-variable-2">.id</span>=<span class="cm-number">1</span></div></div></div><!-- console_message_container -->
+            <div class="query_input">
+                <span class="console_query_input"><div class="CodeMirror cm-s-pma CodeMirror-wrap CodeMirror-focused"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 34px; left: 135px;"><textarea style="position: absolute; bottom: -1em; padding: 0px; width: 1px; height: 1em; outline: currentcolor none medium;" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" wrap="off"></textarea></div><div class="CodeMirror-vscrollbar" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="true"><div class="CodeMirror-sizer" style="margin-left: 16px; margin-bottom: -17px; border-right-width: 13px; min-height: 51px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div style="position: relative; outline: currentcolor none medium;" role="presentation"><div class="CodeMirror-measure"><pre>x</pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style=""><div class="CodeMirror-cursor" style="left: 119px; top: 34px; height: 17px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-keyword">SELECT</span> g<span class="cm-variable-2">.id</span>,g<span class="cm-variable-2">.name</span> <span class="cm-keyword">as</span> Game, g<span class="cm-variable-2">.price</span> ,GROUP_CONCAT(i<span class="cm-variable-2">.link</span>) <span class="cm-keyword">AS</span> images <span class="cm-keyword">FROM</span> game g LEFT <span class="cm-keyword">JOIN</span> images i <span class="cm-keyword">ON</span> g<span class="cm-variable-2">.id</span> = i<span class="cm-variable-2">.game_id</span> <span class="cm-keyword">join</span> items it LEFT <span class="cm-keyword">JOIN</span> users u <span class="cm-keyword">ON</span> u<span class="cm-variable-2">.id</span> = it<span class="cm-variable-2">.user_id</span> <span class="cm-keyword">WHERE</span> g<span class="cm-variable-2">.id</span>=<span class="cm-number">1</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 13px; width: 1px; border-bottom: 0px solid transparent; top: 51px;"></div><div class="CodeMirror-gutters" style="height: 64px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-lint-markers"></div></div></div></div></span>
+            </div>
+        </div><!-- message end -->
+                <div class="mid_layer"></div>
+                <div class="card ungrouped" id="debug_console">
+            <div class="toolbar ">
+                    <div class="button order order_asc active">
+            
+            <span>ascending</span>
+        </div>
+                            <div class="button order order_desc">
+            
+            <span>descending</span>
+        </div>
+                            <div class="text">
+            
+            <span>Order:</span>
+        </div>
+                            <div class="switch_button">
+            
+            <span>Debug SQL</span>
+        </div>
+                            <div class="button order_by sort_count">
+            
+            <span>Count</span>
+        </div>
+                            <div class="button order_by sort_exec active">
+            
+            <span>Execution order</span>
+        </div>
+                            <div class="button order_by sort_time">
+            
+            <span>Time taken</span>
+        </div>
+                            <div class="text">
+            
+            <span>Order by:</span>
+        </div>
+                            <div class="button group_queries">
+            
+            <span>Group queries</span>
+        </div>
+                            <div class="button ungroup_queries">
+            
+            <span>Ungroup queries</span>
+        </div>
+            </div>
+            <div class="content debug" style="height: 335px;">
+                <div class="message welcome binded">Some error occurred while getting SQL debug info.</div>
+                <div class="debugLog"></div>
+            </div> <!-- Content -->
+            <div class="templates">
+                <div class="debug_query action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action dbg_show_trace">
+            Show trace
+                    </span>
+                            <span class="action dbg_hide_trace">
+            Hide trace
+                    </span>
+                            <span class="text count hide">
+            Count
+                    </span>
+                            <span class="text time">
+            Time taken
+                    </span>
+            </div>
+            </div> <!-- Template -->
+        </div> <!-- Debug SQL card -->
+                    <div class="card" id="pma_bookmarks">
+                <div class="toolbar ">
+                    <div class="switch_button">
+            
+            <span>Bookmarks</span>
+        </div>
+                            <div class="button refresh">
+            
+            <span>Refresh</span>
+        </div>
+                            <div class="button add">
+            
+            <span>Add</span>
+        </div>
+            </div>
+                <div class="content bookmark" style="height: 335px;">
+                    <div class="message welcome binded">
+    <span>No bookmarks</span>
+</div>
+
+                </div>
+                <div class="mid_layer"></div>
+                <div class="card add">
+                    <div class="toolbar ">
+                    <div class="switch_button">
+            
+            <span>Add bookmark</span>
+        </div>
+            </div>
+                    <div class="content add_bookmark" style="height: 335px;">
+                        <div class="options">
+                            <label>
+                                Label: <input name="label" type="text">
+                            </label>
+                            <label>
+                                Target database: <input name="targetdb" type="text">
+                            </label>
+                            <label>
+                                <input name="shared" type="checkbox">Share this bookmark                            </label>
+                            <button type="submit" name="submit">OK</button>
+                        </div> <!-- options -->
+                        <div class="query_input">
+                            <span class="bookmark_add_input"><div class="CodeMirror cm-s-pma CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 16px;"><textarea style="position: absolute; bottom: -1em; padding: 0px; width: 1px; height: 1em; outline: currentcolor none medium;" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" wrap="off"></textarea></div><div class="CodeMirror-vscrollbar" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="true"><div class="CodeMirror-sizer" style="margin-left: 16px; margin-bottom: -17px; border-right-width: 13px; min-height: 17px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div style="position: relative; outline: currentcolor none medium;" role="presentation"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 0px; top: 0px; height: 17px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span cm-text="">​</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 13px; width: 1px; border-bottom: 0px solid transparent; top: 17px;"></div><div class="CodeMirror-gutters" style="height: 30px;"><div class="CodeMirror-gutter CodeMirror-lint-markers"></div></div></div></div></span>
+                        </div>
+                    </div>
+                </div> <!-- Add bookmark card -->
+            </div> <!-- Bookmarks card -->
+                        <div class="card" id="pma_console_options">
+            <div class="toolbar ">
+                    <div class="switch_button">
+            
+            <span>Options</span>
+        </div>
+                            <div class="button default">
+            
+            <span>Set default</span>
+        </div>
+            </div>
+            <div class="content" style="height: 335px;">
+                <label>
+                    <input name="always_expand" type="checkbox">Always expand query messages                </label>
+                <br>
+                <label>
+                    <input name="start_history" type="checkbox">Show query history at start                </label>
+                <br>
+                <label>
+                    <input name="current_query" checked="checked" type="checkbox">Show current browsing query                </label>
+                <br>
+                <label>
+                    <input name="enter_executes" type="checkbox">
+                        Execute queries on Enter and insert new line 
+with Shift + Enter. To make this permanent, view settings.              
+  </label>
+                <br>
+                <label>
+                    <input name="dark_theme" type="checkbox">Switch to dark theme                </label>
+                <br>
+            </div>
+        </div> <!-- Options card -->
+        <div class="templates">
+                        <div class="query_actions">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                    </span>
+            </div>
+        </div>
+    </div> <!-- #console end -->
+</div> <!-- #console_container end -->
+<div id="page_content"><div id="loading_parent"><span class="ajax_notification dismissable" id="ajax_message_num_20" style="cursor: pointer;"><div class="error"><h1>Error</h1><p><strong>SQL query:</strong>
+<a href="http://localhost:27017/phpmyadmin/url.php?url=https%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F5.7%2Fen%2Fselect.html" target="mysql_doc"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>    </p>
+<p>
+<code class="sql"></code></p><pre><code class="sql">SELECT g.id,g.name as Game, g.price ,GROUP_CONCAT(i.link) 
+AS images FROM game g LEFT JOIN images i ON g.id = i.game_id join items it LEFT JOIN users u ON u.id = it.user_id WHERE g.new = 1 and g.id=1 LIMIT 0, 25
+</code></pre>
+<p></p>
+<p>
+    <strong>MySQL said: </strong><a href="http://localhost:27017/phpmyadmin/url.php?url=https%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F5.7%2Fen%2Ferror-messages-server.html" target="mysql_doc"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</p>
+<code>#1054 - Unknown column 'g.new' in 'where clause'</code><br></div></span></div><div class="sqlqueryresults ajax"><div class="notice"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="" alt="" class="icon ic_s_notice"> Current selection does not contain a unique column. Grid edit, checkbox, Edit, Copy and Delete features are not available. <a href="http://localhost:27017/phpmyadmin/doc/html/config.html#cfg_RowActionLinksWithoutUnique" target="documentation"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a></div><div class="result_query">
+<div class="success"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="" alt="" class="icon ic_s_success"> Showing rows 0 -  6 (7 total, Query took 0.0022 seconds.)</div><div class="sqlOuter"><code class="sql"><pre style="display: none;">select * from items it LEFT JOIN users u ON u.id = it.user_id WHERE it.game_id = 21
+</pre><div class="sql-highlight cm-s-default"><span class="cm-keyword"><a target="mysql_doc" class="cm-sql-doc" href="http://localhost:27017/phpmyadmin/url.php?url=https://dev.mysql.com/doc/refman/5.5/en/select.html">select</a></span> * <span class="cm-keyword">from</span> items it <span class="cm-keyword"><a target="mysql_doc" class="cm-sql-doc" href="http://localhost:27017/phpmyadmin/url.php?url=https://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_left">LEFT</a></span> <span class="cm-keyword">JOIN</span> users u <span class="cm-keyword">ON</span> u<span class="cm-variable-2">.id</span> = it<span class="cm-variable-2">.user_id</span> <span class="cm-keyword">WHERE</span> it<span class="cm-variable-2">.game_id</span> = <span class="cm-number">21</span>
+</div></code></div><div class="tools print_ignore"><form action="sql.php" method="post"><input name="db" value="gamexc" type="hidden"><input name="table" value="items" type="hidden"><input name="token" value="HZHN[GAotc.$wjr=" type="hidden"><input name="sql_query" value="select * from items it LEFT JOIN users u ON u.id = it.user_id WHERE it.game_id = 21" type="hidden"><input name="profiling_form" value="1" type="hidden"><input name="profiling" id="" class="autosubmit" type="checkbox"><label for="">Profiling</label>
+</form> [<a href="#" class="inline_edit_sql">Edit inline</a>] [&nbsp;<a href="http://localhost:27017/phpmyadmin/tbl_sql.php" data-post="db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21&amp;show_query=1#querybox">Edit</a>&nbsp;] [&nbsp;<a href="http://localhost:27017/phpmyadmin/import.php" data-post="db=gamexc&amp;table=items&amp;sql_query=EXPLAIN+select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21">Explain SQL</a>&nbsp;] [&nbsp;<a href="http://localhost:27017/phpmyadmin/import.php" data-post="db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21&amp;show_query=1&amp;show_as_php=1">Create PHP code</a>&nbsp;] [&nbsp;<a href="http://localhost:27017/phpmyadmin/import.php" data-post="db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21&amp;show_query=1">Refresh</a>]</div></div><table class="navigation nospacing nopadding print_ignore"><tbody><tr><td class="navigation_separator"></td><td>
+    <form action="sql.php" method="post">
+        <input name="db" value="gamexc" type="hidden"><input name="table" value="items" type="hidden"><input name="token" value="HZHN[GAotc.$wjr=" type="hidden">
+        <input name="sql_query" value="select * from items it LEFT JOIN users u ON u.id = it.user_id WHERE it.game_id = 21" type="hidden">
+        <input name="pos" value="0" type="hidden">
+        <input name="is_browse_distinct" value="" type="hidden">
+        <input name="session_max_rows" value="all" type="hidden">
+        <input name="goto" value="db_structure.php" type="hidden">
+        <input name="navig" id="showAll_857463546" class="showAllRows" value="all" type="checkbox">
+        <label for="showAll_857463546">Show all</label>
+    </form>
+</td>
+<td><div class="navigation_separator">|</div></td><td><div class="save_edited hide"><input value="Save edited data" type="submit"><div class="navigation_separator">|</div></div></td><td><div class="restore_column hide" style="display: none;"><input value="Restore column order" type="submit"><div class="navigation_separator">|</div></div></td><td class="navigation_goto"><form action="sql.php" method="post" onsubmit=""><input name="db" value="gamexc" type="hidden"><input name="table" value="items" type="hidden"><input name="token" value="HZHN[GAotc.$wjr=" type="hidden"><input name="sql_query" value="select * from items it LEFT JOIN users u ON u.id = it.user_id WHERE it.game_id = 21" type="hidden">
+<input name="goto" value="db_structure.php" type="hidden">
+<input name="pos" size="3" value="0" type="hidden">
+<input name="is_browse_distinct" value="" type="hidden">
+Number of rows:<select name="session_max_rows" class="autosubmit">
+<option value="25" selected="selected">25</option>
+<option value="50">50</option>
+<option value="100">100</option>
+<option value="250">250</option>
+<option value="500">500</option>
+</select>
+
+</form></td><td class="navigation_separator"></td><td class="largescreenonly"><span>Filter rows:</span><input class="filter_rows" placeholder="Search this table" data-for="857463546" type="text"></td><td class="largescreenonly"><form action="sql.php" method="post" class="print_ignore">
+<input name="db" value="gamexc" type="hidden"><input name="table" value="items" type="hidden"><input name="token" value="HZHN[GAotc.$wjr=" type="hidden"><input name="sort_by_key" value="1" type="hidden"><input name="token" value="HZHN[GAotc.$wjr=" type="hidden">Sort by key: <select name="sql_query" class="autosubmit">
+<option value="select * from items it LEFT JOIN users u ON u.id = it.user_id WHERE it.game_id = 21  
+ ORDER BY `id` ASC">PRIMARY (ASC)</option><option value="select * from items it LEFT JOIN users u ON u.id = it.user_id WHERE it.game_id = 21  
+ ORDER BY `id` DESC">PRIMARY (DESC)</option><option value="select * from items it LEFT JOIN users u ON u.id = it.user_id WHERE it.game_id = 21  
+ ORDER BY `user_id` ASC">user_id (ASC)</option><option value="select * from items it LEFT JOIN users u ON u.id = it.user_id WHERE it.game_id = 21  
+ ORDER BY `user_id` DESC">user_id (DESC)</option><option value="select * from items it LEFT JOIN users u ON u.id = it.user_id WHERE it.game_id = 21  
+ ORDER BY `game_id` ASC">game_id (ASC)</option><option value="select * from items it LEFT JOIN users u ON u.id = it.user_id WHERE it.game_id = 21  
+ ORDER BY `game_id` DESC">game_id (DESC)</option><option value="select * from items it LEFT JOIN users u ON u.id = it.user_id WHERE it.game_id = 21  " selected="selected">None</option></select>
+</form>
+</td><td class="navigation_separator"></td></tr></tbody></table>
+<input class="save_cells_at_once" value="" type="hidden"><div class="common_hidden_inputs"><input name="db" value="gamexc" type="hidden"><input name="table" value="items" type="hidden"><input name="token" value="HZHN[GAotc.$wjr=" type="hidden"></div><input class="table_create_time" value="2018-07-17 04:25:27" type="hidden"><form method="post" action="sql.php" name="displayOptionsForm" class="ajax print_ignore">
+    <input name="db" value="gamexc" type="hidden"><input name="table" value="items" type="hidden"><input name="sql_query" value="select * from items it LEFT JOIN users u ON u.id = it.user_id WHERE it.game_id = 21" type="hidden"><input name="goto" value="db_structure.php" type="hidden"><input name="display_options_form" value="1" type="hidden"><input name="token" value="HZHN[GAotc.$wjr=" type="hidden">
+
+            <a href="#" class="ajax"><span>+ </span>Options</a><div class="slide-wrapper" style="display: none;"><div id="" style="display: none; overflow:auto;" class="pma_auto_slider">
+
+        <fieldset>
+            <div class="formelement">
+                                <input name="pftext" id="pftext_857463546_P" value="P" checked="checked" type="radio">
+<label for="pftext_857463546_P">Partial texts</label>
+<br>
+<input name="pftext" id="pftext_857463546_F" value="F" type="radio">
+<label for="pftext_857463546_F">Full texts</label>
+<br>
+
+            </div>
+
+                            <div class="formelement">
+                    <input name="relational_display" id="relational_display_857463546_K" value="K" checked="checked" type="radio">
+<label for="relational_display_857463546_K">Relational key</label>
+<br>
+<input name="relational_display" id="relational_display_857463546_D" value="D" type="radio">
+<label for="relational_display_857463546_D">Display column for relationships</label>
+<br>
+
+                </div>
+            
+            <div class="formelement">
+                <input name="display_binary" id="display_binary_857463546" checked="checked" type="checkbox"><label for="display_binary_857463546">Show binary contents</label>
+                <input name="display_blob" id="display_blob_857463546" type="checkbox"><label for="display_blob_857463546">Show BLOB contents</label>
+            </div>
+
+                        <div class="formelement">
+                <input name="hide_transformation" id="hide_transformation_857463546" type="checkbox"><label for="hide_transformation_857463546">Hide browser transformation</label>
+            </div>
+
+
+                            <div class="formelement">
+                    
+                    <input name="geoOption" id="geoOption_857463546_WKT" value="WKT" checked="checked" type="radio">
+<label for="geoOption_857463546_WKT">Well Known Text</label>
+<br>
+<input name="geoOption" id="geoOption_857463546_WKB" value="WKB" type="radio">
+<label for="geoOption_857463546_WKB">Well Known Binary</label>
+<br>
+
+                </div>
+                        <div class="clearfloat"></div>
+        </fieldset>
+
+        <fieldset class="tblFooters">
+            <input value="Go" type="submit">
+        </fieldset>
+    </div></div></form>
+
+<div class="responsivetable">
+    <div style="position: relative;" class="data"><div class="cRsz" style="height: 182.067px;"><div class="colborder" style="left: 45.05px;"></div><div class="colborder" style="left: 198.917px;"></div><div class="colborder" style="left: 248.967px;"></div><div class="colborder" style="left: 305.017px;"></div><div class="colborder" style="left: 369.067px;"></div><div class="colborder" style="left: 442.117px;"></div><div class="colborder" style="left: 472.167px;"></div><div class="colborder" style="left: 617.033px;"></div><div class="colborder" style="left: 848.9px;"></div><div class="colborder" style="left: 962.95px;"></div></div><table class="sticky_columns" style="position: fixed; z-index: 99; width: 970.817px; margin-left: 6.56667px; top: 91.3333px; display: none;"><thead><tr>
+<th class="draggable right column_heading pointer marker" data-column="id" style="width: 27px;"><span><a href="http://localhost:27017/phpmyadmin/sql.php" data-post="db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60it%60.%60id%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" class="sortlink">id<input value="sql.php?db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60it%60.%60id%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" type="hidden"></a></span></th><th class="draggable column_heading pointer marker" data-column="code" style="width: 145px;"><span><a href="http://localhost:27017/phpmyadmin/sql.php" data-post="db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60it%60.%60code%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" class="sortlink">code<input value="sql.php?db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60it%60.%60code%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" type="hidden"></a></span></th><th class="draggable right column_heading pointer marker" data-column="price" style="width: 32px;"><span><a href="http://localhost:27017/phpmyadmin/sql.php" data-post="db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60it%60.%60price%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" class="sortlink">price<input value="sql.php?db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60it%60.%60price%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" type="hidden"></a></span></th><th class="draggable right column_heading pointer marker" data-column="active" style="width: 38px;"><span><a href="http://localhost:27017/phpmyadmin/sql.php" data-post="db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60it%60.%60active%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" class="sortlink">active<input value="sql.php?db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60it%60.%60active%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" type="hidden"></a></span></th><th class="draggable right column_heading pointer marker" data-column="user_id" style="width: 46px;"><span><a href="http://localhost:27017/phpmyadmin/sql.php" data-post="db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60it%60.%60user_id%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" class="sortlink">user_id<input value="sql.php?db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60it%60.%60user_id%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" type="hidden"></a></span></th><th class="draggable right column_heading pointer marker" data-column="game_id" style="width: 55px;"><span><a href="http://localhost:27017/phpmyadmin/sql.php" data-post="db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60it%60.%60game_id%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" class="sortlink">game_id<input value="sql.php?db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60it%60.%60game_id%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" type="hidden"></a></span></th><th class="draggable right column_heading pointer marker" data-column="id" style="width: 12px;"><span><a href="http://localhost:27017/phpmyadmin/sql.php" data-post="db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60u%60.%60id%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" class="sortlink">id<input value="sql.php?db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60u%60.%60id%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" type="hidden"></a></span></th><th class="draggable column_heading pointer marker" data-column="email" style="width: 136px;"><span><a href="http://localhost:27017/phpmyadmin/sql.php" data-post="db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60u%60.%60email%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" class="sortlink">email<input value="sql.php?db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60u%60.%60email%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" type="hidden"></a></span></th><th class="draggable column_heading pointer marker" data-column="password" style="width: 223px;"><span><a href="http://localhost:27017/phpmyadmin/sql.php" data-post="db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60u%60.%60password%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" class="sortlink">password<input value="sql.php?db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60u%60.%60password%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" type="hidden"></a></span></th><th class="draggable right column_heading pointer marker" data-column="phone_number" style="width: 96px;"><span><a href="http://localhost:27017/phpmyadmin/sql.php" data-post="db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60u%60.%60phone_number%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" class="sortlink">phone_number<input value="sql.php?db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60u%60.%60phone_number%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" type="hidden"></a></span></th>
+<td class="print_ignore" style="width: 0px;"><span></span></td></tr></thead></table><table class="table_results ajax pma_table" data-uniqueid="857463546">
+<thead><tr>
+<th class="draggable right column_heading pointer marker" data-column="id"><span><a href="http://localhost:27017/phpmyadmin/sql.php" data-post="db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60it%60.%60id%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" class="sortlink">id<input value="sql.php?db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60it%60.%60id%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" type="hidden"></a></span></th><th class="draggable column_heading pointer marker" data-column="code"><span><a href="http://localhost:27017/phpmyadmin/sql.php" data-post="db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60it%60.%60code%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" class="sortlink">code<input value="sql.php?db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60it%60.%60code%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" type="hidden"></a></span></th><th class="draggable right column_heading pointer marker" data-column="price"><span><a href="http://localhost:27017/phpmyadmin/sql.php" data-post="db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60it%60.%60price%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" class="sortlink">price<input value="sql.php?db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60it%60.%60price%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" type="hidden"></a></span></th><th class="draggable right column_heading pointer marker" data-column="active"><span><a href="http://localhost:27017/phpmyadmin/sql.php" data-post="db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60it%60.%60active%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" class="sortlink">active<input value="sql.php?db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60it%60.%60active%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" type="hidden"></a></span></th><th class="draggable right column_heading pointer marker" data-column="user_id"><span><a href="http://localhost:27017/phpmyadmin/sql.php" data-post="db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60it%60.%60user_id%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" class="sortlink">user_id<input value="sql.php?db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60it%60.%60user_id%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" type="hidden"></a></span></th><th class="draggable right column_heading pointer marker" data-column="game_id"><span><a href="http://localhost:27017/phpmyadmin/sql.php" data-post="db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60it%60.%60game_id%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" class="sortlink">game_id<input value="sql.php?db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60it%60.%60game_id%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" type="hidden"></a></span></th><th class="draggable right column_heading pointer marker" data-column="id"><span><a href="http://localhost:27017/phpmyadmin/sql.php" data-post="db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60u%60.%60id%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" class="sortlink">id<input value="sql.php?db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60u%60.%60id%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" type="hidden"></a></span></th><th class="draggable column_heading pointer marker" data-column="email"><span><a href="http://localhost:27017/phpmyadmin/sql.php" data-post="db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60u%60.%60email%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" class="sortlink">email<input value="sql.php?db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60u%60.%60email%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" type="hidden"></a></span></th><th class="draggable column_heading pointer marker" data-column="password" style="cursor: move;"><span><a href="http://localhost:27017/phpmyadmin/sql.php" data-post="db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60u%60.%60password%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" class="sortlink">password<input value="sql.php?db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60u%60.%60password%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" type="hidden"></a></span></th><th class="draggable right column_heading pointer marker" data-column="phone_number"><span><a href="http://localhost:27017/phpmyadmin/sql.php" data-post="db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60u%60.%60phone_number%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" class="sortlink">phone_number<input value="sql.php?db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21++%0AORDER+BY+%60u%60.%60phone_number%60+ASC&amp;session_max_rows=25&amp;is_browse_distinct=0" type="hidden"></a></span></th>
+<td class="print_ignore"><span></span></td></tr></thead><tbody>
+<tr><td data-decimals="0" data-type="int" class="right data  not_null     nowrap"><span>7301</span></td>
+<td data-decimals="0" data-type="string" data-originallength="19" class="data  not_null   text "><span>2XCX-4XRD-35FA-XJ8G</span></td>
+<td data-decimals="31" data-type="real" class="right data       nowrap"><span>8</span></td>
+<td data-decimals="0" data-type="int" class="right data  not_null     nowrap"><span>1</span></td>
+<td data-decimals="0" data-type="int" class="right data  not_null relation    nowrap"><span><a href="http://localhost:27017/phpmyadmin/sql.php" data-post="db=gamexc&amp;table=users&amp;pos=0&amp;sql_query=SELECT+%2A+FROM+%60gamexc%60.%60users%60+WHERE+%60id%60+%3D+3" title="birdylake@gmail.com">3</a></span></td>
+<td data-decimals="0" data-type="int" class="right data  not_null relation    nowrap condition"><span><a href="http://localhost:27017/phpmyadmin/sql.php" data-post="db=gamexc&amp;table=game&amp;pos=0&amp;sql_query=SELECT+%2A+FROM+%60gamexc%60.%60game%60+WHERE+%60id%60+%3D+21" title="Call of Duty back ops III">21</a></span></td>
+<td data-decimals="0" data-type="int" class="right data       nowrap"><span>3</span></td>
+<td data-decimals="0" data-type="string" data-originallength="19" class="data     text "><span>birdylake@gmail.com</span></td>
+<td data-decimals="0" data-type="string" data-originallength="32" class="data text"><span>202cb962ac59075b964b07152d234b70</span></td>
+<td data-decimals="0" data-type="int" class="right data       null"><span>
+    <em>NULL</em>
+</span></td>
+</tr>
+<tr><td data-decimals="0" data-type="int" class="right data  not_null     nowrap"><span>7310</span></td>
+<td data-decimals="0" data-type="string" data-originallength="19" class="data  not_null   text "><span>DSDM-3B47-4AN3-4M9H</span></td>
+<td data-decimals="31" data-type="real" class="right data       nowrap"><span>46</span></td>
+<td data-decimals="0" data-type="int" class="right data  not_null     nowrap"><span>1</span></td>
+<td data-decimals="0" data-type="int" class="right data  not_null relation    nowrap"><span><a href="http://localhost:27017/phpmyadmin/sql.php" data-post="db=gamexc&amp;table=users&amp;pos=0&amp;sql_query=SELECT+%2A+FROM+%60gamexc%60.%60users%60+WHERE+%60id%60+%3D+1" title="brodyghost@gmail.com">1</a></span></td>
+<td data-decimals="0" data-type="int" class="right data  not_null relation    nowrap condition"><span><a href="http://localhost:27017/phpmyadmin/sql.php" data-post="db=gamexc&amp;table=game&amp;pos=0&amp;sql_query=SELECT+%2A+FROM+%60gamexc%60.%60game%60+WHERE+%60id%60+%3D+21" title="Call of Duty back ops III">21</a></span></td>
+<td data-decimals="0" data-type="int" class="right data       nowrap"><span>1</span></td>
+<td data-decimals="0" data-type="string" data-originallength="20" class="data     text "><span>brodyghost@gmail.com</span></td>
+<td data-decimals="0" data-type="string" data-originallength="32" class="data text"><span>202cb962ac59075b964b07152d234b70</span></td>
+<td data-decimals="0" data-type="int" class="right data       nowrap"><span>978123123</span></td>
+</tr>
+<tr><td data-decimals="0" data-type="int" class="right data  not_null     nowrap"><span>7323</span></td>
+<td data-decimals="0" data-type="string" data-originallength="19" class="data  not_null   text "><span>T8UF-FGNX-QCW7-M4QP</span></td>
+<td data-decimals="31" data-type="real" class="right data       nowrap"><span>15</span></td>
+<td data-decimals="0" data-type="int" class="right data  not_null     nowrap"><span>1</span></td>
+<td data-decimals="0" data-type="int" class="right data  not_null relation    nowrap"><span><a href="http://localhost:27017/phpmyadmin/sql.php" data-post="db=gamexc&amp;table=users&amp;pos=0&amp;sql_query=SELECT+%2A+FROM+%60gamexc%60.%60users%60+WHERE+%60id%60+%3D+1" title="brodyghost@gmail.com">1</a></span></td>
+<td data-decimals="0" data-type="int" class="right data  not_null relation    nowrap condition"><span><a href="http://localhost:27017/phpmyadmin/sql.php" data-post="db=gamexc&amp;table=game&amp;pos=0&amp;sql_query=SELECT+%2A+FROM+%60gamexc%60.%60game%60+WHERE+%60id%60+%3D+21" title="Call of Duty back ops III">21</a></span></td>
+<td data-decimals="0" data-type="int" class="right data       nowrap"><span>1</span></td>
+<td data-decimals="0" data-type="string" data-originallength="20" class="data     text "><span>brodyghost@gmail.com</span></td>
+<td data-decimals="0" data-type="string" data-originallength="32" class="data text"><span>202cb962ac59075b964b07152d234b70</span></td>
+<td data-decimals="0" data-type="int" class="right data       nowrap"><span>978123123</span></td>
+</tr>
+<tr><td data-decimals="0" data-type="int" class="right data  not_null     nowrap"><span>7325</span></td>
+<td data-decimals="0" data-type="string" data-originallength="19" class="data  not_null   text "><span>VYE8-B2CB-2UU9-J3JX</span></td>
+<td data-decimals="31" data-type="real" class="right data       nowrap"><span>68</span></td>
+<td data-decimals="0" data-type="int" class="right data  not_null     nowrap"><span>1</span></td>
+<td data-decimals="0" data-type="int" class="right data  not_null relation    nowrap"><span><a href="http://localhost:27017/phpmyadmin/sql.php" data-post="db=gamexc&amp;table=users&amp;pos=0&amp;sql_query=SELECT+%2A+FROM+%60gamexc%60.%60users%60+WHERE+%60id%60+%3D+4" title="hyaha@gmail.com">4</a></span></td>
+<td data-decimals="0" data-type="int" class="right data  not_null relation    nowrap condition"><span><a href="http://localhost:27017/phpmyadmin/sql.php" data-post="db=gamexc&amp;table=game&amp;pos=0&amp;sql_query=SELECT+%2A+FROM+%60gamexc%60.%60game%60+WHERE+%60id%60+%3D+21" title="Call of Duty back ops III">21</a></span></td>
+<td data-decimals="0" data-type="int" class="right data       nowrap"><span>4</span></td>
+<td data-decimals="0" data-type="string" data-originallength="15" class="data     text "><span>hyaha@gmail.com</span></td>
+<td data-decimals="0" data-type="string" data-originallength="32" class="data text"><span>caf1a3dfb505ffed0d024130f58c5cfa</span></td>
+<td data-decimals="0" data-type="int" class="right data       null"><span>
+    <em>NULL</em>
+</span></td>
+</tr>
+<tr><td data-decimals="0" data-type="int" class="right data  not_null     nowrap"><span>7344</span></td>
+<td data-decimals="0" data-type="string" data-originallength="19" class="data  not_null   text "><span>7ZD9-EGV2-MDKQ-3LPN</span></td>
+<td data-decimals="31" data-type="real" class="right data       nowrap"><span>80</span></td>
+<td data-decimals="0" data-type="int" class="right data  not_null     nowrap"><span>1</span></td>
+<td data-decimals="0" data-type="int" class="right data  not_null relation    nowrap"><span><a href="http://localhost:27017/phpmyadmin/sql.php" data-post="db=gamexc&amp;table=users&amp;pos=0&amp;sql_query=SELECT+%2A+FROM+%60gamexc%60.%60users%60+WHERE+%60id%60+%3D+2" title="admin@admin.com">2</a></span></td>
+<td data-decimals="0" data-type="int" class="right data  not_null relation    nowrap condition"><span><a href="http://localhost:27017/phpmyadmin/sql.php" data-post="db=gamexc&amp;table=game&amp;pos=0&amp;sql_query=SELECT+%2A+FROM+%60gamexc%60.%60game%60+WHERE+%60id%60+%3D+21" title="Call of Duty back ops III">21</a></span></td>
+<td data-decimals="0" data-type="int" class="right data       nowrap"><span>2</span></td>
+<td data-decimals="0" data-type="string" data-originallength="15" class="data     text "><span>admin@admin.com</span></td>
+<td data-decimals="0" data-type="string" data-originallength="3" class="data text"><span>123</span></td>
+<td data-decimals="0" data-type="int" class="right data       nowrap"><span>978321321</span></td>
+</tr>
+<tr><td data-decimals="0" data-type="int" class="right data  not_null     nowrap"><span>7345</span></td>
+<td data-decimals="0" data-type="string" data-originallength="19" class="data  not_null   text "><span>ZQXZ-5JRE-SCYL-DYG4</span></td>
+<td data-decimals="31" data-type="real" class="right data       nowrap"><span>75</span></td>
+<td data-decimals="0" data-type="int" class="right data  not_null     nowrap"><span>1</span></td>
+<td data-decimals="0" data-type="int" class="right data  not_null relation    nowrap"><span><a href="http://localhost:27017/phpmyadmin/sql.php" data-post="db=gamexc&amp;table=users&amp;pos=0&amp;sql_query=SELECT+%2A+FROM+%60gamexc%60.%60users%60+WHERE+%60id%60+%3D+4" title="hyaha@gmail.com">4</a></span></td>
+<td data-decimals="0" data-type="int" class="right data  not_null relation    nowrap condition"><span><a href="http://localhost:27017/phpmyadmin/sql.php" data-post="db=gamexc&amp;table=game&amp;pos=0&amp;sql_query=SELECT+%2A+FROM+%60gamexc%60.%60game%60+WHERE+%60id%60+%3D+21" title="Call of Duty back ops III">21</a></span></td>
+<td data-decimals="0" data-type="int" class="right data       nowrap"><span>4</span></td>
+<td data-decimals="0" data-type="string" data-originallength="15" class="data     text "><span>hyaha@gmail.com</span></td>
+<td data-decimals="0" data-type="string" data-originallength="32" class="data text"><span>caf1a3dfb505ffed0d024130f58c5cfa</span></td>
+<td data-decimals="0" data-type="int" class="right data       null"><span>
+    <em>NULL</em>
+</span></td>
+</tr>
+<tr><td data-decimals="0" data-type="int" class="right data  not_null     nowrap"><span>7349</span></td>
+<td data-decimals="0" data-type="string" data-originallength="19" class="data  not_null   text "><span>QN3T-5XZB-KGQK-YSL2</span></td>
+<td data-decimals="31" data-type="real" class="right data       nowrap"><span>58</span></td>
+<td data-decimals="0" data-type="int" class="right data  not_null     nowrap"><span>1</span></td>
+<td data-decimals="0" data-type="int" class="right data  not_null relation    nowrap"><span><a href="http://localhost:27017/phpmyadmin/sql.php" data-post="db=gamexc&amp;table=users&amp;pos=0&amp;sql_query=SELECT+%2A+FROM+%60gamexc%60.%60users%60+WHERE+%60id%60+%3D+1" title="brodyghost@gmail.com">1</a></span></td>
+<td data-decimals="0" data-type="int" class="right data  not_null relation    nowrap condition"><span><a href="http://localhost:27017/phpmyadmin/sql.php" data-post="db=gamexc&amp;table=game&amp;pos=0&amp;sql_query=SELECT+%2A+FROM+%60gamexc%60.%60game%60+WHERE+%60id%60+%3D+21" title="Call of Duty back ops III">21</a></span></td>
+<td data-decimals="0" data-type="int" class="right data       nowrap"><span>1</span></td>
+<td data-decimals="0" data-type="string" data-originallength="20" class="data     text "><span>brodyghost@gmail.com</span></td>
+<td data-decimals="0" data-type="string" data-originallength="32" class="data text"><span>202cb962ac59075b964b07152d234b70</span></td>
+<td data-decimals="0" data-type="int" class="right data       nowrap"><span>978123123</span></td>
+</tr>
+</tbody>
+</table><div class="cPointer" style="visibility: hidden;"></div><div class="cCpy" style="display: none;"></div><div class="cDrop"></div><div class="cList" style="display: none;"><div class="lDiv"><div><input checked="checked" type="checkbox">id</div><div><input checked="checked" type="checkbox">code</div><div><input checked="checked" type="checkbox">price</div><div><input checked="checked" type="checkbox">active</div><div><input checked="checked" type="checkbox">user_id</div><div><input checked="checked" type="checkbox">game_id</div><div><input checked="checked" type="checkbox">id</div><div><input checked="checked" type="checkbox">email</div><div><input checked="checked" type="checkbox">password</div><div><input checked="checked" type="checkbox">phone_number</div></div><div class="showAllColBtn">Show all</div></div><div class="cEdit" style="display: none;"><input class="edit_box" rows="1"><div class="edit_area"></div></div><div class="cEdit" style="display: none;"><textarea class="edit_box" rows="1"></textarea><div class="edit_area"></div></div></div></div><br>
+<table class="navigation nospacing nopadding print_ignore"><tbody><tr><td class="navigation_separator"></td><td>
+    <form action="sql.php" method="post">
+        <input name="db" value="gamexc" type="hidden"><input name="table" value="items" type="hidden"><input name="token" value="HZHN[GAotc.$wjr=" type="hidden">
+        <input name="sql_query" value="select * from items it LEFT JOIN users u ON u.id = it.user_id WHERE it.game_id = 21" type="hidden">
+        <input name="pos" value="0" type="hidden">
+        <input name="is_browse_distinct" value="" type="hidden">
+        <input name="session_max_rows" value="all" type="hidden">
+        <input name="goto" value="db_structure.php" type="hidden">
+        <input name="navig" id="showAll_857463546" class="showAllRows" value="all" type="checkbox">
+        <label for="showAll_857463546">Show all</label>
+    </form>
+</td>
+<td><div class="navigation_separator">|</div></td><td><div class="save_edited hide"><input value="Save edited data" type="submit"><div class="navigation_separator">|</div></div></td><td><div class="restore_column hide" style="display: none;"><input value="Restore column order" type="submit"><div class="navigation_separator">|</div></div></td><td class="navigation_goto"><form action="sql.php" method="post" onsubmit=""><input name="db" value="gamexc" type="hidden"><input name="table" value="items" type="hidden"><input name="token" value="HZHN[GAotc.$wjr=" type="hidden"><input name="sql_query" value="select * from items it LEFT JOIN users u ON u.id = it.user_id WHERE it.game_id = 21" type="hidden">
+<input name="goto" value="db_structure.php" type="hidden">
+<input name="pos" size="3" value="0" type="hidden">
+<input name="is_browse_distinct" value="" type="hidden">
+Number of rows:<select name="session_max_rows" class="autosubmit">
+<option value="25" selected="selected">25</option>
+<option value="50">50</option>
+<option value="100">100</option>
+<option value="250">250</option>
+<option value="500">500</option>
+</select>
+
+</form></td><td class="navigation_separator"></td><td class="largescreenonly"><span>Filter rows:</span><input class="filter_rows" placeholder="Search this table" data-for="857463546" type="text"></td><td class="largescreenonly"><form action="sql.php" method="post" class="print_ignore">
+<input name="db" value="gamexc" type="hidden"><input name="table" value="items" type="hidden"><input name="token" value="HZHN[GAotc.$wjr=" type="hidden"><input name="sort_by_key" value="1" type="hidden"><input name="token" value="HZHN[GAotc.$wjr=" type="hidden">Sort by key: <select name="sql_query" class="autosubmit">
+<option value="select * from items it LEFT JOIN users u ON u.id = it.user_id WHERE it.game_id = 21  
+ ORDER BY `id` ASC">PRIMARY (ASC)</option><option value="select * from items it LEFT JOIN users u ON u.id = it.user_id WHERE it.game_id = 21  
+ ORDER BY `id` DESC">PRIMARY (DESC)</option><option value="select * from items it LEFT JOIN users u ON u.id = it.user_id WHERE it.game_id = 21  
+ ORDER BY `user_id` ASC">user_id (ASC)</option><option value="select * from items it LEFT JOIN users u ON u.id = it.user_id WHERE it.game_id = 21  
+ ORDER BY `user_id` DESC">user_id (DESC)</option><option value="select * from items it LEFT JOIN users u ON u.id = it.user_id WHERE it.game_id = 21  
+ ORDER BY `game_id` ASC">game_id (ASC)</option><option value="select * from items it LEFT JOIN users u ON u.id = it.user_id WHERE it.game_id = 21  
+ ORDER BY `game_id` DESC">game_id (DESC)</option><option value="select * from items it LEFT JOIN users u ON u.id = it.user_id WHERE it.game_id = 21  " selected="selected">None</option></select>
+</form>
+</td><td class="navigation_separator"></td></tr></tbody></table><fieldset class="print_ignore"><legend>Query results operations</legend><a href="#" id="printView" target="print_view"><span class="nowrap"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Print" alt="Print" class="icon ic_b_print">&nbsp;Print</span></a><a href="#" id="copyToClipBoard"><span class="nowrap"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Copy to clipboard" alt="Copy to clipboard" class="icon ic_b_insrow">&nbsp;Copy to clipboard</span></a><a href="http://localhost:27017/phpmyadmin/tbl_export.php" data-post="db=gamexc&amp;table=items&amp;printview=1&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21&amp;single_table=true&amp;unlim_num_rows=7"><span class="nowrap"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Export" alt="Export" class="icon ic_b_tblexport">&nbsp;Export</span></a>
+<a href="http://localhost:27017/phpmyadmin/tbl_chart.php" data-post="db=gamexc&amp;table=items&amp;printview=1&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21&amp;single_table=true&amp;unlim_num_rows=7"><span class="nowrap"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Display chart" alt="Display chart" class="icon ic_b_chart">&nbsp;Display chart</span></a>
+<span><a href="http://localhost:27017/phpmyadmin/view_create.php?db=gamexc" data-post="db=gamexc&amp;table=items&amp;printview=1&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21" class="create_view ajax"><span class="nowrap"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Create view" alt="Create view" class="icon ic_b_view_add">&nbsp;Create view</span></a></span>
+</fieldset><br><form action="sql.php" method="post" onsubmit="" class="bookmarkQueryForm print_ignore"><input name="token" value="HZHN[GAotc.$wjr=" type="hidden"><input name="db" value="gamexc" type="hidden"><input name="goto" value="sql.php?db=gamexc&amp;table=items&amp;sql_query=select+%2A+from+items+it+LEFT+JOIN+users+u+ON+u.id+%3D+it.user_id+WHERE+it.game_id+%3D+21&amp;id_bookmark=1" type="hidden"><input name="bkm_fields[bkm_database]" value="gamexc" type="hidden"><input name="bkm_fields[bkm_user]" value="root" type="hidden"><input name="bkm_fields[bkm_sql_query]" value="select * from items it LEFT JOIN users u ON u.id = it.user_id WHERE it.game_id = 21" type="hidden"><fieldset><legend><span class="nowrap"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Bookmark this SQL query" alt="Bookmark this SQL query" class="icon ic_b_bookmark">&nbsp;Bookmark this SQL query</span></legend><div class="formelement"><label>Label:<input name="bkm_fields[bkm_label]" type="text"></label></div><div class="formelement"><label><input name="bkm_all_users" value="true" type="checkbox">Let every user access this bookmark</label></div><div class="clearfloat"></div></fieldset><fieldset class="tblFooters"><input name="store_bkm" value="1" type="hidden"><input value="Bookmark this SQL query" type="submit"></fieldset></form></div></div><div id="selflink" class="print_ignore"><a href="http://localhost:27017/phpmyadmin/db_structure.php?db=gamexc&amp;table=items&amp;server=1&amp;target=" title="Open new phpMyAdmin window" target="_blank" rel="noopener noreferrer"><img src="localhost%2027017%20_%20127.0.0.1%20_%20gamexc%20_%20items%20%20%20phpMyAdmin%204.8.1_files/dot.gif" title="Open new phpMyAdmin window" alt="Open new phpMyAdmin window" class="icon ic_window-new"></a></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"><div style="display: none;">- Drag to reorder.<br>- Click to mark/unmark.<br>- Double-click to copy column name.</div><div>- Drag to reorder.<br>- Click to mark/unmark.<br>- Double-click to copy column name.</div></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"><div style="display: none;">Click to dismiss this notification</div><div>Click to dismiss this notification</div></div></body></html>

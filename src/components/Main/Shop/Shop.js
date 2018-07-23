@@ -18,13 +18,9 @@ export default class Shop extends Component {
     }
 
     componentDidMount() {
-
-        console.log('go here')
-        fetch('http://192.168.0.101:27017/gamexc/')
         initData()
             .then((responseJson) => {
                 const { category, drawer, item, steam } = responseJson;
-                console.log('resul tof type: ', steam);
                 this.setState({
                     categorys: category,
                     drawers: drawer,

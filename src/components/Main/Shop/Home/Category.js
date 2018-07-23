@@ -5,7 +5,7 @@ import nekoparaItem from '../../../../media/gameImage/nekoparaItem.jpg';
 import thangmatloz from '../../../../media/gameImage/thangmatlon.jpg';
 
 const { height, width } = Dimensions.get('window');
-const url = 'http://192.168.0.101:27017/gamexc/images/game/';
+const url = 'http://192.168.0.100:27017/gamexc/images/game/';
 
 export default class Category extends Component {
 
@@ -40,7 +40,7 @@ export default class Category extends Component {
                 <ScrollView style={scroll} horizontal={true} showsHorizontalScrollIndicator={false}>
                     {
                         steams.map(e => (
-                            <TouchableOpacity style={itemSlide} onPress={() => console.log(e.images)} key={e.id} >
+                            <TouchableOpacity style={itemSlide} onPress={() => this.props.navigation.navigate('DetailView', { 'game': e } )} key={e.id} >
                                 <View style={{
                                     flex: 1, justifyContent: 'center',
                                     alignItems: 'center', marginBottom: 15
