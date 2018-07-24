@@ -4,6 +4,7 @@ import nekoparaItem from '../../../../media/gameImage/nekoparaItem.jpg';
 import Icon from 'react-native-vector-icons/Ionicons';
 import MaterialIcon from 'react-native-vector-icons/MaterialIcons';
 import { createStackNavigator } from 'react-navigation';
+import global from '../../../global';
 
 
 const { height, width } = Dimensions.get('window');
@@ -11,21 +12,34 @@ export default class Profile extends Component {
 
     constructor(props) {
         super(props);
+        this.state = { user: null };
+        global.onSignIn = this.onSignIn.bind(this);
     }
 
-    render() {
+    onSignIn(user) {
+        this.setState({ user })
+    }
 
+    onSignOut() {
+        this.setState({ user: null });
+        saveToken('');
+    }
+
+
+
+    render() {
+        const { user } = this.state;
         const { icon, container, listText, listMenu, itemSlide, wrapper, textTitle, textLogin, iconUser } = styles;
         return (
             <View style={{ flex: 1 }}>
                 <ScrollView style={{ flex: 1 }}>
-                    <TouchableOpacity style={itemSlide} onPress={() => this.props.navigation.navigate('AuthenticationStack', { navigation: this.props.navigation })}>
+                    <TouchableOpacity style={itemSlide} onPress={() => this.props.navigation.navigate('AuthenticationStack', { navigation: this.props.navigation, user: user })}>
                         <View style={wrapper}>
                             <MaterialIcon name="account-circle" style={iconUser} size={60} />
                             <Text style={textTitle}>
                                 Welcome to GameXC
                         </Text>
-                            <Text style={textLogin}>Login or sign up</Text>
+                            <Text style={textLogin}>{user ? user.email : "Login or sign up"}</Text>
                         </View>
                     </TouchableOpacity>
                     <View style={listMenu}>

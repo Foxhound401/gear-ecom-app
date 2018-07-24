@@ -16,8 +16,16 @@ export default class Cart extends Component {
         }
     }
 
+    getTotal(){
+        
+    }
+
     render() {
-        const { containerEmpty, containerItems, cartItem, imageStyle, gameTitle, textPrice, priceTitle, textCurrency, textGameTitle, imageWrapper } = styles;
+        const { containerEmpty, containerItems, cartItem, 
+            imageStyle, gameTitle, textPrice, priceTitle,
+             textCurrency, textGameTitle, imageWrapper,
+             checkoutButton, checkoutTitle
+             } = styles;
         return (
             this.state.cartItems === 0 ?
                 <View style={containerEmpty}>
@@ -30,43 +38,63 @@ export default class Cart extends Component {
                     </TouchableOpacity>
                 </View>
                 :
-                <ScrollView style={{ flex: 1 }}>
-                    <View style={containerItems}>
-                        <TouchableOpacity style={cartItem} onPress={() => this.props.navigation.navigate('DetailView', { name: 'phuc' })}>
-                            <View style={imageWrapper}>
-                                <Image source={nekoparaItem} style={imageStyle} />
-                            </View>
-                            <View style={{ flex: 1 }}>
-                                <Text style={textGameTitle}>{this.state.gameTitle}</Text>
-                                <View style={priceTitle}>
-                                    <Text style={textPrice}>{this.state.price}</Text>
-                                    <Text style={textCurrency}>{this.state.currency}</Text>
+                <View style={{ flex: 1 }}>
+                    <ScrollView style={{ flex: 1 }}>
+                        <View style={containerItems}>
+                            <TouchableOpacity style={cartItem} onPress={() => this.props.navigation.navigate('DetailView', { name: 'phuc' })}>
+                                <View style={imageWrapper}>
+                                    <Image source={nekoparaItem} style={imageStyle} />
                                 </View>
-                            </View>
-                        </TouchableOpacity>
-                    </View>
-                    <View style={containerItems}>
-                        <TouchableOpacity style={cartItem}>
-                            <View style={imageWrapper}>
-                                <Image source={fallout4Item} style={imageStyle} />
-                            </View>
-                            <View style={{ flex: 1 }}>
-                                <Text style={textGameTitle}>{this.state.gameTitle}</Text>
-                                <View style={priceTitle}>
-                                    <Text style={textPrice}>{this.state.price}</Text>
-                                    <Text style={textCurrency}>{this.state.currency}</Text>
+                                <View style={{ flex: 1 }}>
+                                    <Text style={textGameTitle}>{this.state.gameTitle}</Text>
+                                    <View style={priceTitle}>
+                                        <Text style={textPrice}>{this.state.price}</Text>
+                                        <Text style={textCurrency}>{this.state.currency}</Text>
+                                    </View>
                                 </View>
-                            </View>
-                        </TouchableOpacity>
-                    </View>
+                            </TouchableOpacity>
+                        </View>
+                        <View style={containerItems}>
+                            <TouchableOpacity style={cartItem}>
+                                <View style={imageWrapper}>
+                                    <Image source={fallout4Item} style={imageStyle} />
+                                </View>
+                                <View style={{ flex: 1 }}>
+                                    <Text style={textGameTitle}>{this.state.gameTitle}</Text>
+                                    <View style={priceTitle}>
+                                        <Text style={textPrice}>{this.state.price}</Text>
+                                        <Text style={textCurrency}>{this.state.currency}</Text>
+                                    </View>
+                                </View>
+                            </TouchableOpacity>
+                        </View>
 
-                </ScrollView>
+                    </ScrollView>
+                    <TouchableOpacity style={checkoutButton} >
+                        <Text style={checkoutTitle}>TOTAL $ CHECKOUT NOW</Text>
+                    </TouchableOpacity>
+                </View>
 
         );
     }
 }
 
 const styles = StyleSheet.create({
+    checkoutButton: {
+        height: 50,
+        margin: 10,
+        marginTop: 0,
+        backgroundColor: '#2ABB9C',
+        borderRadius: 2,
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    checkoutTitle: {
+        color: '#FFF',
+        fontSize: 15,
+        fontWeight: 'bold',
+        fontFamily: 'Avenir'
+    },
     gameTitle: {
         backgroundColor: 'blue',
     },

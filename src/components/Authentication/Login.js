@@ -17,15 +17,18 @@ export default class Login extends Component {
     }
 
     onLogin() {
+
         const { email, password } = this.state;
         login(email, password)
             .then(responseJson => {
-                console.log('userpassback: ',responseJson.user);
-                console.log("here move here");
-                saveToken(responseJson.token);
-                this.props.navigation.navigate("HomeStack");
+                global.onSignIn(responseJson.user);
+                this.props.navigation.navigate('Home');
             })
             .catch((error) => console.log(error));
+    }
+
+    signUp() {
+        global.isSignUp(true);
     }
 
     render() {
@@ -53,10 +56,10 @@ export default class Login extends Component {
                     <Text style={buttonText}>Log in</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={signUpButton} onPress={() => { this.props.navigation.navigate("AuthenticationScreen", { isLogin: true }) }}>
+                <TouchableOpacity style={signUpButton} onPress={() => { this.props.navigation.navigate("AuthenticationScreen") }}>
                     <Text style={buttonSinupText}>Create GameXC ID</Text>
                 </TouchableOpacity>
-            </View >
+            </View>
         );
     }
 };

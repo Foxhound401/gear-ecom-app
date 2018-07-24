@@ -21,14 +21,23 @@ const profileIcon = (<Icon name="folder-shared" style={{
 const { width } = Dimensions.get('window');
 
 export default class FinanceBar extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            user: null
+        }
+    }
+
     render() {
+        const { user } = this.state;
         const { wrapper, container, textStyle, scrollButtonWrapper, textFinance, titleStyle, left, right, scroll, slideButton } = styles;
         return (
             <View style={wrapper}>
                 <View style={container}>
                     <View style={left}>
                         <TouchableOpacity onPress={() => this.props.navigation.navigate("AuthenticationScreen")}>
-                            <Text style={titleStyle} >Login to see balance</Text>
+                            <Text style={titleStyle} >{user ? user.email : 'Login to see balance'}</Text>
                             <Text style={textStyle} >0.00 EUR</Text>
                         </TouchableOpacity>
                     </View>

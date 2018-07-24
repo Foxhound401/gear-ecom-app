@@ -11,12 +11,12 @@ import TopGame from './TopGame.js';
 export default class HomeView extends Component {
     steams
     render() {
-        const { navigation, categorys, drawers, topGames, steams } = this.props;
+        const { navigation, categorys, drawers, topGames, steams, user } = this.props;
         const { wrapper } = styles;
         return (
             <ScrollView style={wrapper}>
                 <Collection navigation={navigation} drawers={drawers} />
-                <FinanceBar navigation={navigation} />
+                <FinanceBar navigation={navigation} user={user} />
                 <SearchBar navigation={navigation} />
                 <CategoryBar navigation={navigation} categorys={categorys} />
                 <TopGame navigation={navigation} topGames={topGames} />

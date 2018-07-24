@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Text, View, TouchableOpacity, StyleSheet } from 'react-native';
 import { TabBar } from '../../Route/Route';
 import HomeView from './Home/HomeView';
-import global from '../../global';
 import initData from '../../../api/initData';
+import global from '../../global';
 
 export default class Shop extends Component {
 
@@ -14,7 +14,14 @@ export default class Shop extends Component {
             drawers: [],
             topGames: [],
             steams: [],
-        }
+            user: null,
+        };
+        global.onSignIn = this.onSignIn.bind(this);
+    }
+
+    onSignIn(user) {
+        this.setState({ user });
+        console.log('user in shop', user);
     }
 
     componentDidMount() {
@@ -36,11 +43,11 @@ export default class Shop extends Component {
     render() {
 
         const { navigation } = this.props;
-        const { categorys, drawers, topGames, steams } = this.state;
+        const { categorys, drawers, topGames, steams, user } = this.state;
 
         return (
             <View style={{ flex: 1 }}>
-                <HomeView navigation={navigation} categorys={categorys} drawers={drawers} topGames={topGames} steams={steams} />
+                <HomeView navigation={navigation} categorys={categorys} drawers={drawers} topGames={topGames} steams={steams} user={user} />
             </View>
 
         );

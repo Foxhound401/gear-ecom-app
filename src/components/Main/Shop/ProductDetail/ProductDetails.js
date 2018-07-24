@@ -8,6 +8,7 @@ import backGround from '../../../../media/temp/subway-lines.png';
 import FontIcon from 'react-native-vector-icons/FontAwesome';
 import Icon from 'react-native-vector-icons/Ionicons';
 import gameDetail from '../../../../api/getGameDetail';
+import global from '../../../global';
 
 const globeIcon = (<Icon name="md-globe" size={25} />);
 const steamIcon = (<FontIcon name="steam" size={25} />);
@@ -39,6 +40,9 @@ export default class ProductDetails extends Component {
             .catch((err) => console.log(err));
     }
 
+    addItemToCart(item) {
+        global.addProductToCart(item);
+    }
 
     formatPrice(price) {
         return Number.parseFloat(price).toFixed(2);
@@ -165,6 +169,7 @@ export default class ProductDetails extends Component {
                                             borderRadius: 2,
                                         }} onPress={() => {
                                             this.props.navigation.navigate('Cart');
+                                            this.addItemToCart(e)
                                         }}>
                                             <Text style={{ color: '#FFF' }}>
                                                 Add to cart
@@ -174,8 +179,8 @@ export default class ProductDetails extends Component {
                                 </View>
                             ))
                             :
-                            <View>
-                                <Text> No record </Text>
+                            <View style={{ height: height / 6, width: width, justifyContent: 'center', alignItems: 'center' }}>
+                                <Text> No user selling this game yet </Text>
                             </View>
                     }
                 </ScrollView>
