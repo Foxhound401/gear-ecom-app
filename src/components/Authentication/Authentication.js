@@ -18,14 +18,13 @@ export default class Authentication extends Component {
         this.setState({
             user: this.props.navigation.getParam('user')
         });
-        console.log(this.state.user);
     }
 
     render() {
         const { imageStyle, title } = styles;
         const { navigation } = this.props;
         const { user } = this.state;
-        console.log("user ", user);
+        const isLogin = navigation.getParam('isLogin');
 
         return (
             <ScrollView style={{ flex: 1, marginTop: 0, backgroundColor: '#FFF' }}>
@@ -38,7 +37,7 @@ export default class Authentication extends Component {
                         <Text style={{ color: '#FFF', fontSize: 9, fontFamily: 'Helvetica-Light' }}>One login to the last Platforms you ever need</Text>
                     </ImageBackground>
                 </View>
-                {user ? <Signup navigation={this.props.navigation} /> : <Login navigation={this.props.navigation} />}
+                {isLogin ? <Signup navigation={this.props.navigation} {...this.props} /> : <Login navigation={this.props.navigation} {...this.props} />}
             </ScrollView>
         );
     }

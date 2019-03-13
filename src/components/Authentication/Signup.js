@@ -59,16 +59,13 @@ export default class Signup extends Component {
             })
     }
 
-    signIn() {
-        global.isSignUp(false);
-    }
-
     render() {
         const { container, inputStyle, bigButton, buttonText, signUpButton, buttonSinupText, backButton } = styles;
         const { email, password, retypePassword } = this.state;
+        const { navigation } = this.props;
         return (
             <View style={container}>
-                <TouchableOpacity style={backButton} onPress={() => { this.signIn.bind(this) }}>
+                <TouchableOpacity style={backButton} onPress={() => { navigation.navigate("AuthenticationScreen", { isLogin: false }) }}>
                     {backIcon}
                 </TouchableOpacity>
                 <TextInput

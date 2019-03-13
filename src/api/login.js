@@ -1,5 +1,5 @@
 const login = (email, password) => (
-    fetch('http://192.168.0.100:27017/gamexc/login.php',
+    fetch('http://10.82.139.8:27017/gamexc/login.php',
         {
             method: 'POST',
             headers: {

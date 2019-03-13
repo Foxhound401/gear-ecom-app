@@ -18,10 +18,18 @@ export default class Wallet extends Component {
         this.state = {
             price: '0.00',
             currency: 'VND',
+            user: null
         }
     }
 
+    // componentDidUpdate() {
+    //     this.setState({
+    //         user: this.props.user,
+    //     })
+    // }
+
     render() {
+        const { user } = this.state;
         const { scrollButtonWrapper, slideButton, textButton, textStyle, priceTitle, textPrice, textCurrency } = styles;
 
         return (
@@ -44,8 +52,8 @@ export default class Wallet extends Component {
                                 {historyIcon}
                             </View>
                             <Text style={textButton}>
-                                View History
-                        </Text>
+                                View History of {user ? user.email : ''}
+                            </Text>
                         </TouchableOpacity>
                         <TouchableOpacity style={scrollButtonWrapper}>
                             <View style={slideButton}>

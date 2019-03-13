@@ -5,7 +5,7 @@ import stardew from '../../../../media/gameImage/stardewValleySlider.jpg';
 import fallout4 from '../../../../media/gameImage/fallout4Slider.png';
 import Swiper from 'react-native-swiper';
 
-const url = 'http://192.168.0.100:27017/gamexc/images/game/'
+const url = 'http://10.82.139.8:27017/gamexc/images/game/'
 const { height } = Dimensions.get('window');
 
 export default class Collection extends Component {

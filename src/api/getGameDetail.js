@@ -1,5 +1,5 @@
 const getGameDetail = (id) => {
-    const url = `http://192.168.0.100:27017/gamexc/game_detail.php?id=${id}`;
+    const url = `http://10.82.139.8:27017/gamexc/game_detail.php?id=${id}`;
     return fetch(url)
         .then(res => res.json());
 };
