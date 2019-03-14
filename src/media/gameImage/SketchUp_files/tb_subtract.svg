@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="#4A4A4A" width="32" height="32" viewBox="0 0 32 32">
+  <g id="tb_subtract" transform="translate(5 5)" fill="inherit" stroke="none">
+      <g transform="translate(7 7)">
+        <path fill-opacity=".25" d="M15 15V0H8v8H0v7h15z"/>
+        <path d="M15 0h.7v-.7H15V0zm0 15v.7h.7V15H15zM0 15h-.7v.7H0V15zm8-7v.7h.7V8H8zm0-8v-.7h-.7V0H8zM0 8v-.7h-.7V8H0zm14.3-8v15h1.4V0h-1.4zm.7 14.3H0v1.4h15v-1.4zM7.3 0v8h1.4V0H7.3zm.7.7h7V-.7H8V.7zm0 6.6H0v1.4h8V7.3zM.7 15V8H-.7v7H.7z"/>
+      </g>
+      <path d="M0 0v-.35h-.35V0H0zm15 0h.36v-.35H15V0zM0 15h-.35v.36H0V15zM0 .36h15v-.7H0v.7zM.35 15V0h-.7v15h.7zm14.3-15v7h.7V0h-.7zM7 14.64H0v.7l7 .02v-.7z"/>
+  </g>
+</svg>

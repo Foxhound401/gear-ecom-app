@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15855) - http://www.bohemiancoding.com/sketch -->
+    <title>ei_shadowsCastOff</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-3---Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="ei_shadowsCastOff" sketch:type="MSArtboardGroup">
+            <g id="CastShadows" sketch:type="MSLayerGroup" transform="translate(8.000000, 8.000000)">
+                <path d="M11.5384615,23.2 L16.1538462,29 L28.8461538,22.04 L21.5,11.6 L21,18.56 L11.5384615,23.2 Z" id="Path-193" stroke="#979797" stroke-dasharray="4,1" sketch:type="MSShapeGroup"></path>
+                <path d="M7.61081167,18.4011397 L21.6199576,11.2588235" id="Stroke-495" stroke="#4A4A4A" stroke-width="0.803880056" stroke-linecap="round" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+                <path d="M9.07235014,24.7694118 L7.61081167,18.7647059" id="Stroke-496" stroke="#4A4A4A" stroke-width="0.803880056" stroke-linecap="round" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+                <path d="M0.303119366,6.75529412 L7.69038274,18.641196" id="Stroke-497" stroke="#4A4A4A" stroke-width="0.803880056" stroke-linecap="round" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+                <path d="M9.07235014,24.7437569 L21.1032669,18.4267109 L21.5411001,11.2588235" id="Stroke-498" stroke="#4A4A4A" stroke-width="1.20582008" stroke-linecap="round" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+                <path d="M21.5996188,11.3167302 L13.5900986,0.750588235 L0.303119366,6.44643179" id="Stroke-499" stroke="#4A4A4A" stroke-width="1.20582008" stroke-linecap="round" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+                <path d="M3.22619629,14.2611765 L0.303119366,6.75529412" id="Stroke-500" stroke="#4A4A4A" stroke-width="1.20582008" stroke-linecap="round" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+                <path d="M3.22619629,14.2611765 L9.07235014,24.7694118" id="Stroke-501" stroke="#4A4A4A" stroke-width="1.20582008" stroke-linecap="round" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="#4A4A4A" width="32" height="32" viewBox="0 0 32 32">
+  <g id="tb_outershell" transform="translate(5 5)" fill="inherit" stroke="none">
+    <path fill-opacity=".25" d="M22 22H7v-7H0V0h15v7h7v15z"/>
+    <path d="M22 7h.7v-.7H22V7zM7 22h-.7v.7H7V22zm15 0v.7h.7V22H22zM15 0h.7v-.7H15V0zM0 0v-.7h-.7V0H0zm0 15h-.7v.7H0V15zm15-8h-.7v.7h.7V7zm-8 8h.7v-.7H7v.7zm0 7.7h15v-1.4H7v1.4zm15.7-.7V7h-1.4v15h1.4zM15-.7H0V.7h15V-.7zM-.7 0v15H.7V0H-.7zm16.4 7V0h-1.4v7h1.4zm6.3-.7h-7v1.4h7V6.3zM0 15.7h7v-1.4H0v1.4zm6.3-.7v7h1.4v-7H6.3z"/>
+  </g>
+</svg>

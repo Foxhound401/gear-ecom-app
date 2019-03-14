@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g fill="none" fill-rule="evenodd" stroke="#4A4A4A" transform="translate(4 5)">
+    <g transform="translate(0 4)">
+      <polyline points="13.053 5.175 13.053 2.587 6.473 .131 .397 2.394 .397 8.596 7.426 11.861 10.727 10.272"/>
+      <polyline stroke-width=".5" points=".374 2.437 7.259 5.047 13.082 2.437"/>
+      <path stroke-width=".5" d="M7.25708008,11.9135742 L7.25708008,5.01660156"/>
+    </g>
+    <g transform="translate(10 7)">
+      <polygon points="7.15 13.397 .721 10.415 .721 3.428 6.745 .815 13.305 3.05 13.305 9.754"/>
+      <polyline stroke-width=".5" points=".66 3.475 7.142 6.099 13.295 3.088"/>
+      <path stroke-width=".5" d="M7.25199806,13.2839355 L7.24800194,6.10766602"/>
+    </g>
+    <g transform="translate(11)">
+      <polyline points="10.163 9.315 12.497 8.218 12.604 2.308 6.029 .461 1.032 2.246 1.079 5.938"/>
+      <polyline stroke-width=".5" points=".919 2.28 7.569 4.404 12.662 2.302"/>
+      <path stroke-width=".5" d="M7.53540039,4.4901123 L7.53540039,8.46032715"/>
+    </g>
+  </g>
+</svg>

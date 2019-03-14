@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g fill="none" fill-rule="evenodd" stroke="#4A4A4A" transform="translate(6 5)">
+    <polygon stroke-width=".604" points="21.117 11.704 20.753 14.198 8.98 20.958 8.851 17.914" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon stroke-width=".604" points="8.965 21.072 8.837 18.027 .139 11.079 .543 13.497" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon stroke-width=".71" points="6.73 6.48 8.564 6.48 8.564 11.732 12.233 11.732 12.233 6.48 13.979 6.48 10.399 .831" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline stroke-width="1.42" points="8.517 8.557 .258 11.245 .632 13.781 8.998 21.27 20.788 14.381 20.997 11.952 12.396 8.214"/>
+    <polyline stroke-width="1.065" points="7.955 8.298 7.966 6.851 6.684 6.851 10.419 .76 14.003 6.851 12.747 6.851 12.747 8.196"/>
+  </g>
+</svg>
