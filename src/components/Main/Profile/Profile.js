@@ -54,10 +54,6 @@ export default class Profile extends Component {
                             <MaterialIcon name="assignment" size={28} style={icon} />
                             <Text style={listText}>My Orders</Text>
                         </TouchableOpacity>
-                        <TouchableOpacity style={container} onPress={() => this.getUser()}>
-                            <MaterialIcon name="account-balance" size={28} style={icon} />
-                            <Text style={listText}>My Sellings</Text>
-                        </TouchableOpacity>
                         <TouchableOpacity style={container} onPress={() => { this.onSignOut() }}>
                             <Icon name="md-log-out" size={28} style={icon} />
                             <Text style={listText}>Log out</Text>
