@@ -44,37 +44,9 @@ export default class FinanceBar extends Component {
                 <View style={container}>
                     <View style={left}>
                         <TouchableOpacity onPress={() => this.props.navigation.navigate("AuthenticationScreen")}>
-                            <Text style={titleStyle} >{user ? user.email : 'Login to see balance'}</Text>
-                            <Text style={textStyle} >{user ? `${this.formatPrice(user.balance)} USD` :'0.00 USD'}</Text>
+                            <Text style={titleStyle} >Welcome to GameXC</Text>
+                            <Text style={textStyle} >Login or sign up</Text>
                         </TouchableOpacity>
-                    </View>
-                    <View style={right} >
-                        <ScrollView style={scroll} horizontal={true} showsHorizontalScrollIndicator={false}>
-                            <TouchableOpacity style={scrollButtonWrapper} onPress={() => this.props.navigation.navigate("Wallet")}>
-                                <View style={slideButton}>
-                                    {addIcon}
-                                </View>
-                                <Text style={textFinance}>
-                                    Add fund
-                                </Text>
-                            </TouchableOpacity>
-                            <TouchableOpacity style={scrollButtonWrapper}>
-                                <View style={slideButton}>
-                                    {historyIcon}
-                                </View>
-                                <Text style={textFinance}>
-                                    History
-                                </Text>
-                            </TouchableOpacity>
-                            <TouchableOpacity style={scrollButtonWrapper} onPress={() => this.props.navigation.navigate("Profile")} >
-                                <View style={slideButton}>
-                                    {profileIcon}
-                                </View>
-                                <Text style={textFinance}>
-                                    Profile
-                                </Text>
-                            </TouchableOpacity>
-                        </ScrollView>
                     </View>
                 </View>
             </View>
@@ -104,16 +76,17 @@ const styles = StyleSheet.create({
         paddingTop: 0,
     },
     titleStyle: {
-        fontSize: 16,
-        margin: 10,
-        marginBottom: 5,
-        color: '#FFF',
-    },
-    textStyle: {
         fontSize: 20,
         margin: 10,
-        color: '#46a8a8',
-        marginTop: 0,
+        marginBottom: 5,
+        color: '#000000',
+        fontWeight: 'bold'
+    },
+    textStyle: {
+        fontSize: 15,
+        marginLeft: 50,
+        marginBottom: 10,
+        color: '#59ABE3',
     },
     container: {
         flex: 1,
@@ -121,7 +94,8 @@ const styles = StyleSheet.create({
     },
     left: {
         flex: 1,
-        backgroundColor: '#7BC8C8'
+        backgroundColor: '#e6fff9',
+        alignItems: 'center'
     },
     right: {
         flex: 1,

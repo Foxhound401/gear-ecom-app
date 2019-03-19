@@ -90,13 +90,6 @@ export const TabBar = createBottomTabNavigator(
                 tabBarIcon: searchIcon,
             },
         },
-        Wallet: {
-            screen: Wallet,
-            navigationOptions: {
-                title: "Wallet",
-                tabBarIcon: walletIcon
-            }
-        },
         Cart: {
             screen: Cart,
             navigationOptions: {
