@@ -6,6 +6,6 @@ module.exports = {
     onSignIn: null,
     gotoSearch: null,
     setArraySearch: null,
-    url: 'http://192.168.0.100:27017/gamexc',
+    url: 'http://10.82.139.8:27017/gamexc',
     isSignUp: null
 };

@@ -24,13 +24,20 @@ export default class FinanceBar extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {
-            user: null
-        }
+    }
+
+    // componentDidUpdate() {
+    //     this.setState({
+    //         user: this.props.user,
+    //     })
+    // }
+
+    formatPrice(price) {
+        return Number.parseFloat(price).toFixed(2);
     }
 
     render() {
-        const { user } = this.state;
+        const { user } = this.props;
         const { wrapper, container, textStyle, scrollButtonWrapper, textFinance, titleStyle, left, right, scroll, slideButton } = styles;
         return (
             <View style={wrapper}>
@@ -38,7 +45,7 @@ export default class FinanceBar extends Component {
                     <View style={left}>
                         <TouchableOpacity onPress={() => this.props.navigation.navigate("AuthenticationScreen")}>
                             <Text style={titleStyle} >{user ? user.email : 'Login to see balance'}</Text>
-                            <Text style={textStyle} >0.00 EUR</Text>
+                            <Text style={textStyle} >{user ? `${this.formatPrice(user.balance)} USD` :'0.00 USD'}</Text>
                         </TouchableOpacity>
                     </View>
                     <View style={right} >

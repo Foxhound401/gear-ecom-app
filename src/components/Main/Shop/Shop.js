@@ -14,7 +14,7 @@ export default class Shop extends Component {
             drawers: [],
             topGames: [],
             steams: [],
-            user: null,
+            user: null
         };
         global.onSignIn = this.onSignIn.bind(this);
     }
@@ -23,6 +23,7 @@ export default class Shop extends Component {
         this.setState({ user });
         console.log('user in shop', user);
     }
+
 
     componentDidMount() {
         initData()
@@ -44,6 +45,7 @@ export default class Shop extends Component {
 
         const { navigation } = this.props;
         const { categorys, drawers, topGames, steams, user } = this.state;
+        console.log('shop ', user);
 
         return (
             <View style={{ flex: 1 }}>

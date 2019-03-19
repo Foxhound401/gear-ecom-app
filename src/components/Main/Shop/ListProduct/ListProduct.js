@@ -4,7 +4,7 @@ import nekoparaItem from '../../../../media/gameImage/nekoparaItem.jpg';
 import fallout4Item from '../../../../media/gameImage/fallout4Slider.png';
 import getListGame from '../../../../api/getListGame';
 
-const url = 'http://192.168.0.100:27017/gamexc/images/game/';
+const url = 'http://10.82.139.8:27017/gamexc/images/game/';
 
 export default class ListProduct extends Component {
     constructor(props) {

@@ -13,7 +13,7 @@ import global from '../../../global';
 const globeIcon = (<Icon name="md-globe" size={25} />);
 const steamIcon = (<FontIcon name="steam" size={25} />);
 const digitalIcon = (<Icon name="ios-key" size={25} />);
-const url = 'http://192.168.0.100:27017/gamexc/images/game/';
+const url = 'http://10.82.139.8:27017/gamexc/images/game/';
 
 
 

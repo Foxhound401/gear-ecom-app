@@ -11,7 +11,7 @@ import { createStackNavigator, createSwitchNavigator, createBottomTabNavigator }
 import Search from '../Main/Shop/Search/Search';
 import Wallet from '../Main/Shop/Wallet/Wallet';
 import Cart from '../Main/Shop/Cart/Cart';
-import Profile from '../Main/Shop/Profile/Profile';
+import Profile from '../Main/Profile/Profile';
 import HomeView from '../Main/Shop/Home/HomeView';
 import ListProduct from '../Main/Shop/ListProduct/ListProduct';
 import Login from '../Authentication/Login';

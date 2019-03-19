@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { Text, View, Button, Dimensions, StyleSheet, TextInput, TouchableOpacity } from 'react-native';
+import { Text, View, Dimensions, StyleSheet, TextInput, TouchableOpacity } from 'react-native';
 import global from '../global';
 import login from '../../api/login';
 import saveToken from '../../api/saveToken';
-const { height, width } = Dimensions.get('window');
+
+const { height } = Dimensions.get('window');
 
 export default class Login extends Component {
 
@@ -22,6 +23,7 @@ export default class Login extends Component {
         login(email, password)
             .then(responseJson => {
                 global.onSignIn(responseJson.user);
+                saveToken(responseJson.token);
                 this.props.navigation.navigate('Home');
             })
             .catch((error) => console.log(error));
@@ -34,6 +36,7 @@ export default class Login extends Component {
     render() {
         const { container, inputStyle, bigButton, buttonText, signUpButton, buttonSinupText } = styles;
         const { email, password } = this.state;
+        const { navigation } = this.props;
         return (
             <View style={container}>
                 <TextInput
@@ -56,7 +59,7 @@ export default class Login extends Component {
                     <Text style={buttonText}>Log in</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={signUpButton} onPress={() => { this.props.navigation.navigate("AuthenticationScreen") }}>
+                <TouchableOpacity style={signUpButton} onPress={() => { this.props.navigation.navigate("AuthenticationScreen", { isLogin: true }) }}>
                     <Text style={buttonSinupText}>Create GameXC ID</Text>
                 </TouchableOpacity>
             </View>
