@@ -12,7 +12,7 @@ export default class TopGame extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            title: "Top Popular Game",
+            title: "Top Popular Gear",
             gameTitle: "Nekopara Vol 1 Key Steam Global",
             price: "0.00",
             currency: "USD",

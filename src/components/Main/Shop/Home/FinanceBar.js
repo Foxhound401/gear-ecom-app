@@ -44,7 +44,7 @@ export default class FinanceBar extends Component {
                 <View style={container}>
                     <View style={left}>
                         <TouchableOpacity onPress={() => this.props.navigation.navigate("AuthenticationScreen")}>
-                            <Text style={titleStyle} >Welcome to GameXC</Text>
+                            <Text style={titleStyle} >Welcome to Gear Ecom</Text>
                             <Text style={textStyle} >Login or sign up</Text>
                         </TouchableOpacity>
                     </View>
@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
     },
     textStyle: {
         fontSize: 15,
-        marginLeft: 50,
+        marginLeft: 65,
         marginBottom: 10,
         color: '#8FD7C5',
     },
