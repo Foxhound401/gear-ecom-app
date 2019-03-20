@@ -12,7 +12,7 @@ export default class Category extends Component {
     constructor(props) {
         super(props);
         this.state = {  
-            title: "Game on Play Station 4",
+            title: "Gear For PC",
             gameTitle: "Nekopara Vol 1 Key Steam Global",
             price: "0.00",
             currency: "USD",

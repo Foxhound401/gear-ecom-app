@@ -44,7 +44,7 @@ export default class Profile extends Component {
                         <View style={wrapper}>
                             <MaterialIcon name="account-circle" style={iconUser} size={60} />
                             <Text style={textTitle}>
-                                Welcome to GameXC
+                                Welcome to Gear Ecom
                         </Text>
                             <Text style={textLogin}>{user ? user.email : "Login or sign up"}</Text>
                         </View>
