@@ -1,5 +1,6 @@
+const url = "http://localhost:5000/gearecom/initdata";
 const initData = () => (
-    fetch('http://10.82.139.8:27017/gamexc/')// eslint-disable-line
+    fetch(url) // eslint-disable-line
     .then(res => res.json())
 );
 
