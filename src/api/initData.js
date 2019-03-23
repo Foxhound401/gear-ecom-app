@@ -1,5 +1,5 @@
 import axios from 'axios';
-const url = 'http://192.168.43.185:5000/';
+const url = 'http://192.168.0.104:5000/';
 
 export const initProduct = item => {
   return axios
@@ -30,6 +30,19 @@ export const initCategory = item => {
 export const initSlider = item => {
   return axios
     .get(`${url}gearecom/initSlider`)
+    .then(res => {
+      if (res) {
+        return res.data;
+      }
+    })
+    .catch(err => {
+      console.log('ERROR AT GET CATEGORIES_API ' + err);
+    });
+};
+
+export const initCamera = item => {
+  return axios
+    .get(`${url}gearecom/initCamera`)
     .then(res => {
       if (res) {
         return res.data;

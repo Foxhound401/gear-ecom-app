@@ -24,6 +24,7 @@ export default class Shop extends Component {
     this.initProductFromDB = this.initProductFromDB.bind(this);
     this.initCategoryFromDB = this.initCategoryFromDB.bind(this);
     this.initSliderFromDB = this.initSliderFromDB.bind(this);
+    this.initCameraFromDB = this.initCameraFromDB.bind(this);
   }
 
   onSignIn(user) {
@@ -55,10 +56,19 @@ export default class Shop extends Component {
     });
   }
 
+  initCameraFromDB() {
+    initCamera().then(res => {
+      if (res) {
+        this.setState({camera: res});
+      }
+    });
+  }
+
   componentDidMount() {
     this.initSliderFromDB();
     this.initProductFromDB();
     this.initCategoryFromDB();
+    this.initCameraFromDB();
   }
 
   render() {
