@@ -31,7 +31,7 @@ export default class Collection extends Component {
                 }
                 key={e.idProduct}>
                 <Image
-                  source={{uri: `${url}${e.idProduct}.jpg`}}
+                  source={{uri: `${url}${e.idProduct}Slider.jpg`}}
                   style={imageStyle}
                 />
               </TouchableOpacity>

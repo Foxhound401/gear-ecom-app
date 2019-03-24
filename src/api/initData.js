@@ -1,5 +1,5 @@
 import axios from 'axios';
-const url = 'http://192.168.0.104:5000/';
+const url = 'http://172.16.1.107:5000/';
 
 export const initProduct = item => {
   return axios

@@ -13,7 +13,7 @@ import nekoparaItem from '../../../../media/gameImage/nekoparaItem.jpg';
 import thangmatloz from '../../../../media/gameImage/thangmatlon.jpg';
 
 const {height, width} = Dimensions.get('window');
-const url = 'http://10.82.139.8:27017/gamexc/images/game/';
+const url = 'http://192.168.0.104:5000/images/';
 
 export default class TopGame extends Component {
   constructor(props) {
@@ -80,7 +80,7 @@ export default class TopGame extends Component {
                     marginBottom: 15,
                   }}>
                   <Image
-                    source={{uri: `${url}${e.images}`}}
+                    source={{uri: `${url}${e.idProduct}.jpg`}}
                     style={imageStyle}
                   />
                 </View>
