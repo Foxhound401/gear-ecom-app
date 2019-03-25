@@ -13,7 +13,7 @@ import nekoparaItem from '../../../../media/gameImage/nekoparaItem.jpg';
 import thangmatloz from '../../../../media/gameImage/thangmatlon.jpg';
 
 const {height, width} = Dimensions.get('window');
-const url = 'http://192.168.0.104:5000/images/';
+const url = 'http://172.16.1.107:5000/images/';
 
 export default class Category extends Component {
   constructor(props) {

@@ -1,14 +1,19 @@
-const login = (email, password) => (
-    fetch('http://10.82.139.8:27017/gamexc/login.php',
-        {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                Accept: 'application/json'
-            },
-            body: JSON.stringify({ email, password })
-        })
-        .then(res => res.json())
-);
+import axios from 'axios';
+const url = 'http://192.168.0.104:5000/';
 
-module.exports = login;
+export const login = user => {
+  return axios
+    .post(`${url}users/login`, {
+      email: user.email,
+      password: user.password,
+    })
+    .then(res => {
+      localStorage.setItem('usertoken', res.data);
+      if (res) {
+        return res.data;
+      }
+    })
+    .catch(err => {
+      console.log('ERROR AT LOGIN_API' + err);
+    });
+};

@@ -31,7 +31,7 @@ export default class CategoryBar extends Component {
                 <TouchableOpacity
                   style={slideButton}
                   onPress={() =>
-                    this.props.navigation.navigate('ListView', {category: e})
+                    this.props.navigation.navigate('ListView', {category: e.idcategory})
                   }
                   key={e.idcategory}>
                   <Text style={textStyle}>{e.name}</Text>

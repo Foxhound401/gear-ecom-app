@@ -31,6 +31,13 @@ export default class Shop extends Component {
     this.setState({user});
   }
 
+  componentDidUpdate(prevProps) {
+    console.log('userProps in Shop: ' + this.props.user);
+    if (this.props.user !== prevProps.user) {
+      this.setState({user: this.props.user});
+    }
+  }
+
   initCategoryFromDB() {
     initCategory().then(res => {
       if (res) {
@@ -74,6 +81,7 @@ export default class Shop extends Component {
   render() {
     const {navigation} = this.props;
     let {categories, sliders, topProducts, camera, user} = this.state;
+    console.log('home view user: ' + user);
 
     return (
       <View style={{flex: 1}}>
