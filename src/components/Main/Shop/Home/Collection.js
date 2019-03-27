@@ -12,7 +12,7 @@ import stardew from '../../../../media/gameImage/stardewValleySlider.jpg';
 import fallout4 from '../../../../media/gameImage/fallout4Slider.png';
 import Swiper from 'react-native-swiper';
 
-const url = 'http://172.16.1.107:5000/images/';
+const url = 'http://192.168.0.104:5000/images/';
 const {height} = Dimensions.get('window');
 
 export default class Collection extends Component {
@@ -27,11 +27,11 @@ export default class Collection extends Component {
               <TouchableOpacity
                 style={wrapper}
                 onPress={() =>
-                  this.props.navigation.navigate('DetailView', {game: e})
+                  this.props.navigation.navigate('DetailView', {details: e})
                 }
-                key={e.idProduct}>
+                key={e.productID}>
                 <Image
-                  source={{uri: `${url}${e.idProduct}Slider.jpg`}}
+                  source={{uri: `${url}${e.productID}Slider.jpg`}}
                   style={imageStyle}
                 />
               </TouchableOpacity>

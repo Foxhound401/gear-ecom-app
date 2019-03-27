@@ -16,7 +16,6 @@ const {width} = Dimensions.get('window');
 
 export default class CategoryBar extends Component {
   render() {
-    console.log('category bar : ' + this.props.categories);
     let {categories} = this.props;
     const {wrapper, container, scroll, slideButton, textStyle} = styles;
     return (

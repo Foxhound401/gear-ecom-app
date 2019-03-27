@@ -1,7 +1,12 @@
-export const initCamera = item => {
+import axios from 'axios';
+const url = 'http://192.168.0.104:5000/';
+
+export const getCategoryByID = categoryID => {
+  console.log('category for the axios: ' + categoryID);
   return axios
-    .get(`${url}gearecom/initCamera`, item.idcategory)
+    .get(`${url}categories/get-category-by-id/${categoryID}`)
     .then(res => {
+      console.log('axios response: ' + res.data);
       if (res) {
         return res.data;
       }

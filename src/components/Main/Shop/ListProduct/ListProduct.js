@@ -10,8 +10,7 @@ import {
 } from 'react-native';
 import nekoparaItem from '../../../../media/gameImage/nekoparaItem.jpg';
 import fallout4Item from '../../../../media/gameImage/fallout4Slider.png';
-import getListGame from '../../../../api/getListGame';
-import getCategoryByID from '../../../../api/CategoryFunciton';
+import {getCategoryByID} from '../../../../api/CategoryFunction';
 
 const url = 'http://192.168.0.104:5000/images/';
 
@@ -25,10 +24,9 @@ export default class ListProduct extends Component {
   }
 
   componentDidMount() {
-    const categoryID = this.props.navigation.getParam('category').idcategory;
-    getListGame(categoryId).then(responseJSON => {
-      console.log('response ', responseJSON);
-      this.setState({category: responseJSON});
+    const categoryID = this.props.navigation.getParam('category');
+    getCategoryByID(categoryID).then(res => {
+      this.setState({category: res});
     });
   }
 
@@ -55,15 +53,15 @@ export default class ListProduct extends Component {
       <ScrollView style={{flex: 1}}>
         {category.length > 0 ? (
           category.map(e => (
-            <View style={containerItems} key={e.id}>
+            <View style={containerItems} key={e.productID}>
               <TouchableOpacity
                 style={cartItem}
                 onPress={() =>
-                  this.props.navigation.navigate('DetailView', {game: e})
+                  this.props.navigation.navigate('DetailView', {details: e})
                 }>
                 <View style={imageWrapper}>
                   <Image
-                    source={{uri: `${url}${e.images}`}}
+                    source={{uri: `${url}${e.productID}.jpg`}}
                     style={imageStyle}
                   />
                 </View>

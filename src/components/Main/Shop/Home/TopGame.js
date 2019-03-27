@@ -13,7 +13,7 @@ import nekoparaItem from '../../../../media/gameImage/nekoparaItem.jpg';
 import thangmatloz from '../../../../media/gameImage/thangmatlon.jpg';
 
 const {height, width} = Dimensions.get('window');
-const url = 'http://172.16.1.107:5000/images/';
+const url = 'http://192.168.0.104:5000/images/';
 
 export default class TopGame extends Component {
   constructor(props) {
@@ -69,9 +69,9 @@ export default class TopGame extends Component {
               <TouchableOpacity
                 style={itemSlide}
                 onPress={() =>
-                  this.props.navigation.navigate('DetailView', {game: e})
+                  this.props.navigation.navigate('DetailView', {details: e})
                 }
-                key={e.idProduct}>
+                key={e.productID}>
                 <View
                   style={{
                     flex: 1,
@@ -80,12 +80,12 @@ export default class TopGame extends Component {
                     marginBottom: 15,
                   }}>
                   <Image
-                    source={{uri: `${url}${e.idProduct}.jpg`}}
+                    source={{uri: `${url}${e.productID}.jpg`}}
                     style={imageStyle}
                   />
                 </View>
                 <View style={gameTitle}>
-                  <Text style={textGameTitle}>{e.title}</Text>
+                  <Text style={textGameTitle}>{e.name}</Text>
                 </View>
                 <Text style={{padding: 5, paddingBottom: 0, color: '#BDC3C7'}}>
                   From
