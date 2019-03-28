@@ -7,10 +7,12 @@ import {
   Dimensions,
   ScrollView,
   Image,
+  AsyncStorage,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import MaterialIcon from 'react-native-vector-icons/MaterialIcons';
 import saveToken from '../../../api/saveToken';
+import {getUserData, deleteUserData} from '../../../api/UserFunction';
 import global from '../../global';
 
 const {height, width} = Dimensions.get('window');
@@ -27,16 +29,17 @@ export default class Profile extends Component {
 
   onSignOut() {
     this.setState({user: null});
-    saveToken('');
+    deleteUserData('');
+    this.forceUpdate();
   }
 
-  componentDidUpdate(prevProps) {
-    if (this.props.user !== prevProps.user) {
-      console.log('user props: ' + this.props.user);
-      this.setState({
-        user: this.props.user,
-      });
-    }
+  componentDidUpdate() {
+    getUserData().then(res => {
+      console.log('call function in Profilejs: ' + res);
+      if (this.state.user !== res) {
+        this.setState({user: res});
+      }
+    });
   }
 
   render() {
@@ -67,9 +70,7 @@ export default class Profile extends Component {
             <View style={wrapper}>
               <MaterialIcon name="account-circle" style={iconUser} size={60} />
               <Text style={textTitle}>Welcome to Gear Ecom</Text>
-              <Text style={textLogin}>
-                {user ? user : 'Login or sign up'}
-              </Text>
+              <Text style={textLogin}>{user ? user : 'Login or sign up'}</Text>
             </View>
           </TouchableOpacity>
           <View style={listMenu}>

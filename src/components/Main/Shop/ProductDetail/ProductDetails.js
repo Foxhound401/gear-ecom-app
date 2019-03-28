@@ -18,7 +18,7 @@ import {getProductByID} from '../../../../api/ProductFunction';
 const globeIcon = <Icon name="md-globe" size={25} />;
 const steamIcon = <FontIcon name="steam" size={25} />;
 const digitalIcon = <Icon name="ios-key" size={25} />;
-const url = 'http://192.168.0.104:5000/images/';
+const url = 'http://10.82.139.8:5000/images/';
 
 const {height, width} = Dimensions.get('window');
 export default class ProductDetails extends Component {
@@ -179,9 +179,9 @@ export default class ProductDetails extends Component {
             </Text>
           </View>
 
-          {details.length > 0 && details[0].quantity > 0 ? (
+          {details.length > 0 ? (
             details.map(e => (
-              <View style={containerUser} key={e.id}>
+              <View style={containerUser} key={e.productID}>
                 <View
                   style={{
                     flex: 1,
@@ -201,8 +201,7 @@ export default class ProductDetails extends Component {
                       borderRadius: 2,
                     }}
                     onPress={() => {
-                      this.props.navigation.navigate('Cart');
-                      this.addItemToCart(e);
+                      this.props.navigation.navigate('Cart', {cartItem: e});
                     }}>
                     <Text style={{color: '#FFF'}}>Add to cart</Text>
                   </TouchableOpacity>

@@ -1,5 +1,5 @@
 import axios from 'axios';
-const url = 'http://192.168.0.104:5000/';
+const url = 'http://10.82.139.8:5000/';
 
 export const getCategoryByID = categoryID => {
   console.log('category for the axios: ' + categoryID);

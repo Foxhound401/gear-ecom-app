@@ -12,7 +12,7 @@ import nekoparaItem from '../../../../media/gameImage/nekoparaItem.jpg';
 import fallout4Item from '../../../../media/gameImage/fallout4Slider.png';
 import {getCategoryByID} from '../../../../api/CategoryFunction';
 
-const url = 'http://192.168.0.104:5000/images/';
+const url = 'http://10.82.139.8:5000/images/';
 
 export default class ListProduct extends Component {
   constructor(props) {

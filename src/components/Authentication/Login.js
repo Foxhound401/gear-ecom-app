@@ -6,10 +6,12 @@ import {
   StyleSheet,
   TextInput,
   TouchableOpacity,
+  AsyncStorage,
 } from 'react-native';
 import global from '../global';
 import {login} from '../../api/UserFunction';
 import saveToken from '../../api/saveToken';
+import {saveUserData} from '../../api/UserFunction';
 
 const {height} = Dimensions.get('window');
 
@@ -29,9 +31,8 @@ export default class Login extends Component {
     };
     login(user)
       .then(res => {
-        console.log("inside login onSignin : " + res.user.username);
         global.onSignIn(res.user.email);
-        saveToken(res.token);
+        saveUserData(res.user.email);
         this.props.navigation.navigate('HomeView');
       })
       .catch(error => console.log(error));

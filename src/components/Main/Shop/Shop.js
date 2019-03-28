@@ -8,6 +8,7 @@ import {
   initSlider,
   initCamera,
 } from '../../../api/initData';
+import {getUserData} from '../../../api/UserFunction';
 import global from '../../global';
 
 export default class Shop extends Component {
@@ -31,11 +32,12 @@ export default class Shop extends Component {
     this.setState({user});
   }
 
-  componentDidUpdate(prevProps) {
-    console.log('userProps in Shop: ' + this.props.user);
-    if (this.props.user !== prevProps.user) {
-      this.setState({user: this.props.user});
-    }
+  componentDidUpdate() {
+    getUserData().then(res => {
+      if (this.state.user !== res) {
+        this.setState({user: res});
+      }
+    });
   }
 
   initCategoryFromDB() {

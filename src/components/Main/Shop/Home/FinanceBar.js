@@ -8,6 +8,7 @@ import {
   Button,
   TouchableOpacity,
   ScrollView,
+  AsyncStorage,
 } from 'react-native';
 import bannerImage from '../../../../media/gameImage/nekoparaSlider1.jpg';
 import icSearch from '../../../../media/appIcon/cart.png';
@@ -53,20 +54,6 @@ export default class FinanceBar extends Component {
     this.state = {
       user: '',
     };
-    global.onSignIn = this.onSignIn.bind(this);
-  }
-
-  onSignIn(user) {
-    this.setState({user});
-  }
-
-  componentDidUpdate(prevProps) {
-    if (this.props.user !== prevProps.user) {
-      console.log('user props: ' + this.props.user);
-      this.setState({
-        user: this.props.user,
-      });
-    }
   }
 
   formatPrice(price) {
@@ -96,7 +83,11 @@ export default class FinanceBar extends Component {
                 this.props.navigation.navigate('AuthenticationScreen')
               }>
               <Text style={titleStyle}>Welcome to Gear Ecom</Text>
-              <Text style={textStyle}>All the Gears you ever need</Text>
+              {user ? (
+                <Text style={textStyle}>{user}</Text>
+              ) : (
+                <Text style={textStyle}>All the Gears you ever need</Text>
+              )}
             </TouchableOpacity>
           </View>
         </View>

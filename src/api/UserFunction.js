@@ -1,6 +1,7 @@
 import axios from 'axios';
+import {AsyncStorage} from 'react-native';
 
-const url = 'http://192.168.0.104:5000/';
+const url = 'http://10.82.139.8:5000/';
 
 export const login = user => {
   return axios
@@ -35,4 +36,31 @@ export const register = user => {
     .catch(err => {
       console.log('ERROR AT REGISTER_API' + err);
     });
+};
+
+export const getUserData = async user => {
+  let userData = '';
+  try {
+    userData = (await AsyncStorage.getItem('@user')) || '';
+  } catch (error) {
+    console.log('ERROR AT GETUSERDATA: ' + error);
+  }
+  return userData;
+};
+
+export const saveUserData = async user => {
+  try {
+    console.log('setUserData: ' + user);
+    await AsyncStorage.setItem('@user', user);
+  } catch (error) {
+    console.log('ERROR AT SAVEUSERDATA: ' + error);
+  }
+};
+
+export const deleteUserData = async user => {
+  try {
+    await AsyncStorage.removeItem('@user');
+  } catch (error) {
+    console.log('ERROR AT REMOVEUSERDATA: ' + error);
+  }
 };
