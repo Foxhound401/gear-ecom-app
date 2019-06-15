@@ -14,6 +14,7 @@
 ## Quick start
 
 1.  **Install the dependencies **
+
     Navigate into your new site’s directory
     
     ```sh
@@ -23,7 +24,7 @@
     
 1.  **Start the App.**
 
-    start it up using command
+    Start it up using command
 
     ```sh
     react-native run-android
