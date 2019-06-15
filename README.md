@@ -1,25 +1,29 @@
 # Gear Ecommerce App
 ## Gear Marketplace & Trading Platform 
 
-<img alt="Ro River" width="200" height="500" src="https://github.com/Foxhound401/gear_ecom_app/blob/master/home-page.png" /> | <img alt="Ro River" width="200" height="500" src="https://github.com/Foxhound401/gear_ecom_app/blob/master/login-page.png" />
+<img alt="Ro River" width="230" height="500" src="https://github.com/Foxhound401/gear_ecom_app/blob/master/home-page.png" /> | <img alt="Ro River" width="230" height="500" src="https://github.com/Foxhound401/gear_ecom_app/blob/master/product-details.png" /> | <img alt="Ro River" width="230" height="500" src="https://github.com/Foxhound401/gear_ecom_app/blob/master/product-showing-screen.png" /> | <img alt="Ro River" width="230" height="500" src="https://github.com/Foxhound401/gear_ecom_app/blob/master/login-page.png" />
+
+## Entity Diagram
+
+## Use Case Diagram
+
+<img alt="Ro River" width="230" height="500" src="https://github.com/Foxhound401/gear_ecom_app/blob/master/user-case-diagram.png" />
 
 ## Quick start
 
-1.  **Start developing.**
+1.  **Start the App.**
 
     Navigate into your new site’s directory and start it up.
 
     ```sh
-    cd my-default-starter/
-    gatsby develop
+    cd app-directory/
+    react-native run-android
     ```
-
-1.  **Open the source code and start editing!**
-
-    Your site is now running at `http://localhost:8000`!
-
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`\_. This is a tool you can use to experiment with querying your data.
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+    or 
+    ```sh
+    cd app-directory/
+    react-native run-ios
+    ```
 
 ## What's inside?
 
