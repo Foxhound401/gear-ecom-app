@@ -13,7 +13,7 @@
 
 ## Quick start
 
-1.  **Install the dependencies **
+1.  **Install the dependencies.**
 
     Navigate into your new site’s directory
     
