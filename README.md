@@ -5,6 +5,8 @@
 
 ## Entity Diagram
 
+<img src="https://github.com/Foxhound401/gear_ecom_app/blob/master/entity-diagram.png" />
+
 ## Use Case Diagram
 
 <img src="https://github.com/Foxhound401/gear_ecom_app/blob/master/user-case-diagram.png" />
