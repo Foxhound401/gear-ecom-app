@@ -1,13 +1,13 @@
 # Gear Ecommerce App
 ## Gear Marketplace & Trading Platform 
 
-<img alt="Ro River" width="230" height="500" src="https://github.com/Foxhound401/gear_ecom_app/blob/master/home-page.png" /> | <img alt="Ro River" width="230" height="500" src="https://github.com/Foxhound401/gear_ecom_app/blob/master/product-details.png" /> | <img alt="Ro River" width="230" height="500" src="https://github.com/Foxhound401/gear_ecom_app/blob/master/product-showing-screen.png" /> | <img alt="Ro River" width="230" height="500" src="https://github.com/Foxhound401/gear_ecom_app/blob/master/login-page.png" />
+<img alt="Ro River" width="200" height="400" src="https://github.com/Foxhound401/gear_ecom_app/blob/master/home-page.png" /> | <img alt="Ro River" width="200" height="400" src="https://github.com/Foxhound401/gear_ecom_app/blob/master/product-details.png" /> | <img alt="Ro River" width="200" height="400" src="https://github.com/Foxhound401/gear_ecom_app/blob/master/product-showing-screen.png" /> | <img alt="Ro River" width="200" height="400" src="https://github.com/Foxhound401/gear_ecom_app/blob/master/login-page.png" />
 
 ## Entity Diagram
 
 ## Use Case Diagram
 
-<img alt="Ro River" width="230" height="500" src="https://github.com/Foxhound401/gear_ecom_app/blob/master/user-case-diagram.png" />
+<img src="https://github.com/Foxhound401/gear_ecom_app/blob/master/user-case-diagram.png" />
 
 ## Quick start
 
