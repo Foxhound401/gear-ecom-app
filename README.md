@@ -1,7 +1,7 @@
 # Gear Ecommerce App
 ## Gear Marketplace & Trading Platform 
-<img alt="Ro River" width="200" height="500" src="https://github.com/Foxhound401/gear_ecom_app/blob/master/home-page.png" />
-<img alt="Ro River" width="200" height="500" src="https://github.com/Foxhound401/gear_ecom_app/blob/master/login-page.png" />
+
+<img alt="Ro River" width="200" height="500" src="https://github.com/Foxhound401/gear_ecom_app/blob/master/home-page.png" /> | <img alt="Ro River" width="200" height="500" src="https://github.com/Foxhound401/gear_ecom_app/blob/master/login-page.png" />
 
 ## Quick start
 
