@@ -1,70 +1,114 @@
-import React, { Component } from 'react';
-import { Text, View, TouchableOpacity, StyleSheet } from 'react-native';
-import { TabBar } from '../../Route/Route';
+import React, {Component} from 'react';
+import {Text, View, TouchableOpacity, StyleSheet} from 'react-native';
+import {TabBar} from '../../Route/Route';
 import HomeView from './Home/HomeView';
-import initData from '../../../api/initData';
+import {
+  initProduct,
+  initCategory,
+  initSlider,
+  initCamera,
+} from '../../../api/initData';
+import {getUserData} from '../../../api/UserFunction';
 import global from '../../global';
 
 export default class Shop extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      categories: [],
+      sliders: [],
+      topProducts: [],
+      camera: [],
+      user: null,
+    };
+    global.onSignIn = this.onSignIn.bind(this);
+    this.initProductFromDB = this.initProductFromDB.bind(this);
+    this.initCategoryFromDB = this.initCategoryFromDB.bind(this);
+    this.initSliderFromDB = this.initSliderFromDB.bind(this);
+    this.initCameraFromDB = this.initCameraFromDB.bind(this);
+  }
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            categorys: [],
-            drawers: [],
-            topGames: [],
-            steams: [],
-            user: null
-        };
-        global.onSignIn = this.onSignIn.bind(this);
-    }
+  onSignIn(user) {
+    this.setState({user});
+  }
 
-    onSignIn(user) {
-        this.setState({ user });
-        console.log('user in shop', user);
-    }
+  componentDidUpdate() {
+    getUserData().then(res => {
+      if (this.state.user !== res) {
+        this.setState({user: res});
+      }
+    });
+  }
 
+  initCategoryFromDB() {
+    initCategory().then(res => {
+      if (res) {
+        console.log(JSON.stringify(res));
+        this.setState({categories: res});
+      }
+    });
+  }
 
-    componentDidMount() {
-        initData()
-            .then((responseJson) => {
-                const { category, drawer, item, steam } = responseJson;
-                this.setState({
-                    categorys: category,
-                    drawers: drawer,
-                    topGames: item,
-                    steams: steam
-                })
-            })
-            .catch((error) => {
-                console.log(error);
-            });
-    }
+  initProductFromDB() {
+    initProduct().then(res => {
+      if (res) {
+        this.setState({topProducts: res});
+      }
+    });
+  }
 
-    render() {
+  initSliderFromDB() {
+    initSlider().then(res => {
+      if (res) {
+        this.setState({sliders: res});
+      }
+    });
+  }
 
-        const { navigation } = this.props;
-        const { categorys, drawers, topGames, steams, user } = this.state;
-        console.log('shop ', user);
+  initCameraFromDB() {
+    initCamera().then(res => {
+      if (res) {
+        this.setState({camera: res});
+      }
+    });
+  }
 
-        return (
-            <View style={{ flex: 1 }}>
-                <HomeView navigation={navigation} categorys={categorys} drawers={drawers} topGames={topGames} steams={steams} user={user} />
-            </View>
+  componentDidMount() {
+    this.initSliderFromDB();
+    this.initProductFromDB();
+    this.initCategoryFromDB();
+    this.initCameraFromDB();
+  }
 
-        );
-    }
+  render() {
+    const {navigation} = this.props;
+    let {categories, sliders, topProducts, camera, user} = this.state;
+    console.log('home view user: ' + user);
+
+    return (
+      <View style={{flex: 1}}>
+        <HomeView
+          navigation={navigation}
+          categories={categories}
+          sliders={sliders}
+          topProducts={topProducts}
+          camera={camera}
+          user={user}
+        />
+      </View>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        paddingHorizontal: 10
-    },
-    button: {
-        alignItems: 'center',
-        backgroundColor: '#DDDDDD',
-        padding: 10
-    },
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    paddingHorizontal: 10,
+  },
+  button: {
+    alignItems: 'center',
+    backgroundColor: '#DDDDDD',
+    padding: 10,
+  },
 });
